@@ -1,0 +1,206 @@
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  .main-content-section &,
+  .tab-container & {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .tab-container & {
+    margin-bottom: 30px;
+    font-size: 26px;
+    text-align: left;
+  }
+}
+
+.section-title + .links-list,
+.section-header + .links-list {
+  margin-top: $content-section-margin;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+
+  .main-content-section & {
+    text-align: left;
+  }
+
+  .tab-container & {
+    text-align: left;
+  }
+}
+
+.section-subtitle + form {
+  margin-top: 33px;
+}
+
+.tooltip-link {
+
+}
+
+.title {
+  font-family: $base-font-family-black;
+  -webkit-font-smoothing: antialiased;
+}
+
+.action-link {
+  @include action-link();
+}
+
+.action-link--get-pdf {
+  position: relative;
+  padding: 7px 0 7px 38px;
+  text-decoration: none;
+  cursor: default;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    background: url(../img/icons/icon-mini-pdf-hover.png) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.action-link--folder {
+  position: relative;
+  padding: 7px 0 7px 44px;
+  text-decoration: none;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 24px;
+    top: 50%;
+    margin-top: -14px;
+    background: url(../img/icons/icon-mini-folder.png) no-repeat top center;
+    background-size: cover;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.action-link--get-excel {
+  position: relative;
+  padding: 7px 0 7px 38px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 27px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    background: url(../img/icons/icon-mini-excel.png) no-repeat top center;
+    background-size: cover;
+  }
+}
+
+.fullscreen-link {
+  @include action-link();
+  padding-left: 32px;
+  line-height: 23px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icons/icon-mini-fullscreen.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.link-change {
+  @include action-link();
+  padding-left: 22px;
+  line-height: 18px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 18px;
+    background: url(../img/icons/icon-mini-change.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.link-download {
+  font-size: $note-font-size;
+  color: $link-accent;
+}
+
+.answer-link {
+  @include action-link();
+  &.is-active {
+    color: $link-accent;
+    text-decoration: none;
+  }
+}
+
+@font-face {
+  font-family: "MuseoSansLight";
+  src: url("/assets/fonts/MuseoSansLight/museosanscyrl-300.eot?") format("eot"),
+  url("/assets/fonts/MuseoSansLight/museosanscyrl-300.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSansLight/museosanscyrl-300.woff") format("woff"),
+  url("/assets/fonts/MuseoSansLight/museosanscyrl-300.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansLightItalic";
+  src: url("/assets/fonts/MuseoSansLightItalic/museosanscyrl-300italic.eot?") format("eot"),
+  url("/assets/fonts/MuseoSansLightItalic/museosanscyrl-300italic.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSansLightItalic/museosanscyrl-300italic.woff") format("woff"),
+  url("/assets/fonts/MuseoSansLightItalic/museosanscyrl-300italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSans";
+  src: url("/assets/fonts/MuseoSans/museosanscyrl-500.eot?") format("eot"),
+  url("/assets/fonts/MuseoSans/museosanscyrl-500.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSans/museosanscyrl-500.woff") format("woff"),
+  url("/assets/fonts/MuseoSans/museosanscyrl-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansItalic";
+  src: url("/assets/fonts/MuseoSansItalic/museosanscyrl-500italic.eot?") format("eot"),
+  url("/assets/fonts/MuseoSansItalic/museosanscyrl-500italic.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSansItalic/museosanscyrl-500italic.woff") format("woff"),
+  url("/assets/fonts/MuseoSansItalic/museosanscyrl-500italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansBlack";
+  src: url("/assets/fonts/MuseoSansBlack/museosanscyrl-900.eot?") format("eot"),
+  url("/assets/fonts/MuseoSansBlack/museosanscyrl-900.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSansBlack/museosanscyrl-900.woff") format("woff"),
+  url("/assets/fonts/MuseoSansBlack/museosanscyrl-900.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansBlackItalic";
+  src: url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.eot?") format("eot"),
+  url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.woff2") format("woff2"),
+  url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.woff") format("woff"),
+  url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.ttf") format("truetype");
+}

@@ -1,0 +1,178 @@
+.modal-open .modal.in {
+  display: flex;
+  align-items: center; // required for ie10 and ie11
+}
+
+.modal__title {
+  @extend .section-title;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.modal__subtitle {
+  @extend .section-subtitle;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+$modal-inner-padding:         32px 30px;
+
+//** Padding applied to the modal title
+$modal-title-padding:         20px 30px;
+//** Modal title line-height
+$modal-title-line-height:     inherit;
+
+//** Background color of modal content area
+$modal-content-bg:                             #fff;
+//** Modal content border color
+$modal-content-border-color:                   rgba(0,0,0,.2);
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color:          #999;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           #000;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .4;
+//** Modal header border color
+$modal-header-border-color:   #e5e5e5;
+//** Modal footer border color
+$modal-footer-border-color:   $modal-header-border-color;
+
+$modal-width:                 584px;
+$modal-width-sm:              300px;
+
+//
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 998!important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-overflow-scrolling: touch;
+
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+}
+.modal-open .modal.in {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+  .flexboxtweener &,
+  .flexbox & {
+    display: flex !important;
+    align-items: center; // required for ie10 and ie11
+  }
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: absolute;
+  padding: $modal-inner-padding;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: $modal-width;
+  max-width: 100%;
+  margin: auto;
+  z-index: 999;
+  border-radius: $border-radius;
+  background: $main-bg-color;
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Actual modal
+.modal-content {
+  width: 584px;
+  position: relative;
+  margin: auto;
+  background-color: $modal-content-bg;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 13px 0 rgba(68, 68, 68, .5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 996;
+  background-color: $modal-backdrop-bg;
+  opacity: $modal-backdrop-opacity;
+}
+
+.modal-close {
+  $size: 40px;
+  opacity: 1;
+  cursor: pointer;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  display: block;
+  height: $size;
+  width: $size;
+  padding: 0;
+  line-height: $size;
+  text-align: center;
+  font-size: 0;
+  border: 0;
+  box-shadow: none;
+  transition: all .15s;
+  background-color: transparent;
+  &::before {
+    content: "";
+    font-size: $size;
+    color: red;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    background-color: transparent;
+    background-image: url('../img/icons/icon-popup-close.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &:hover {
+    filter: brightness(150%);
+  }
+}

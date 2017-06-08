@@ -1,0 +1,213 @@
+$table-font-size: 13px;
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: $content-section-margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table {
+  width: 100%;
+  @extend .table-decorated;
+  font-size: $table-font-size;
+  th {
+    font-family: $base-font-family-light;
+  }
+
+  th, td {
+    padding: 11px 14px;
+    empty-cells: show;
+    border: 1px solid $border-color;
+  }
+}
+
+.table-decorated {
+  tr td,
+  tr th {
+    border-left: 0;
+    border-right: 0;
+    &:first-child {
+      border-left: 1px solid $border-color;
+    }
+
+    &:last-child {
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  th, td {
+    border-right: 0;
+    &:nth-child(even) {
+      background: #f9f9fa;
+    }
+  }
+
+  td {
+    border-right: 0;
+  }
+}
+
+.table--incoming-coupons {
+  th, td {
+    &:nth-child(2n) {
+      width: 45%;
+      text-align: center;
+    }
+  }
+}
+
+.table-heading {
+  display: table;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.table-heading__title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table-heading__actions {
+  display: table-cell;
+  vertical-align: top;
+  font-size: 0;
+  text-align: right;
+}
+
+.table-row-title {
+  text-align: center;
+}
+
+.table-unstyled {
+  $table-unstyled-padding: 10px;
+  margin-bottom: $content-section-margin - $table-unstyled-padding;
+  line-height: 1.4;
+  th, td {
+    border: 0;
+    padding: $table-unstyled-padding;
+  }
+}
+
+.table-client-details {
+  margin-bottom: 0;
+  tr {
+    &:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+  td {
+    padding : 14px 10px;
+    border-bottom: 1px solid $border-color;
+    &:first-child {
+      width: 165px;
+      padding-left: 0;
+      padding-right: 40px;
+    }
+  }
+}
+
+.table-iia-opening-selected-data-summary {
+
+}
+
+.table-management-structure {
+  display: block;
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: $table-font-size;
+
+  th, td {
+    border: 1px solid $border-color;
+    text-align: center;
+  }
+
+  th {
+    font-size: 12px;
+    padding-bottom: 30px;
+    padding-top: 17px;
+    vertical-align: top;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  td {
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+    &:first-child {
+      text-align: left;
+      padding-left: 17px;
+      padding-right: 17px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      white-space: nowrap;
+    }
+  }
+
+  .title {
+    color: #0ca462;
+  }
+
+  .total {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  th, td:nth-child(even) {
+    background-color: #f3f4f4;
+  }
+
+  .sum {
+    border: none;
+    background-color: #f3f4f4;
+  }
+
+  .sum_left-border {
+    border-left: 1px solid #dcdedf;
+  }
+
+  .sum_right-border {
+    border-right: 1px solid #dcdedf;
+  }
+
+  .sum_top-bottom-border {
+    border-bottom: 1px solid #dcdedf;
+    border-top: 1px solid #dcdedf;
+  }
+
+  .asterisk {
+    color: #e21e4b;
+  }
+
+  .fraction {
+    font-size: 11px;
+  }
+
+  .fraction_gray {
+    font-size: 11px;
+    color: #8c9196;
+  }
+}
+
+.table--unit-trust-coupons {
+  table-layout: fixed;
+  th:nth-child(-n+1) {
+    width: 200px;
+  }
+
+  th:nth-child(-n+2) {
+    width: 50px;
+  }
+
+  th:nth-child(-n+4) {
+    width: 310px;
+  }
+}

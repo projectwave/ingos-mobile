@@ -1,0 +1,19 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.section-title Вход в личный кабинет
+
+		form(method='' action='').form-autorisation-verification.js-form-validate
+			include assets/jade/partials/forms/sms-verification
+
+	include assets/jade/partials/outgoing-link
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

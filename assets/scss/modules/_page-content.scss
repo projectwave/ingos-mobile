@@ -1,0 +1,276 @@
+.page-section {
+  @extend %clearfix;
+}
+
+.filter {
+  @extend %clearfix;
+  margin-bottom: 26px;
+}
+
+.filter__column {
+  float: left;
+  width: 50%;
+  padding: 0 2%;
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.section-header {
+  display: table;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.section-header + .section-title {
+  margin-top: $content-section-margin;
+}
+
+.section-header__column {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: $content-section-margin;
+  &:last-child {
+    text-align: right;
+    padding-right: 0;
+  }
+}
+
+.content-nav {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  padding: 3px 38px;
+  line-height: 1.2;
+}
+
+.content-nav__prev {
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &::before {
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    height: 22px;
+    background: url(../img/icons/icon-nav-arrow-left.png) no-repeat top center;
+    background-size: contain;
+  }
+}
+
+.content-nav__next {
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    width: 13px;
+    height: 22px;
+    background: url(../img/icons/icon-nav-arrow-right.png) no-repeat top center;
+    background-size: contain;
+  }
+}
+
+.period-range {
+  display: inline-table;
+  vertical-align: top;
+  width: auto;
+}
+
+.period-range__title {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 25px;
+}
+
+.period-range__input {
+  font-size: 0;
+  text-align: right;
+}
+
+.data-range-input {
+  display: inline-block;
+  min-height: 35px;
+  line-height: 33px;
+  padding-right: 40px;
+  position: relative;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+}
+
+.data-range-input__value {
+  padding-left: 14px;
+  font-size: $note-font-size;
+}
+
+
+.data-range-input__icon {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 25px;
+  height: 24px;
+  cursor: pointer;
+  background: url(../img/icons/icon-mini-calendar.png);
+  background-size: cover;
+}
+
+.links-list__item,
+.icon-links-list__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.links-list__item {
+  padding-right: 15%;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $border-color;
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.links-list-unstyled {
+  .links-list__item {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-left: -29px;
+  padding: 24px 29px;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid $border-color;
+  background: #f9f9fa;
+  border-radius: $border-radius;
+}
+
+.faq-answer.is-visible {
+  display: block;
+}
+
+.download-area {
+  margin-top: 14px;
+  margin-bottom: $content-section-margin;
+  .action-link--get-pdf {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.download-file-list {
+  text-align: right;
+}
+
+.download-file-list__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 22px;
+}
+
+.detailed-info {
+  margin-bottom: $content-section-margin;
+  font-size: 16px;
+  .phone-number {
+    font-size: 18px;
+  }
+}
+
+$adventage-bottom-margin: 35px;
+
+.advantages-list {
+  margin-bottom: -$adventage-bottom-margin;
+}
+
+.advantage__header {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.advantage__icon,
+.advantage__title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.advantage__title {
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.advantage__icon {
+  width: 42px;
+}
+
+.advantages-list__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 64px;
+  margin-bottom: $adventage-bottom-margin;
+}
+
+.advantage {
+  width: 335px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.advantages__title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: $bolder;
+}
+
+.error-page-404 {
+  width: 493px;
+  margin: 30px 0 0 187px;
+  .section-title {
+    text-align: left;
+  }
+
+  .section-subtitle {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 34px;
+  }
+
+  .links-list-unstyled {
+    padding-left: 35px;
+    margin-bottom: 15px;
+  }
+}

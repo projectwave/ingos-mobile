@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  background: #f9f9fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $link-color;
+}
+
+ol {
+  margin-bottom: $content-section-margin;
+  list-style: decimal;
+  padding-left: 38px;
+  line-height: $lineHeight;
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+p {
+
+}
+
+ul {
+
+}

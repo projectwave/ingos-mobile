@@ -1,0 +1,42 @@
+// Hacks and helper classes
+.phone-number {
+  @include phone-number();
+}
+
+.line-break {
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.price-inline__dot-value {
+  font-family: $base-font-family-light;
+  font-size: 12px;
+  &::before {
+    content: ".";
+    font-size: $base-font-size;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.value-change-positive {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 18px;
+  font-size: $note-font-size;
+  color: $status-positive;
+}
+
+.inline-item-separator {
+  display: inline-block;
+  width: $inline-item-spacer;
+}

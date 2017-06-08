@@ -1,0 +1,64 @@
+extends assets/jade/layouts/global/index
+
+block content
+
+	form(method='' action='').form-cabinet-connection-verification.js-form-validate
+		.content-section
+			.content-section__inner
+				.section-title
+					| Вход в личный кабинет
+
+				form(method='' action='').form-autorisation.js-form-validate
+					.form-row
+						label(for='autorisation-login').form-row__title
+							| Логин:
+
+							input(type='text'
+										required,
+										placeholder='Введите логин'
+										id='autorisation-login').form-control
+
+						.form-item.form-item--password
+							label(for='autorisation-login').form-item__title
+								| Пароль:
+
+								a(href='#').link-remind-pass Забыли пароль?
+
+							input(type='password'
+										required,
+										placeholder='•••••'
+										id='autorisation-password').form-control
+
+						.form-item
+							input(type='submit' value='Войти').form-submit
+
+					.form-row.form-row--note
+						.form-note
+							| Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.
+
+							span.content-margin
+
+							span.line-break
+								| Если вы еще не зарегестрированы &mdash;&nbsp;
+								a(href='#')
+									| подключите личный кабинет
+								| .
+
+					.form-row.form-row--outcoming-link
+						a(href='#') Перейтив в полную версию кабинета
+
+		.test
+			.test__item
+			.test__item
+			.test__item
+
+		include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

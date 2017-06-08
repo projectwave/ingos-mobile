@@ -1,0 +1,38 @@
+extends assets/jade/layouts/global/index
+
+block content
+
+	form(method='' action='').form-cabinet-connection-verification.js-form-validate
+		.content-section
+			.content-section__inner
+				.section-title
+					| Возможности
+
+				.section-subtitle
+					| Личный кабинет &mdash; это очень удобный, простой и доступный способ получения информации о своем инвестиционным портфеле!
+
+					img(src='' alt='').features-cabinet-screenshot
+
+		.content-section
+			.content-section__inner
+				.section-title
+					| Круглосуточно посредством личного кабинета вы можете:
+
+				ol
+					li Посмотреть актуальную информацию ...
+
+					li ...
+
+				.outcoming-link
+					a(href='#') Перейтив в полную версию кабинета
+
+		include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

@@ -1,0 +1,28 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.content-section__inner
+			.title Демо-ПИФ
+
+			p
+				| «Демо-ПИФ» &mdash; это виртульный сервис, позволяющий...
+
+			p
+				| ...
+
+			.title Начать тренировки с 300 000 виртуальных рублей на счету.
+
+			.btn-primary
+				| Открыть виртуальный счет
+
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

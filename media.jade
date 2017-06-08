@@ -1,0 +1,57 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.section-title Медиа
+
+		form.form-filter-archive
+			.form-row
+				label.form-row__title Архив по годам:
+
+				select
+					option(value='2016') 2016
+					option(value='2017') 2017
+
+		.media-list
+			.media-list__item
+				.media-preview
+					.media-preview__viewport
+						img(src='' alt='')
+
+						.media-preview__video-length-label 08:20
+
+					.media-preview__caption
+						| Личные финансы с Натальей Смирновой. Выпуск 18.
+						span.line-break
+							| Паевый инвестиционный фонд (ПИФ)
+
+					.media-preview__posttime сегодня, 11:18
+
+			.media-list__item
+				.media-preview
+					.media-preview__viewport
+						img(src='' alt='')
+
+						.media-preview__video-length-label 09:15
+
+					.media-preview__caption
+						| Личные финансы с Натальей Смирновой. Выпуск 17.
+						span.line-break
+							| Пожизненный источник дохода
+
+					.media-preview__posttime сегодня, 11:18
+
+	include assets/jade/partials/cards-list
+
+	include assets/jade/partials/outgoing-link
+
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

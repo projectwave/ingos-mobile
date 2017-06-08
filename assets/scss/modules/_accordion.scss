@@ -1,0 +1,45 @@
+$accordion-title-padding: 10px;
+
+.accordion {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  margin-bottom: $content-section-margin;
+}
+
+.accordion__section-title {
+  position: relative;
+  padding: 23px 20px 20px 50px;
+  font-size: 18px;
+  border-bottom: 1px solid $border-color;
+  cursor: pointer;
+  user-select: none;
+  &::before {
+    content: "";
+    width: 22px;
+    height: 13px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    background: url(../img/arrow-down.png);
+    background-size: cover;
+    transition: transform 0.2s linear;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.accordion__section-title.is-active {
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion__section {
+  display: none;
+  padding: 20px 20px 20px 50px;
+  &.is-visible {
+    display: block;
+  }
+}

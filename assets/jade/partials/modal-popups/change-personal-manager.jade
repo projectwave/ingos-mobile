@@ -1,0 +1,23 @@
+.modal#modal-change-personal-manager
+	.modal-dialog
+		.modal__title
+			| Сменить персонального менеджера
+
+		.modal__subtitle
+			| Пожалуйста, подробно опишите причину смены менеджера.
+			br
+			| Тогда наша служба контроля за качеством обслуживания сможет принять меры.
+
+		form#form-reason-to-change-manager.form-reason-to-change-manager.js-form-validate
+			.form-row
+				textarea(required
+								 data-parsley-error-message='Это поле нужно заполнить'
+								 placeholder='Опишите причину смены менеджера').form-control
+
+			.form-row
+				button(type='submit' value='').form-submit
+					span.icon-change.icon-change--white
+
+					| Сменить менеджера
+
+		.modal-close(data-dismiss='modal')

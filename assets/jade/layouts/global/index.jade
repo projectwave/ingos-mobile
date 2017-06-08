@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title= title
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+
+		link(rel='stylesheet' href='assets/css/style.css')
+
+		block head_end
+
+	body
+		include partials/header
+
+		main.page-content
+			.page-content__inner
+				block content
+
+		include partials/footer
+
+		//include ../../partials/modal-popups/
+
+		script(type='text/javascript' src='assets/js/libs/jquery-3.2.1.js')
+		script(type='text/javascript' src='assets/js/vendors/parsley.js')
+		script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+		script(type='text/javascript' src='assets/js/vendors/password-strength.js')
+		script(type='text/javascript' src='assets/js/main.js')
+		script(type='text/javascript').
+				$(function () {
+						commonActions.init();
+				})
+
+		block body_end

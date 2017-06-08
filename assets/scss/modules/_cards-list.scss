@@ -1,0 +1,173 @@
+.cards-list {
+  display: table;
+  width: 100%;
+  @extend .cards-list--blue-icon;
+  font-size: 0;
+  text-align: center;
+  background: $main-bg-color;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+
+.cards-list__item {
+  display: table-cell;
+  vertical-align: top;
+  font-size: $base-font-size;
+  border-right: 1px solid $border-color;
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.cards-list--call-to-action {
+  .cards-list__item {
+    width: 33.33%;
+  }
+}
+
+.cards-list--blue-icon {
+  .card__icon {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #00adeb;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-size: cover;
+    }
+  }
+}
+
+.card {
+  padding: 25px 25px 35px;
+  a {
+    color: $link-accent;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.card__footer {
+  margin-top: 25px;
+}
+
+.card__icon--investment-fund {
+  &::before {
+    height: 37px;
+    width: 45px;
+    margin-top: -18px;
+    margin-left: -22px;
+    background: url(../img/icons/icon-1.png);
+  }
+}
+
+.card__icon--trust-management {
+  &::before {
+    height: 44px;
+    width: 53px;
+    margin-top: -22px;
+    margin-left: -26px;
+    background: url(../img/icons/icon-2.png);
+  }
+}
+
+.card__icon--investment-accs {
+  &::before {
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    background: url(../img/icons/icon-3.png);
+  }
+}
+
+.cards-list--ordering-steps {
+  margin: 25px 0;
+  box-shadow: none;
+  .cards-list__item {
+    border-right: 0;
+    padding-right: $content-section-margin / 2;
+    border-radius: $border-radius;
+    &:nth-child(2n) {
+      padding-left: $content-section-margin / 2;
+      padding-right: 0;
+    }
+  }
+
+  .card {
+    width: 382px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+}
+
+.card__caption {
+  line-height: 1.2;
+}
+
+.card__icon--browse {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -23px;
+    margin-top: -18px;
+    width: 50px;
+    height: 37px;
+    background: url(../img/icons/icon-4.png);
+  }
+}
+
+.card__icon--ordering {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icons/icon-5.png);
+  }
+}
+
+.card__icon--bill {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -24px;
+    width: 41px;
+    height: 48px;
+    background: url(../img/icons/icon-6.png);
+  }
+}
+
+.cards-list--iia-opening {
+  margin: 25px 0;
+  box-shadow: none;
+  .cards-list__item {
+    border-right: 0;
+    padding-right: $content-section-margin / 2;
+    border-radius: $border-radius;
+    &:nth-child(3n) {
+      padding-left: $content-section-margin / 2;
+      padding-right: 0;
+    }
+  }
+
+  .card {
+    width: 252px;
+    padding: 25px 20px 35px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+}

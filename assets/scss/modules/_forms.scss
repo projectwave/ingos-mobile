@@ -1,0 +1,153 @@
+form {
+  width: 100%;
+}
+
+.form-cabinet-connection-data {
+  max-width: 554px;
+  margin: 28px auto;
+}
+
+.form-cabinet-connection-verification {
+  max-width: 770px;
+  margin: 33px auto 72px;
+}
+
+.form-sms-verification {
+  margin-top: 30px;
+  .form-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .form-row--sms-verification {
+    margin-bottom: 14px;
+  }
+}
+
+.form-autorisation-verification {
+
+}
+
+.form-cabinet-connection-password {
+  max-width: 556px;
+  margin: 31px auto;
+  .form-row--login {
+    max-width: 260px;
+  }
+
+  .form-item--password-create {
+    width: 358px;
+  }
+}
+
+.form-update-personal-user-data {
+  $form-item-padding: 7%;
+
+  margin-top: $content-section-margin;
+  .form-control {
+    max-width: 265px;
+  }
+
+  .form-row__title {
+    display: block;
+  }
+
+  .form-row--password {
+    @include clearfix();
+  }
+
+  .form-item--password-create,
+  .form-item--password-note {
+    width: 50%;
+    float: left;
+  }
+
+  .form-row--password-strength {
+    width: 50%;
+    display: table;
+    overflow: hidden;
+  }
+
+  .form-row--password-strength .form-item {
+    width: 50%;
+    display: table-cell;
+  }
+
+  .form-item--password-strength-title {
+    padding-right: $form-item-padding;
+  }
+
+  .form-item--password-note {
+    font-size: 14px;
+  }
+
+  .form-note {
+    text-align: left;
+    line-height: 1.4;
+    padding-left: $form-item-padding;
+  }
+
+  .form-row--submit {
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+.form-reason-to-change-manager {
+  margin-bottom: 0;
+  .form-row:last-child {
+    margin-bottom: 0;
+  }
+
+  textarea.form-control {
+    min-height: 106px;
+  }
+
+  .form-submit {
+    padding-left: 18px;
+    padding-right: 20px;
+  }
+
+  .icon-change {
+    @include icon();
+    margin-right: 10px;
+    width: 16px;
+    height: 18px;
+    background: url(../img/icons/icon-mini-change.png);
+    background-size: cover;
+  }
+
+  .icon-change--white {
+    background: url(../img/icons/icon-mini-popup-change.png);
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+  }
+}
+
+.form-autorisation {
+  max-width: 750px;
+  margin: 65px auto 0;
+  .form-control {
+    min-width: 260px;
+  }
+
+  .form-submit {
+    width: 162px;
+  }
+
+  .form-row--note {
+    margin-top: 42px;
+  }
+
+  .form-item--password .form-item__title {
+    display: block;
+  }
+
+  .link-remind-pass {
+    float: right;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: $note-font-size;
+  }
+}

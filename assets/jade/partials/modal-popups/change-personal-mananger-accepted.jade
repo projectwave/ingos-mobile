@@ -1,0 +1,26 @@
+.modal#modal-new-personal-manager
+	.modal-dialog
+		.modal__title
+			| Спасибо! Ваша заявка принята
+
+		.modal__subtitle
+			| Ваш новый персональный менеджер &mdash;
+
+		.person-preview
+			.person-preview__image
+				img(src='' alt='')
+
+			.person-preview__info
+				.person-preview__name Анна Орлова
+
+				.person-preview__contacts
+					.person-preview__contacts-item
+						| skype:&nbsp;
+						span.underline
+							| anna.ingosinvest
+
+						.person-preview__actions
+							span.js-start-manager-chat.btn-bordered.btn-sm
+								| Начать чат с менеджером
+
+		.modal-close(data-dismiss='modal')

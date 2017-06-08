@@ -1,0 +1,74 @@
+@mixin clearfix(){
+  &::before,
+  &::after {
+    content: "";
+    display: block; // bug with extra space in Safari when using table instead block
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin section-decorated(){
+  background: $main-bg-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+@mixin action-link(){
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  font-size: $base-font-size;
+  font-family: $base-font-family-light;
+  cursor: pointer;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin button() {
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  font-size: $base-font-size;
+  line-height: 1;
+  padding: 19px 41px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: $border-radius;
+  user-select: none;
+}
+
+@mixin icon() {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+@mixin phone-number() {
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: $bolder;
+}
+
+%clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: block; // bug with extra space in Safari when using table instead block
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+%container {
+  @include clearfix();
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-gutter;
+}

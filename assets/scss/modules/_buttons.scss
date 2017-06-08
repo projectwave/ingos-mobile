@@ -1,0 +1,33 @@
+%btn-primary {
+  @include button();
+  color: white;
+  background: $brand-color;
+  &:hover {
+    background-color: #f92a51;
+  }
+  &:focus {
+    outline: none;
+    background-color: #c21244;
+  }
+}
+
+.btn-bordered {
+  @include button();
+  color: $brand-color;
+  border: 2px solid $brand-color;
+}
+
+.btn-flat {
+  @include button();
+  color: white;
+  background: gray;
+}
+
+.btn-sm {
+  padding: 8px;
+  font-size: $note-font-size;
+}
+
+.btn-primary {
+  @extend %btn-primary
+}

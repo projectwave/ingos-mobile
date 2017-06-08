@@ -1,0 +1,14 @@
+.page-section {
+  position: relative;
+}
+
+.page-section__inner {
+  @extend %container;
+  @media (min-width: 480px) {
+
+  }
+}
+
+.main-content-section {
+  @include section-decorated();
+}

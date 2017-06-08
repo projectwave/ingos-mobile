@@ -1,0 +1,69 @@
+extends assets/jade/layouts/global/index
+
+block content
+
+	form(method='' action='').form-cabinet-connection-verification.js-form-validate
+		.content-section
+			.content-section__inner
+				.section-title
+					| Подключить личный кабинет
+
+				.section-subtitle
+					| Подтвердите телефон
+
+		.content-section
+			.content-section__inner
+				.form-list
+					.form-list__item
+						input(type='checkbox' checked='checked' id='form-ccv-esignature-check')
+
+						label(for='form-ccv-esignature-check')
+							| Я ознакомился и принимаю соглашение&nbsp;
+							a(href='#')
+								| об использовании электронной подписи
+
+					.form-list__item
+						input(type='checkbox' checked='checked' id='form-ccv-communication-check')
+
+						label(for='form-ccv-communication-check')
+							| Подтверждаю свое&nbsp;
+							a(href='#')
+								| согласие на коммуникацию
+
+		.content-section
+			.content-section__inner
+				.section-subtitle На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом для входа в Личный кабинет.
+
+				.form-row
+					label(for='cabinet-connection-data-second-name').form-row__title
+						| Введите код:
+
+					input(type='password'
+								placeholder='••••'
+								required,
+								id='cabinet-connection-data-second-name').form-control
+
+				.form-row
+					input(type='submit' value='Войти').form-submit
+
+				.form-row
+					.links-list
+						.links-list__item
+							a(href='Отправить еще раз')
+
+						.links-list__item
+							a(href='SMS не приходит?')
+
+				.form-row.form-row--outcoming-link
+					a(href='#') Перейтив в полную версию кабинета
+
+		include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

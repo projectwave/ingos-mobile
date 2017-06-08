@@ -1,0 +1,35 @@
+extends assets/jade/layouts/global/index
+
+block content
+
+	form(method='' action='').form-cabinet-connection-verification.js-form-validate
+		.content-section
+			.content-section__inner
+				.title
+					| Как подключить?
+
+				img(src='' alt='')
+
+				.title Регистрация в системе
+
+				p Для регистрации в системе ...
+
+				.title Ограничения и сроки получения доступа к данным
+
+				ul
+					li Обратившись в ...
+
+					li
+
+		include assets/jade/partials/outgoing-link
+
+		include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})
