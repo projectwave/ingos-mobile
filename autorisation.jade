@@ -3,12 +3,12 @@ extends assets/jade/layouts/global/index
 block content
 
 	form(method='' action='').form-cabinet-connection-verification.js-form-validate
-		.content-section
+		.content-section.content-section-padding
 			.content-section__inner
 				.section-title
 					| Вход в личный кабинет
 
-				form(method='' action='').form-autorisation.js-form-validate
+				form(method='' action='').form-autorisation.js-form-validate.form-autorisation
 					.form-row
 						label(for='autorisation-login').form-row__title
 							| Логин:
@@ -19,7 +19,7 @@ block content
 										id='autorisation-login').form-control
 
 						.form-item.form-item--password
-							label(for='autorisation-login').form-item__title
+							label(for='autorisation-login').form-row__title
 								| Пароль:
 
 								a(href='#').link-remind-pass Забыли пароль?
