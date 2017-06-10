@@ -1,5 +1,6 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header
 block content
 	.content-section.content-section-padding
 		.content-section__inner
@@ -53,8 +54,7 @@ block content
 				.form-row
 					input(type='submit' value='Отправить').form-submit
 
-				.form-row.form-row--outcoming-link
-					a(href='#').link-text Перейти в полную версию кабинета
+				include assets/jade/partials/outgoing-link
 
 	include assets/jade/partials/privacy-policy
 

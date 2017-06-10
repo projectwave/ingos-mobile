@@ -4,7 +4,7 @@
     max-width: 100%;
 
     @media(max-width: $breakpoint-md-max) {
-      max-width: 50%;
+      width: 170px;
     }
   }
 }

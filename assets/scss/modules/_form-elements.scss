@@ -6,11 +6,15 @@ $input-font-size: 1.154rem; //30px
 
 .form-row {
   position: relative;
-  margin-bottom: $form-row-margin;
+  margin-bottom: $form-row-margin / 2;
   text-align: center;
 
   p {
     font-size: 1rem;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: $form-row-margin;
   }
 }
 

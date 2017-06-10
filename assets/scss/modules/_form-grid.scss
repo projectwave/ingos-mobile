@@ -1,5 +1,31 @@
 $form-grid-padding: 40px;
 
+@mixin form-grid-table() {
+  display: table;
+  width: 100%;
+  > .cell {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: $form-grid-padding / 2;
+    padding-right: $form-grid-padding / 2;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &.style-full {
+      width: 100%;
+    }
+    &.style-nowrap {
+      white-space: nowrap;
+    }
+  }
+}
+
 
 .form-grid {
   position: relative;
@@ -8,30 +34,17 @@ $form-grid-padding: 40px;
     margin: 10px 0;
   }
 
-  @media(min-width: $breakpoint-md) {
-    display: table;
-    width: 100%;
-    > .cell {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 0;
-      padding-left: $form-grid-padding / 2;
-      padding-right: $form-grid-padding / 2;
-
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
-
-      &.style-full {
-        width: 100%;
-      }
-      &.style-nowrap {
-        white-space: nowrap;
-      }
-    }
+  &.strict {
+    @include form-grid-table();
   }
+
+  @media(min-width: $breakpoint-md) {
+    @include form-grid-table();
+  }
+
 }
+
+
+
+
 

@@ -1,7 +1,4 @@
 .form-sms-verification
-	.form-title
-		| На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом.
-
 	.form-row
 		label(for='verification-sms-code').form-row__title
 			| Введите код:
@@ -15,11 +12,11 @@
 		input(type='submit' value='Отправить').form-submit
 
 	.form-row.form-row--verification-troubleshooting
-		.links-group
-			.links-group__item.text-right
-				a(href='#').tooltip-link
+		.form-grid
+			.cell
+				a(href='#').link-text-small
 					| Отправить еще раз
 
-			.links-group__item.text-left
-				a(href='#').tooltip-link
+			.cell
+				a(href='#').link-text-small
 					| СМС не приходит?

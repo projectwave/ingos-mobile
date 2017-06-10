@@ -1,58 +1,49 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header-menu
 block content
+	.content-section.content-section-padding
+		.content-section__inner
+			.section-title
+				| Вход в личный кабинет
 
-	form(method='' action='').form-cabinet-connection-verification.js-form-validate
-		.content-section.content-section-padding
-			.content-section__inner
-				.section-title
-					| Вход в личный кабинет
+			form(method='' action='').form-autorisation.js-form-validate
+				.form-row
+					label(for='autorisation-login').form-row__title
+						| Логин:
 
-				form(method='' action='').form-autorisation.js-form-validate.form-autorisation
-					.form-row
-						label(for='autorisation-login').form-row__title
-							| Логин:
+					input(type='text'
+								required,
+								placeholder='Введите логин'
+								id='autorisation-login').form-control
 
-							input(type='text'
-										required,
-										placeholder='Введите логин'
-										id='autorisation-login').form-control
+				.form-row.form-item--password
+					label(for='autorisation-login').form-row__title
+						| Пароль:
 
-						.form-item.form-item--password
-							label(for='autorisation-login').form-row__title
-								| Пароль:
+					a(href='#').link-remind-pass Забыли пароль?
 
-								a(href='#').link-remind-pass Забыли пароль?
+					input(type='password'
+								required,
+								placeholder='•••••'
+								id='autorisation-password').form-control
 
-							input(type='password'
-										required,
-										placeholder='•••••'
-										id='autorisation-password').form-control
+				.form-row
+					input(type='submit' value='Войти').form-submit
 
-						.form-item
-							input(type='submit' value='Войти').form-submit
+				.form-row.form-row--note
+					p
+						| Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.
 
-					.form-row.form-row--note
-						.form-note
-							| Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.
+					p
+						| Если вы еще не зарегестрированы &mdash;&nbsp;
+						a(href='#').link-text-small
+							| подключите личный кабинет
+						| .
 
-							span.content-margin
+				include assets/jade/partials/outgoing-link
 
-							span.line-break
-								| Если вы еще не зарегестрированы &mdash;&nbsp;
-								a(href='#')
-									| подключите личный кабинет
-								| .
-
-					.form-row.form-row--outcoming-link
-						a(href='#') Перейтив в полную версию кабинета
-
-		.test
-			.test__item
-			.test__item
-			.test__item
-
-		include assets/jade/partials/privacy-policy
+	include assets/jade/partials/privacy-policy
 
 block body_end
 	script(type='text/javascript' src='assets/js/vendors/parsley.js')
