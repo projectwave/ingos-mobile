@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6e41b95-351f-45b8-b6ea-4c6614ba0e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/scss/modules/_page-section.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_content-section.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" afterPath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/layouts/global/partials/header.jade" afterPath="$PROJECT_DIR$/assets/jade/layouts/global/partials/header.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/partials/privacy-policy.jade" afterPath="$PROJECT_DIR$/assets/jade/partials/privacy-policy.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_mixins.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_typography.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_variables.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/layouts/global/_header.scss" afterPath="$PROJECT_DIR$/assets/scss/layouts/global/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_all.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_all.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_image-blocks.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_image-blocks.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_tables.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_tables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration-password-creating.jade" afterPath="$PROJECT_DIR$/registration-password-creating.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration-verification.jade" afterPath="$PROJECT_DIR$/registration-verification.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration.jade" afterPath="$PROJECT_DIR$/registration.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/css/style.css" afterPath="$PROJECT_DIR$/site/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-connect.html" afterPath="$PROJECT_DIR$/site/autorisation-connect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-features.html" afterPath="$PROJECT_DIR$/site/autorisation-features.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-verification.html" afterPath="$PROJECT_DIR$/site/autorisation-verification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation.html" afterPath="$PROJECT_DIR$/site/autorisation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/media-item.html" afterPath="$PROJECT_DIR$/site/media-item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/media.html" afterPath="$PROJECT_DIR$/site/media.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration-password-creating.html" afterPath="$PROJECT_DIR$/site/registration-password-creating.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration-verification.html" afterPath="$PROJECT_DIR$/site/registration-verification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration.html" afterPath="$PROJECT_DIR$/site/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/unit-trust__demo-step-1.html" afterPath="$PROJECT_DIR$/site/unit-trust__demo-step-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/unit-trust__demo-step-2.html" afterPath="$PROJECT_DIR$/site/unit-trust__demo-step-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +24,7 @@
             <entry file="file://$PROJECT_DIR$/registration.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -74,7 +44,7 @@
             <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+                  <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -104,8 +74,10 @@
             <entry file="file://$PROJECT_DIR$/registration-password-creating.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="54">
-                  <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="44" />
-                  <folding />
+                  <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="44" />
+                  <folding>
+                    <marker date="1497097216376" expanded="true" signature="47:1956" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -120,21 +92,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_form-grid.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_form-grid.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <state relative-caret-position="108">
+                  <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="registration-verification.jade" pinned="false" current-in-tab="true">
+          <file leaf-file-name="registration-verification.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/registration-verification.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="134">
-                  <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+                <state relative-caret-position="26">
+                  <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -149,7 +131,12 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="108">
                   <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <marker date="1497097292488" expanded="true" signature="13:240" ph="{...}" />
+                    <marker date="1497097292488" expanded="true" signature="208:238" ph="{...}" />
+                    <marker date="1497097292488" expanded="true" signature="438:622" ph="{...}" />
+                    <marker date="1497097292488" expanded="true" signature="566:620" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -159,7 +146,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="108">
                   <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-                  <folding />
+                  <folding>
+                    <marker date="1497091456255" expanded="true" signature="12:141" ph="{...}" />
+                    <marker date="1497091456255" expanded="true" signature="20:139" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -169,7 +159,13 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="175">
                   <caret line="182" column="1" lean-forward="false" selection-start-line="182" selection-start-column="1" selection-end-line="182" selection-end-column="16" />
-                  <folding />
+                  <folding>
+                    <marker date="1497093595755" expanded="true" signature="15:301" ph="{...}" />
+                    <marker date="1497093595755" expanded="true" signature="425:734" ph="{...}" />
+                    <marker date="1497093595755" expanded="true" signature="702:732" ph="{...}" />
+                    <marker date="1497093595755" expanded="true" signature="761:849" ph="{...}" />
+                    <marker date="1497093595755" expanded="true" signature="820:847" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -178,7 +174,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
-                  <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+                  <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -188,7 +184,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_all.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="222">
-                  <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+                  <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -198,7 +194,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/base/_all.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="36">
-                  <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                  <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -209,7 +205,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="234">
                   <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-                  <folding />
+                  <folding>
+                    <marker date="1497092876323" expanded="true" signature="323:422" ph="{...}" />
+                    <marker date="1497092876323" expanded="true" signature="584:696" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -248,7 +247,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="63">
-                  <caret line="168" column="34" lean-forward="true" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
+                  <caret line="168" column="34" lean-forward="false" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -279,7 +278,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
                   <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-                  <folding />
+                  <folding>
+                    <marker date="1497097263544" expanded="true" signature="55:103" ph="{...}" />
+                    <marker date="1497097263544" expanded="true" signature="449:671" ph="{...}" />
+                    <marker date="1497097263544" expanded="true" signature="639:669" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -289,7 +292,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="204">
                   <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-                  <folding />
+                  <folding>
+                    <marker date="1497087163083" expanded="true" signature="583:834" ph="{...}" />
+                    <marker date="1497087163083" expanded="true" signature="1211:1313" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -308,8 +314,10 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_content-section.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="115">
-                  <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-                  <folding />
+                  <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+                  <folding>
+                    <marker date="1497097041120" expanded="true" signature="117:267" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -362,7 +370,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_page-section.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
@@ -374,7 +381,6 @@
         <option value="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_content-section.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/privacy-policy.jade" />
         <option value="$PROJECT_DIR$/registration.jade" />
@@ -384,6 +390,8 @@
         <option value="$PROJECT_DIR$/registration-verification.jade" />
         <option value="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
       </list>
     </option>
   </component>
@@ -437,148 +445,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -589,8 +455,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/scss/modules" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/scss/modules" />
     </key>
   </component>
   <component name="RunManager">
@@ -656,27 +522,27 @@
       <option name="presentableId" value="Default" />
       <updated>1497014846538</updated>
       <workItem from="1497014848615" duration="2530000" />
-      <workItem from="1497077451565" duration="18218000" />
+      <workItem from="1497077451565" duration="18399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20748000" />
+    <option name="totallyTimeSpent" value="20929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1550" height="1199" extended-state="4" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20678191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14948933" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14948933" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20705664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20705664" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -704,13 +570,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -773,7 +632,7 @@
     <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -781,7 +640,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_all.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -789,7 +648,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -805,7 +664,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/base/_all.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -814,7 +673,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1497087163083" expanded="true" signature="583:834" ph="{...}" />
+            <marker date="1497087163083" expanded="true" signature="1211:1313" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -830,7 +692,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1497091456255" expanded="true" signature="12:141" ph="{...}" />
+            <marker date="1497091456255" expanded="true" signature="20:139" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,7 +703,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1497092876323" expanded="true" signature="323:422" ph="{...}" />
+            <marker date="1497092876323" expanded="true" signature="584:696" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -854,7 +722,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="182" column="1" lean-forward="false" selection-start-line="182" selection-start-column="1" selection-end-line="182" selection-end-column="16" />
-          <folding />
+          <folding>
+            <marker date="1497093595755" expanded="true" signature="15:301" ph="{...}" />
+            <marker date="1497093595755" expanded="true" signature="425:734" ph="{...}" />
+            <marker date="1497093595755" expanded="true" signature="702:732" ph="{...}" />
+            <marker date="1497093595755" expanded="true" signature="761:849" ph="{...}" />
+            <marker date="1497093595755" expanded="true" signature="820:847" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -862,14 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -885,7 +751,7 @@
     <entry file="file://$PROJECT_DIR$/registration.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -894,7 +760,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-          <folding />
+          <folding>
+            <marker date="1497097263544" expanded="true" signature="55:103" ph="{...}" />
+            <marker date="1497097263544" expanded="true" signature="449:671" ph="{...}" />
+            <marker date="1497097263544" expanded="true" signature="639:669" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -902,38 +772,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1497097292488" expanded="true" signature="13:240" ph="{...}" />
+            <marker date="1497097292488" expanded="true" signature="208:238" ph="{...}" />
+            <marker date="1497097292488" expanded="true" signature="438:622" ph="{...}" />
+            <marker date="1497097292488" expanded="true" signature="566:620" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/registration-password-creating.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="44" />
-          <folding />
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <marker date="1497097216376" expanded="true" signature="47:1956" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_content-section.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <marker date="1497097041120" expanded="true" signature="117:267" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="168" column="34" lean-forward="true" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration-verification.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <caret line="168" column="34" lean-forward="false" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -950,6 +821,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="234" column="21" lean-forward="false" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration-verification.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
