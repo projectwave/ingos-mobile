@@ -1,6 +1,11 @@
 .brand-logo {
   img {
     display: block;
+    max-width: 100%;
+
+    @media(max-width: $breakpoint-md-max) {
+      max-width: 50%;
+    }
   }
 }
 

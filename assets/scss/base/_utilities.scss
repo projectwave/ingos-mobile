@@ -15,9 +15,17 @@
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0!important;
+}
+
 .price-inline__dot-value {
   font-family: $base-font-family-light;
-  font-size: 12px;
+  font-size: 0.462rem; //12px
   &::before {
     content: ".";
     font-size: $base-font-size;
@@ -39,4 +47,12 @@
 .inline-item-separator {
   display: inline-block;
   width: $inline-item-spacer;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.vertical-middle {
+  vertical-align: middle;
 }

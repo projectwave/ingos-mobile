@@ -1,12 +1,17 @@
-$form-row-margin: 21px;
+$form-row-margin: 30px;
 $form-list-item-margin: 13px;
-$input-font-size: 14px;
+$input-font-size: 1.154rem; //30px
 
 // TODO separate modifiers
 
 .form-row {
   position: relative;
   margin-bottom: $form-row-margin;
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 .form-item {
@@ -55,10 +60,12 @@ $input-font-size: 14px;
 }
 
 .form-row__title {
-  line-height: 1.5;
+  font-size: 1.154rem; //30px
+  line-height: 1.2;
   display: inline-block;
-  padding-bottom: 3px;
+  padding-bottom: 7px;
   padding-left: 3px;
+  font-family: $base-font-family-light;
 }
 
 .form-item--number {
@@ -80,16 +87,22 @@ $input-font-size: 14px;
 // Element of the form (input, textarea, select etc..)
 .form-control {
   width: 100%;
-  height: $input-height;
+  height: $input-height / 2;
   padding: 0 19px;
   font-size: $input-font-size;
   color: #2f2f2f;
   border: 1px solid #dcdedf;
-  background: #f9f9fa;
+  background: $dark-bg-color;
   border-radius: $border-radius;
+  font-family: $base-font-family-light;
+  text-align: center;
   &:focus {
     outline: none;
     border-color: #00adeb;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    height: $input-height;
   }
 }
 
@@ -200,22 +213,34 @@ textarea.form-control {
 
 .form-submit {
   @extend %btn-primary;
-  min-height: $input-height;
+  min-height: $input-height / 2;
+
+  @media(min-width: $breakpoint-md) {
+    min-height: $input-height;
+  }
 }
 
 // List for elements like checkbox and radoibutton
 .form-list {
+  margin: 30px 0;
 
+  @media(min-width: $breakpoint-md) {
+    margin: 50px 0;
+  }
 }
 
 .form-list__item {
   margin-bottom: $form-list-item-margin;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-note {
   line-height: 1.4;
   text-align: center;
-} 
+  @extend p;
+}
 
 // Styled checkboxes
 /* Base for label styling */
@@ -227,16 +252,19 @@ textarea.form-control {
   }
   &:not(:checked) + label, &:checked + label {
     position: relative;
-    padding-left: 1.95em;
+    padding-left: 60px;
     cursor: pointer;
+    display: block;
+
+    @extend p;
   }
   &:not(:checked) + label:before, &:checked + label:before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
-    width: 14px;
-    height: 14px;
+    width: 30px;
+    height: 30px;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $main-bg-color;
@@ -244,9 +272,9 @@ textarea.form-control {
   &:not(:checked) + label:after, &:checked + label:after {
     content: '✔';
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 3px;
-    font-size: 14px;
+    font-size: 34px;
     line-height: 0.8;
     color: $brand-color;
     transition: all $transition-time;
@@ -282,60 +310,14 @@ textarea.form-control {
 }
 
 .parsley-errors-list {
-  position: absolute;
-  bottom: -15px;
+  position: relative;
+  margin-top: 15px;
+  //bottom: -15px;
   left: 0;
   color: $brand-color;
   font-size: $note-font-size;
 }
 
-.password-strength-scale {
-  overflow: hidden;
-}
-
-.password-strength-scale__degree {
-  width: 19%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  float: left;
-  height: 3px;
-  background: $main-bg-color;
-  border: 1px solid cadetblue;
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
-    margin-right: 0;
-  }
-
-  .is30,
-  .is30 & {
-    &:nth-child(-n+2) {
-      background: cadetblue;
-    }
-  }
-
-  .is40 &,
-  .is50 &{
-    &:nth-child(-n+3) {
-      background: cadetblue;
-    }
-  }
-
-  .is60 &,
-  .is70 & {
-    &:nth-child(-n+4) {
-      background: cadetblue;
-    }
-  }
-
-  .is80 &,
-  .is100 & {
-    &:nth-child(-n+5) {
-      background: cadetblue;
-    }
-  }
-}
 
 .form-row--items {
   .form-item {
@@ -352,4 +334,72 @@ textarea.form-control {
   display: inline-block;
   font-size: 15px;
   padding-bottom: 4px;
+}
+
+.form-row--outcoming-link {
+  margin: 30px 0 0;
+  a {
+
+  }
+
+  @media(min-width: $breakpoint-md) {
+    margin: 90px 0 0;
+  }
+}
+
+
+.password-strength-scale {
+  overflow: hidden;
+}
+
+
+.password-strength-scale__degree {
+  width: 19%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  float: left;
+  height: 6px;
+  background: $grey-bg-color;
+  //border: 1px solid cadetblue;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .is20,
+  .is20 & {
+    &:nth-child(-n+1) {
+      background: $degree-color;
+    }
+  }
+
+  .is40,
+  .is40 &{
+    &:nth-child(-n+2) {
+      background: $degree-color;
+    }
+  }
+
+  .is60,
+  .is60 & {
+    &:nth-child(-n+3) {
+      background: $degree-color;
+    }
+  }
+
+  .is80 &,
+  .is80 & {
+    &:nth-child(-n+4) {
+      background: $degree-color;
+    }
+  }
+
+  .is100 &,
+  .is100 & {
+    &:nth-child(-n+5) {
+      background: $degree-color;
+    }
+  }
 }

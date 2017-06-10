@@ -1,7 +1,7 @@
 extends assets/jade/layouts/global/index
 
 block content
-	.content-section
+	.content-section.content-section-padding
 		.content-section__inner
 			.section-title
 				| Подключить личный кабинет
@@ -38,10 +38,13 @@ block content
 								id='cabinet-connection-data-second-name').form-control
 
 				.form-row
-						label.form-item__title
+						label(for='cabinet-connection-data-phone').form-row__title
 							| Номер мобильного телефона:
 
-						input(type='text' required placeholder='+7 (937) 524-54-19').form-control
+						input(type='text'
+						placeholder='+7 (937) 524-54-19'
+						required,
+						id='cabinet-connection-data-phone').form-control
 
 						p В формате&nbsp;
 							span.form-item__note
@@ -51,9 +54,9 @@ block content
 					input(type='submit' value='Отправить').form-submit
 
 				.form-row.form-row--outcoming-link
-					a(href='#') Перейтив в полную версию кабинета
+					a(href='#').link-text Перейти в полную версию кабинета
 
-		include assets/jade/partials/privacy-policy
+	include assets/jade/partials/privacy-policy
 
 block body_end
 	script(type='text/javascript' src='assets/js/vendors/parsley.js')

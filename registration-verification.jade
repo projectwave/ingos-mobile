@@ -3,7 +3,7 @@ extends assets/jade/layouts/global/index
 block content
 
 	form(method='' action='').form-cabinet-connection-verification.js-form-validate
-		.content-section
+		.content-section.content-section-padding
 			.content-section__inner
 				.section-title
 					| Подключить личный кабинет
@@ -11,9 +11,7 @@ block content
 				.section-subtitle
 					| Подтвердите телефон
 
-		.content-section
-			.content-section__inner
-				.form-list
+				.form-list.margin-bottom-0
 					.form-list__item
 						input(type='checkbox' checked='checked' id='form-ccv-esignature-check')
 
@@ -30,7 +28,10 @@ block content
 							a(href='#')
 								| согласие на коммуникацию
 
-		.content-section
+
+
+
+		.content-section.content-section-separator
 			.content-section__inner
 				.section-subtitle На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом для входа в Личный кабинет.
 
@@ -47,15 +48,15 @@ block content
 					input(type='submit' value='Войти').form-submit
 
 				.form-row
-					.links-list
-						.links-list__item
-							a(href='Отправить еще раз')
+					.form-grid
+						.cell
+							a(href='#').link-text-small Отправить еще раз
 
-						.links-list__item
-							a(href='SMS не приходит?')
+						.cell
+							a(href='#').link-text-small SMS не приходит?
 
 				.form-row.form-row--outcoming-link
-					a(href='#') Перейтив в полную версию кабинета
+					a(href='#').link-text Перейти в полную версию кабинета
 
 		include assets/jade/partials/privacy-policy
 

@@ -1,0 +1,37 @@
+$form-grid-padding: 40px;
+
+
+.form-grid {
+  position: relative;
+  > .cell {
+    position: relative;
+    margin: 10px 0;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    display: table;
+    width: 100%;
+    > .cell {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0;
+      padding-left: $form-grid-padding / 2;
+      padding-right: $form-grid-padding / 2;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &.style-full {
+        width: 100%;
+      }
+      &.style-nowrap {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+

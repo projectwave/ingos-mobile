@@ -3,13 +3,13 @@ form {
 }
 
 .form-cabinet-connection-data {
-  max-width: 554px;
-  margin: 28px auto;
+ /* max-width: 554px;
+  margin: 60px auto;*/
 }
 
 .form-cabinet-connection-verification {
-  max-width: 770px;
-  margin: 33px auto 72px;
+  /*max-width: 770px;
+  margin: 33px auto 72px;*/
 }
 
 .form-sms-verification {
@@ -29,14 +29,18 @@ form {
 }
 
 .form-cabinet-connection-password {
-  max-width: 556px;
-  margin: 31px auto;
+  max-width: $desktop-lg;
+  //margin: 30px auto;
   .form-row--login {
     max-width: 260px;
   }
 
   .form-item--password-create {
     width: 358px;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    //margin: 50px auto;
   }
 }
 

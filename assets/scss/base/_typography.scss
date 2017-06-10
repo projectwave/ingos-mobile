@@ -1,17 +1,17 @@
 .section-title {
-  font-size: 28px;
+  font-size: 1.615rem; //42px
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   .main-content-section &,
   .tab-container & {
-    font-size: 25px;
+    font-size: 0.962rem; //25px
     text-align: left;
   }
 
   .tab-container & {
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 1rem; //26px
     text-align: left;
   }
 }
@@ -22,9 +22,11 @@
 }
 
 .section-subtitle {
-  font-size: 16px;
+  font-size: 1.154rem; //30px
   line-height: 1.2;
   text-align: center;
+  font-family: $base-font-family-light;
+  margin-bottom: 30px;
 
   .main-content-section & {
     text-align: left;
@@ -33,10 +35,18 @@
   .tab-container & {
     text-align: left;
   }
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 70px;
+  }
 }
 
 .section-subtitle + form {
-  margin-top: 33px;
+  margin-top: 30px;
+
+  @media(min-width: $breakpoint-md) {
+    margin-top: 70px;
+  }
 }
 
 .tooltip-link {
@@ -155,6 +165,24 @@
     color: $link-accent;
     text-decoration: none;
   }
+}
+
+
+.link-text {
+  color: $title-color;
+  font-family: $base-font-family-light;
+  text-decoration: none;
+  border-bottom: 1px solid $title-color;
+  font-size: 1.154rem; //30px;
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+
+.link-text-small {
+  @extend .link-text;
+  font-size: 1rem;
 }
 
 @font-face {
