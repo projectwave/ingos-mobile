@@ -1,50 +1,42 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section
-		.section-title Медиа
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title Медиа
 
-		form.form-filter-archive
-			.form-row
-				label.form-row__title Архив по годам:
+			form.form-filter-archive
+				.form-row
+					label.form-row__title
+						| Архив по годам:
 
-				select
-					option(value='2016') 2016
-					option(value='2017') 2017
+					input(type='password'
+						required,
+						placeholder='2016').form-control
 
-		.media-list
-			.media-list__item
-				.media-preview
-					.media-preview__viewport
-						img(src='' alt='')
 
-						.media-preview__video-length-label 08:20
 
-					.media-preview__caption
-						| Личные финансы с Натальей Смирновой. Выпуск 18.
-						span.line-break
-							| Паевый инвестиционный фонд (ПИФ)
+	.media-list
+		+media-list-item(
+			'assets/img/media-1.png',
+			'08:20',
+			[
+				'Личные финансы с Натальей Смирновой. Выпуск 18. Паевый инвестиционный фонд (ПИФ)',
+			],
+			'сегодня, 11:18'
+		)
+		+media-list-item(
+			'assets/img/media-2.png',
+			'08:20',
+			[
+				'Личные финансы с Натальей Смирновой. Выпуск 18. Пожизненный источник дохода',
+			],
+			'сегодня, 11:18'
+		)
 
-					.media-preview__posttime сегодня, 11:18
-
-			.media-list__item
-				.media-preview
-					.media-preview__viewport
-						img(src='' alt='')
-
-						.media-preview__video-length-label 09:15
-
-					.media-preview__caption
-						| Личные финансы с Натальей Смирновой. Выпуск 17.
-						span.line-break
-							| Пожизненный источник дохода
-
-					.media-preview__posttime сегодня, 11:18
-
-	include assets/jade/partials/cards-list
-
+	include assets/jade/partials/request-to-open-pif
 	include assets/jade/partials/outgoing-link
-
 	include assets/jade/partials/privacy-policy
 
 block body_end

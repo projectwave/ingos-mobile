@@ -7,60 +7,87 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <main class="page-content">
-      <div class="page-content__inner">
-        <div class="content-section">
-          <div class="section-title">Медиа</div>
-          <form class="form-filter-archive">
-            <div class="form-row">
-              <label class="form-row__title">Архив по годам:</label>
-              <select>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-              </select>
-            </div>
-          </form>
-          <div class="media-list">
-            <div class="media-list__item">
-              <div class="media-preview">
-                <div class="media-preview__viewport"><img src="" alt="">
-                  <div class="media-preview__video-length-label">08:20</div>
-                </div>
-                <div class="media-preview__caption">Личные финансы с Натальей Смирновой. Выпуск 18.<span class="line-break">Паевый инвестиционный фонд (ПИФ)</span></div>
-                <div class="media-preview__posttime">сегодня, 11:18</div>
+    <header class="page-header">
+      <div class="header-row">
+        <div class="header-row__inner">
+          <div class="form-grid strict">
+            <div class="cell style-full">
+              <div class="header__logo">
+                <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
               </div>
             </div>
-            <div class="media-list__item">
+            <div class="cell"><a href="#" class="menu-bar"><i></i><i></i><i></i></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__inner">
+        <div class="content-section content-section--padding">
+          <div class="content-section__inner">
+            <div class="section-title">Медиа</div>
+            <form class="form-filter-archive">
+              <div class="form-row">
+                <label class="form-row__title">Архив по годам:</label>
+                <input type="password" required placeholder="2016" class="form-control">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="media-list">
+          <div class="media-list__item">
+            <div class="media-list__item-inner">
               <div class="media-preview">
-                <div class="media-preview__viewport"><img src="" alt="">
-                  <div class="media-preview__video-length-label">09:15</div>
+                <div class="media-preview__viewport"><img src="assets/img/media-1.png" alt=""/>
+                  <div class="media-preview__video-length-label">08:20</div>
                 </div>
-                <div class="media-preview__caption">Личные финансы с Натальей Смирновой. Выпуск 17.<span class="line-break">Пожизненный источник дохода</span></div>
-                <div class="media-preview__posttime">сегодня, 11:18</div>
+                <div class="media-preview__description">
+                  <div class="media-preview__caption">
+                    <p>Личные финансы с Натальей Смирновой. Выпуск 18. Паевый инвестиционный фонд (ПИФ)</p>
+                  </div>
+                  <div class="media-preview__posttime">сегодня, 11:18</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media-list__item">
+            <div class="media-list__item-inner">
+              <div class="media-preview">
+                <div class="media-preview__viewport"><img src="assets/img/media-2.png" alt=""/>
+                  <div class="media-preview__video-length-label">08:20</div>
+                </div>
+                <div class="media-preview__description">
+                  <div class="media-preview__caption">
+                    <p>Личные финансы с Натальей Смирновой. Выпуск 18. Пожизненный источник дохода</p>
+                  </div>
+                  <div class="media-preview__posttime">сегодня, 11:18</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section content-section--dark content-section--open-pif">
           <div class="content-section__inner">
             <div class="section-title">Отправить заявку на открытие</div>
-            <div class="cards-list cards-list--call-to-action">
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-fund"></div>
-                  <div class="card__caption">ПИФы</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--trust-management"></div>
-                  <div class="card__caption">ДУ</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-accs"></div>
-                  <div class="card__caption">ИИС</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -7,40 +7,66 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <header class="page-header">
+      <div class="header-row">
+        <div class="header-row__inner">
+          <div class="form-grid strict">
+            <div class="cell style-full">
+              <div class="header__logo">
+                <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
+              </div>
+            </div>
+            <div class="cell"><a href="#" class="menu-bar"><i></i><i></i><i></i></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <div class="content-section">
-          <div class="section-title">Что такое индивидуальный инвестиционный счет
-            <div class="media">
-              <div class="media__viewport"><img src="" alt="">
-                <div class="media__video-length-label">09:15</div>
-              </div>
-              <div class="media-details">
-                <p>ИИС &mdash; это индивидуальный ...</p>
+        <div class="content-section content-section--padding">
+          <div class="content-section__inner">
+            <div class="section-title">Что такое индивидуальный инвестиционный счет</div>
+          </div>
+        </div>
+        <div class="media-list">
+          <div class="media-list__item">
+            <div class="media-list__item-inner">
+              <div class="media-preview">
+                <div class="media-preview__viewport"><img src="assets/img/media-1.png" alt=""/>
+                  <div class="media-preview__video-length-label">08:20</div>
+                </div>
+                <div class="media-preview__description">
+                  <div class="media-preview__caption">
+                    <p>ИИС — это Индивидуальный Инвестиционный Счёт, который открывается управляющей компанией                 на основании договора доверительного управления, имеет особый режим налогообложения и установленный минимальный срок действия 3 года.</p>
+                    <p>ИИС — практически обыкновенный брокерский счет, но с налоговыми льготами, которые можно получать ежегодно, если его пополнять. Максимальная сумма инвестиций (может увеличится), но на данный момент 400 000 рублей в год.Минимальный срок пользования(если конечно нужны льготы) — 3 года. Срок действия не ограничен. Инвестсчета бывают 2 типов. По типу А получаем вычет в 13% от внесенной суммы, по типу Б — отсутствие налогообложения.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section content-section--dark content-section--open-pif">
           <div class="content-section__inner">
             <div class="section-title">Отправить заявку на открытие</div>
-            <div class="cards-list cards-list--call-to-action">
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-fund"></div>
-                  <div class="card__caption">ПИФы</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--trust-management"></div>
-                  <div class="card__caption">ДУ</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-accs"></div>
-                  <div class="card__caption">ИИС</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,8 +111,8 @@
     <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
-      $(function(){
-      	commonActions.init();
+      $(function () {
+          commonActions.init();
       })
     </script>
   </body>

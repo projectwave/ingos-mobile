@@ -1,0 +1,15 @@
+mixin media-list-item(image, videoLength, caption, time)
+    .media-list__item
+        .media-list__item-inner
+            .media-preview
+                .media-preview__viewport
+                    img(src='#{image}' alt='')
+                    .media-preview__video-length-label #{videoLength}
+                .media-preview__description
+                    .media-preview__caption
+                        - for(var i=0; i<caption.length; i++) {
+                        p #{caption[i]}
+                        - }
+                    - if(time) {
+                    .media-preview__posttime #{time}
+                    - }

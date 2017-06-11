@@ -1,28 +1,30 @@
 extends assets/jade/layouts/global/index
-
+block header
+    include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section
-		.section-title Что такое индивидуальный инвестиционный счет
-			.media
-				.media__viewport
-					img(src='' alt='')
+    .content-section.content-section--padding
+        .content-section__inner
+            .section-title Что такое индивидуальный инвестиционный счет
 
-					.media__video-length-label 09:15
+    .media-list
+        +media-list-item(
+			'assets/img/media-1.png',
+			'08:20',
+			[
+				'ИИС — это Индивидуальный Инвестиционный Счёт, который открывается управляющей компанией                 на основании договора доверительного управления, имеет особый режим налогообложения и установленный минимальный срок действия 3 года.',
+				'ИИС — практически обыкновенный брокерский счет, но с налоговыми льготами, которые можно получать ежегодно, если его пополнять. Максимальная сумма инвестиций (может увеличится), но на данный момент 400 000 рублей в год.Минимальный срок пользования(если конечно нужны льготы) — 3 года. Срок действия не ограничен. Инвестсчета бывают 2 типов. По типу А получаем вычет в 13% от внесенной суммы, по типу Б — отсутствие налогообложения.'
+			]
+        )
 
-				.media-details
-					p ИИС &mdash; это индивидуальный ...
-
-	include assets/jade/partials/cards-list
-
-	include assets/jade/partials/outgoing-link
-
-	include assets/jade/partials/privacy-policy
+    include assets/jade/partials/request-to-open-pif
+    include assets/jade/partials/outgoing-link
+    include assets/jade/partials/privacy-policy
 
 block body_end
-	script(type='text/javascript' src='assets/js/vendors/parsley.js')
-	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
-	script(type='text/javascript' src='assets/js/main.js')
-	script(type='text/javascript').
-		$(function(){
-			commonActions.init();
-		})
+    script(type='text/javascript' src='assets/js/vendors/parsley.js')
+    script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+    script(type='text/javascript' src='assets/js/main.js')
+    script(type='text/javascript').
+        $(function () {
+            commonActions.init();
+        })
