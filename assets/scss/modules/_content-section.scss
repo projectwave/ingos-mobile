@@ -6,9 +6,9 @@
   @extend %container;
 }
 
-.content-section-dark {
+.content-section--dark {
   //box-shadow:0 -2px 2px #dcdedf;
-  border-top: 1px solid $border-color;
+  @extend .content-section--padding;
 
   background: $dark-bg-color;
   color: #6e767d;
@@ -17,14 +17,48 @@
   }
 }
 
+.content-section--top-border {
+  border-top: 1px solid $border-color;
+}
 
-.content-section-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+.content-section--open-pif {
+  padding: 30px 0 30px;
+  color: $title-color;
+  .section-title {
+    margin: 0 0 30px 0;
+  }
 
   @media(min-width: $breakpoint-md) {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 50px 0 30px;
+  }
+}
+
+
+.content-section--outcoming-link {
+  padding: 45px 0 30px;
+  text-align: center;
+
+  .content-section:not(.content-section--dark) + & {
+    padding-top: 45 - $section-padding-small;
+    @media(min-width: $breakpoint-md) {
+        padding-top: 85 - $section-padding-default;
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    padding: 85px 0 60px;
+  }
+}
+
+
+.content-section--padding {
+  padding-top: $section-padding-small;
+  padding-bottom: $section-padding-small;
+
+  @media(min-width: $breakpoint-md) {
+    padding-top: $section-padding-default;
+    padding-bottom: $section-padding-default;
   }
 }
 

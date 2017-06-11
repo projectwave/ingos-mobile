@@ -1,21 +1,30 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section
+	.content-section.content-section--padding
 		.content-section__inner
-			.title Демо-ПИФ
+			.section-title
+				| Демо-ПИФ
+			p.
+				«Демо-ПИФ» — это виртуальный сервис, позволяющий смоделировать финансовый результат от
+				операций с паями ПИФ-ов под управлением АО УК «Ингосстрах–Инвестиции», без осуществления
+				реального приобретения и погашения паев.
+			p.
+				Пользователь «Демо-ПИФ» покупает и продает не реальные, а виртуальные паи и, соответственно,
+				прибыль или убыток пайщик получает в виртуальных деньгах. С «Демо-ПИФами» можно проводить в
+				личном кабинете все операции кроме обмена паев между фондами.
+			p.
+				«Демо-ПИФ» прекрасно подходит как для начинающих пайщиков, так и для опытных инвесторов.
 
-			p
-				| «Демо-ПИФ» &mdash; это виртульный сервис, позволяющий...
+			.section-title
+				| Начать тренировки с 300 000 виртуальных рублей на счету
 
-			p
-				| ...
-
-			.title Начать тренировки с 300 000 виртуальных рублей на счету.
-
-			.btn-primary
+			button.btn-primary
 				| Открыть виртуальный счет
 
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
 block body_end
@@ -23,6 +32,6 @@ block body_end
 	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
 	script(type='text/javascript' src='assets/js/main.js')
 	script(type='text/javascript').
-		$(function(){
+		$(function () {
 			commonActions.init();
 		})

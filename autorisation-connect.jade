@@ -2,7 +2,7 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section.content-section-padding
+	.content-section.content-section--padding
 		.content-section__inner
 			.section-title
 				| Как подключить?
@@ -74,8 +74,7 @@ block content
 			p.
 				Клиенты индивидуального доверительного управления могут пройти процедуру восстановления пароля, обратившись к персональному финансовому консультанту.
 
-		include assets/jade/partials/outgoing-link
-
+	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
 block body_end

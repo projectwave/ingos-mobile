@@ -1,19 +1,26 @@
+$card-list-padding: 10px;
+
+.cards-list-container {
+  margin-left: -$card-list-padding/2;
+  margin-right: -$card-list-padding/2;
+}
+
 .cards-list {
   display: table;
   width: 100%;
   @extend .cards-list--blue-icon;
   font-size: 0;
   text-align: center;
-  background: $main-bg-color;
-  box-shadow: $box-shadow;
-  border-radius: $border-radius;
+  //background: $main-bg-color;
+  //box-shadow: $box-shadow;
+  //border-radius: $border-radius;
 }
 
 .cards-list__item {
   display: table-cell;
   vertical-align: top;
-  font-size: $base-font-size;
-  border-right: 1px solid $border-color;
+  //font-size: $base-font-size;
+  //border-right: 1px solid $border-color;
   &:last-child {
     border-right: 0;
   }
@@ -21,16 +28,20 @@
 
 .cards-list--call-to-action {
   .cards-list__item {
-    width: 33.33%;
+    width: 33.33333%;
+    > .card {
+      width: calc(100% - #{$card-list-padding});
+      margin: 0 auto;
+    }
   }
 }
 
 .cards-list--blue-icon {
   .card__icon {
     position: relative;
-    width: 76px;
-    height: 76px;
-    margin: 0 auto 25px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 30px;
     border-radius: 50%;
     background: #00adeb;
     &::before {
@@ -45,7 +56,10 @@
 }
 
 .card {
-  padding: 25px 25px 35px;
+  padding: 30px 0;
+  border: 2px solid $grey-bg-color;
+  border-radius: 5px;
+  background: #fff;
   a {
     color: $link-accent;
     &:hover {
@@ -103,13 +117,14 @@
 
   .card {
     width: 382px;
-    border: 1px solid $border-color;
+    //border: 1px solid $border-color;
     border-radius: $border-radius;
   }
 }
 
 .card__caption {
   line-height: 1.2;
+  font-size: 1rem;
 }
 
 .card__icon--browse {

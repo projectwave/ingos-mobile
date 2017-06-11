@@ -2,10 +2,11 @@
   @include button();
   color: white;
   background: $brand-color;
+  text-align: center;
   &:hover {
     background-color: #f92a51;
   }
-  &:focus {
+  &:active {
     outline: none;
     background-color: #c21244;
   }
@@ -29,5 +30,11 @@
 }
 
 .btn-primary {
-  @extend %btn-primary
+  @extend %btn-primary;
+
+  min-height: $input-height / 2;
+
+  @media(min-width: $breakpoint-md) {
+    min-height: $input-height;
+  }
 }

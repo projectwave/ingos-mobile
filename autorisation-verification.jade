@@ -2,7 +2,7 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header
 block content
-	.content-section.content-section-padding
+	.content-section.content-section--padding
 		.content-section__inner
 			.section-title Вход в личный кабинет
 			.section-subtitle
@@ -11,8 +11,7 @@ block content
 			form(method='' action='').form-autorisation-verification.js-form-validate
 				include assets/jade/partials/forms/sms-verification
 
-				include assets/jade/partials/outgoing-link
-
+	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
 block body_end

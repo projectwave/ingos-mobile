@@ -2,7 +2,7 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section.content-section-padding
+	.content-section.content-section--padding
 		.content-section__inner
 			.section-title
 				| Возможности
@@ -32,8 +32,7 @@ block content
 					важные сообщения в Личном кабинете.
 
 
-			include assets/jade/partials/outgoing-link
-
+	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
 block body_end

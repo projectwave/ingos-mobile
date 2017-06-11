@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <header class="page-header">
+      <div class="header-row">
+        <div class="header-row__inner">
+          <div class="form-grid strict">
+            <div class="cell">
+              <div class="header__logo">
+                <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
+              </div>
+            </div>
+            <div class="cell"><a href="#" class="menu-bar"><i></i><i></i><i></i></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <div class="content-section">
+        <div class="content-section content-section--padding">
           <div class="content-section__inner">
-            <div class="title">Открытие Демо-ПИФ</div>
-            <form class="form-demo-pif-verification">
-              <div class="form-sms-verification">
+            <div class="section-title">Открытие Демо-ПИФ</div>
+            <div class="section-subtitle">На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом.</div>
+            <form method="" action="" class="js-form-validate">
+              <div class="form-open-demo-pif">
                 <div class="form-row">
                   <label for="verification-sms-code" class="form-row__title">Введите код:</label>
                   <input type="password" required placeholder="•••••" id="verification-sms-code" class="form-control">
                 </div>
                 <div class="form-row">
-                  <input type="submit" value="Отправить" class="form-submit">
+                  <input type="submit" value="Войти" class="form-submit">
                 </div>
                 <div class="form-row form-row--verification-troubleshooting">
                   <div class="form-grid">
@@ -31,32 +46,37 @@
             </form>
           </div>
         </div>
-        <div class="content-section">
+        <div class="content-section content-section--dark content-section--open-pif">
           <div class="content-section__inner">
             <div class="section-title">Отправить заявку на открытие</div>
-            <div class="cards-list cards-list--call-to-action">
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-fund"></div>
-                  <div class="card__caption">ПИФы</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--trust-management"></div>
-                  <div class="card__caption">ДУ</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
                 </div>
-              </div>
-              <div class="cards-list__item">
-                <div class="card">
-                  <div class="card__icon card__icon--investment-accs"></div>
-                  <div class="card__caption">ИИС</div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="content-section content-section-dark content-section-padding">
+        <div class="content-section content-section--outcoming-link">
+          <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>
+        </div>
+        <div class="content-section content-section--dark content-section--top-border">
           <div class="content-section__inner">
             <div class="privacy-policy">
               <p>
@@ -92,7 +112,7 @@
     <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
-      $(function(){
+      $(function () {
       	commonActions.init();
       })
     </script>

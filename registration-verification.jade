@@ -3,7 +3,7 @@ block header
 	include assets/jade/layouts/global/partials/header
 block content
 	form(method='' action='').form-cabinet-connection-verification.js-form-validate
-		.content-section.content-section-padding
+		.content-section.content-section--padding
 			.content-section__inner
 				.section-title
 					| Подключить личный кабинет
@@ -55,8 +55,7 @@ block content
 						.cell
 							a(href='#').link-text-small SMS не приходит?
 
-				include assets/jade/partials/outgoing-link
-
+		include assets/jade/partials/outgoing-link
 		include assets/jade/partials/privacy-policy
 
 block body_end

@@ -7,18 +7,74 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <main class="page-content">
-      <div class="page-content__inner">
-        <div class="content-section">
-          <div class="content-section__inner">
-            <div class="title">Демо-ПИФ</div>
-            <p>«Демо-ПИФ» &mdash; это виртульный сервис, позволяющий...</p>
-            <p>...</p>
-            <div class="title">Начать тренировки с 300 000 виртуальных рублей на счету.</div>
-            <div class="btn-primary">Открыть виртуальный счет</div>
+    <header class="page-header">
+      <div class="header-row">
+        <div class="header-row__inner">
+          <div class="form-grid strict">
+            <div class="cell">
+              <div class="header__logo">
+                <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
+              </div>
+            </div>
+            <div class="cell"><a href="#" class="menu-bar"><i></i><i></i><i></i></a></div>
           </div>
         </div>
-        <div class="content-section content-section-dark content-section-padding">
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__inner">
+        <div class="content-section content-section--padding">
+          <div class="content-section__inner">
+            <div class="section-title">Демо-ПИФ</div>
+            <p>
+              «Демо-ПИФ» — это виртуальный сервис, позволяющий смоделировать финансовый результат от
+              операций с паями ПИФ-ов под управлением АО УК «Ингосстрах–Инвестиции», без осуществления
+              реального приобретения и погашения паев.
+            </p>
+            <p>
+              Пользователь «Демо-ПИФ» покупает и продает не реальные, а виртуальные паи и, соответственно,
+              прибыль или убыток пайщик получает в виртуальных деньгах. С «Демо-ПИФами» можно проводить в
+              личном кабинете все операции кроме обмена паев между фондами.
+            </p>
+            <p>
+              «Демо-ПИФ» прекрасно подходит как для начинающих пайщиков, так и для опытных инвесторов.
+              
+            </p>
+            <div class="section-title">Начать тренировки с 300 000 виртуальных рублей на счету</div>
+            <button class="btn-primary">Открыть виртуальный счет</button>
+          </div>
+        </div>
+        <div class="content-section content-section--dark content-section--open-pif">
+          <div class="content-section__inner">
+            <div class="section-title">Отправить заявку на открытие</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section content-section--outcoming-link">
+          <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>
+        </div>
+        <div class="content-section content-section--dark content-section--top-border">
           <div class="content-section__inner">
             <div class="privacy-policy">
               <p>
@@ -54,7 +110,7 @@
     <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
-      $(function(){
+      $(function () {
       	commonActions.init();
       })
     </script>
