@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6e41b95-351f-45b8-b6ea-4c6614ba0e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/assets/img/arrow-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bottom.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scss/modules/_period-block.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-1-3.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-1-4.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" afterPath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/partials/mixins.jade" afterPath="$PROJECT_DIR$/assets/jade/partials/mixins.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_variables.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_all.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_all.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_cards-list.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_cards-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/css/style.css" afterPath="$PROJECT_DIR$/site/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/main.js" afterPath="$PROJECT_DIR$/site/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-connect.html" afterPath="$PROJECT_DIR$/site/autorisation-connect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-features.html" afterPath="$PROJECT_DIR$/site/autorisation-features.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation-verification.html" afterPath="$PROJECT_DIR$/site/autorisation-verification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/autorisation.html" afterPath="$PROJECT_DIR$/site/autorisation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/media-item.html" afterPath="$PROJECT_DIR$/site/media-item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/media.html" afterPath="$PROJECT_DIR$/site/media.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration-password-creating.html" afterPath="$PROJECT_DIR$/site/registration-password-creating.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration-verification.html" afterPath="$PROJECT_DIR$/site/registration-verification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/registration.html" afterPath="$PROJECT_DIR$/site/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/unit-trust__demo-step-1.html" afterPath="$PROJECT_DIR$/site/unit-trust__demo-step-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/unit-trust__demo-step-2.html" afterPath="$PROJECT_DIR$/site/unit-trust__demo-step-2.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-1-(2-pages).html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-3-(1-page).html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-400.html" afterPath="$PROJECT_DIR$/site/error-page-400.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-403.html" afterPath="$PROJECT_DIR$/site/error-page-403.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-500.html" afterPath="$PROJECT_DIR$/site/error-page-500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/profile-and-settings.html" afterPath="$PROJECT_DIR$/site/profile-and-settings.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +49,7 @@
             <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="126">
-                  <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
+                  <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
                   <folding />
                 </state>
               </provider>
@@ -92,7 +69,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_period-block.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="37">
-                  <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+                  <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -122,7 +99,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="62">
-                  <caret line="229" column="0" lean-forward="true" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+                  <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -152,7 +129,7 @@
             <entry file="file://$PROJECT_DIR$/autorisation.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="324">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -182,7 +159,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_accordion.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="229">
-                  <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+                  <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -192,7 +169,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_cards-list.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -256,7 +233,7 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
-                  <caret line="19" column="3" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
+                  <caret line="19" column="3" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -483,109 +460,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ingos-mobile" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jade" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,12 +556,12 @@
       <workItem from="1497014848615" duration="2530000" />
       <workItem from="1497077451565" duration="42349000" />
       <workItem from="1498721811625" duration="227000" />
-      <workItem from="1498903944543" duration="18641000" />
+      <workItem from="1498903944543" duration="19186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63747000" />
+    <option name="totallyTimeSpent" value="64292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1067" extended-state="4" />
@@ -697,9 +572,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14920636" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -952,7 +827,7 @@
     <entry file="file://$PROJECT_DIR$/autorisation.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -968,7 +843,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_cards-list.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -992,7 +867,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
-          <caret line="229" column="0" lean-forward="true" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1040,7 +915,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_accordion.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
-          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1048,7 +923,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_period-block.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1056,7 +931,7 @@
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
+          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -1072,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
+          <caret line="19" column="3" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
           <folding />
         </state>
       </provider>

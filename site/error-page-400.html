@@ -7,15 +7,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="header-row">
-        <div class="header-row__inner">
-          <div class="header__logo">
-            <div class="brand-logo"><img src="assets/img/svg/brand-logo.svg" width="100" height="75" alt="ИНГОССТРАХ Инвестиции"></div>
-          </div>
-        </div>
-      </div>
-    </header>
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section">
@@ -32,57 +23,29 @@
             </div>
           </div>
         </div>
-        <div class="content-section">
-          <div class="content-section__inner"><a href="#">Перейти в полную версию кабинета</a></div>
+        <div class="content-section content-section--outcoming-link">
+          <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>
         </div>
-        <div class="content-section__inner">
-          <div class="privacy-policy">АО УК ....</div>
+        <div class="content-section content-section--dark content-section--top-border">
+          <div class="content-section__inner">
+            <div class="privacy-policy">
+              <p>
+                АО УК «Ингосстрах-Инвестиции». Лицензия ФКЦБ России № 21-000-1-00020 от 25.08.1997 г.
+                на осуществление деятельности по управлению инвестиционными фондами,
+                паевыми инвестиционными фондами и негосударственными пенсионными фондами,
+                без ограничения срока действия. Лицензия ФСФР России № 077-08203-001000 от 23.12.2004 г.
+                на осуществление деятельности по доверительному управлению ценными бумагами без ограничения срока действия.
+                Раздел Демо-Пиф предназначен для оценки возможной эффективности инвестиций в паевые инвестиционные фонды,
+                вероятность которых рассматривается конкретным инвестором. Операции, осуществляемые инвестором с помощью сервиса «Демо-Пиф»,
+                не влекут каких-либо юридических последствий как для инвестора, так и для АО УК «Ингосстрах – Инвестиции».
+                Никакие действия, осуществляемые пользователем в разделе Демо-Пифы не будут иметь своим результатом приобретение,
+                погашение или обмен инвестиционных паев ПИФов под управлением АО УК «Ингосстрах – Инвестиции» или какой-либо другой управляющей компании.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="footer-row">
-        <div class="footer-row__inner">
-          <div class="footer__nav-area">
-            <div class="footer-nav-section">
-              <div class="footer-nav-title">Профиль</div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Отчёты</a></div>
-                <div class="footer-nav__item"><a href="#">Уведомления</a></div>
-                <div class="footer-nav__item"><a href="#">Пользователь</a></div>
-                <div class="footer-nav__item"><a href="#">Правила пользования</a></div>
-              </div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Ваш персональный менеджер</a></div>
-                <div class="footer-nav__item"><a href="#">FAQ</a></div>
-                <div class="footer-nav__item"><a href="#">Контакты</a></div>
-              </div>
-            </div>
-            <div class="footer-nav-section">
-              <div class="footer-nav-title">Инвестиции</div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Портфель</a></div>
-                <div class="footer-nav__item"><a href="#">ПИФы</a></div>
-                <div class="footer-nav__item"><a href="#">ДУ</a></div>
-                <div class="footer-nav__item"><a href="#">ИИС</a></div>
-                <div class="footer-nav__item"><a href="#"></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__feedback-area">
-            <div class="feedback">
-              <div class="feedback__number">8 800 100-48-98</div>
-              <div class="feedback__link"><a href="#" class="js-modal-open-feedback">Заказать звонок</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-row">
-        <div class="footer-row__inner">
-          <div class="footer-copy">АО УК «Ингосстрах-Инвестиции» &copy; 2011-2017, официальный сайт&nbsp;<a href="https://www.ingosinvest.ru/">ingosinvest.ru</a></div>
-        </div>
-      </div>
-    </footer>
     <!--include ../../partials/modal-popups/-->
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>
@@ -92,15 +55,6 @@
     <script type="text/javascript">
       $(function () {
       		commonActions.init();
-      })
-      
-    </script>
-    <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>
-    <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript">
-      $(function(){
-      	commonActions.init();
       })
     </script>
   </body>
