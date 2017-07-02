@@ -1,0 +1,60 @@
+form.js-form-validate.form-update-personal-user-data
+	.form-row
+		label(for='cabinet-data-user-last-name').form-row__title
+			| Фамилия:
+
+		input(type='text'
+					required,
+					placeholder='Введите вашу фамилию'
+					id='cabinet-data-user-last-name').form-control
+
+	.form-row
+		label(for='cabinet-data-user-name').form-row__title
+			| Имя:
+
+		input(type='text'
+					required,
+					placeholder='Введите ваше имя'
+					id='cabinet-data-user-name').form-control
+
+	.form-row
+		label(for='cabinet-data-user-second-name').form-row__title
+			| Отчество:
+
+		input(type='text'
+					required,
+					placeholder='Введите ваше отчество'
+					id='cabinet-data-user-second-name').form-control
+
+	.form-row
+		.form-row__title Пожалуйста, загрузите недостающие документы:
+
+		ol
+			li Идентефикационный номер налогоплательщика
+
+			li Справка 2 НФДЛ
+
+		.form__uploading-area
+			| Выберите файлы
+
+			label.file-uploading-button
+
+			input(type='file')
+
+			.uploaded-files-list
+				.js-able-to-drop.uploaded-files-list__item
+					.uploaded-file
+						.uploaded-file__name P60803-140827.jpg
+
+						.uploaded-file__actions
+							.js-drop.uploaded-file__drop
+
+				.js-able-to-drop.uploaded-files-list__item
+					.uploaded-file
+						.uploaded-file__name P60723-202803.jpg
+
+						.uploaded-file__actions
+							.js-drop.uploaded-file__drop
+
+	.form-row.form-row--submit
+		input(type='submit' value='Отправить')

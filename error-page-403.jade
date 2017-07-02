@@ -1,0 +1,29 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title
+				| Ошибка 403.
+				br
+				| В доступе отказано
+
+			.section-subtitle
+				| Вы запросили страницу, доступ к которой ограничен специальными правами.
+
+			.links-list
+				.links-list__item
+					a(href='#') Войти в личный кабинет
+
+	include assets/jade/partials/outgoing-link
+
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

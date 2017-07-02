@@ -1,0 +1,44 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title
+				| Ошибка 404.
+				br
+				| Страница не найдена
+
+			.section-subtitle
+				| Извините, запрашиваемый адрес страницы не&nbsp;существует.
+
+			p
+				| Пожалуйста, проверьте правильность введенного адреса страницы или перейдите по одной из ссылок ниже:
+
+			.links-list
+				.links-list__item
+					a(href='#') Портфель
+
+				.links-list__item
+					a(href='#') Паевые Инвестиционные Счета
+
+				.links-list__item
+					a(href='#') Доверительное Управление
+
+				.links-list__item
+					a(href='#') Индивидуальный Инвестиционный Счет
+
+				.links-list__item
+					a(href='#') Ваш профиль и настройки
+
+	include assets/jade/partials/outgoing-link
+
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})
