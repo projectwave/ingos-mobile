@@ -1,0 +1,28 @@
+extends assets/jade/layouts/global/index
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title
+				| Ошибка 500.
+				br
+				| Внутренняя ошибка сервера
+
+			.section-subtitle
+				| Произошла непредвиденная ошибка.
+
+			p
+				| Возможно, на сервере проводятся кратковременные технические работы. Пожалуйста, попробуйте обновить страницу через несколько минут.
+
+	include assets/jade/partials/outgoing-link
+
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

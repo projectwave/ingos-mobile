@@ -1,0 +1,38 @@
+form.chat
+	#chat-thread.chat__messages-tread
+		.chat__post--companion.chat__post(data-post-time='08.12')
+			img(src='assets/img/icons/icon-mini-manager.png' alt='').chat__post-companion-avatar
+
+			.chat__post-message
+				| Доброе утро, меня зовут Анна. Я ваш персональный менеджер.
+
+		.chat__post--companion.chat__post(data-post-time='08.13')
+			.chat__post-message
+				| Сергей Алексеевич, если у вас есть вопрос, спросите меня или посмотрите ответы на странице&nbsp;
+				a(href='')
+					| Часто Задаваемых Вопросов
+				| .
+
+		.chat__post(data-post-time='10.34')
+			.chat__post-message
+				| Здравствуйте, Анна. Спасибо, сначала я посмотрю FAQ.
+
+		.chat__post(data-post-time='11.01')
+			.chat__post-message
+				| Анна, я посмотрел FAQ и не нашел ответа, скажите пожалуйста, как я могу изменить свой рассчетный счет?
+
+		.chat__post--companion.chat__post(data-post-time='11.02')
+			img(src='assets/img/icons/icon-mini-manager.png' alt='').chat__post-companion-avatar
+
+			.chat__post-message
+				| Сергей Алексеевич, по вашему вопросу&nbsp;
+				a(href='#')
+					| создана заявка.
+				br
+				| Вы получите ответ на вопрос в ближайшее время.
+
+	.chat__input-area
+		textarea#chat-textarea.chat__textarea
+			| Спасибо, Анна!
+
+		input(type='submit' value='Отправить').js-chat-submit.chat__submit-message.btn-flat.btn-sm
