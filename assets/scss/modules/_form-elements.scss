@@ -228,15 +228,53 @@ textarea.form-control {
 .form-list {
   margin: 30px 0;
 
+  label + & {
+    margin-top: 10px;
+  }
+
   @media(min-width: $breakpoint-md) {
     margin: 50px 0;
   }
+
+  .accordion-panel__body-item & {
+    margin-bottom: 0;
+  }
+
 }
 
 .form-list__item {
   margin-bottom: $form-list-item-margin;
+  text-align: left;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  input {
+    display:none;
+    &:checked + label:before {
+      background: #8c9196;
+      box-shadow: 0px 0px 0px 5px #fff inset;
+    }
+  }
+
+  label {
+    display: block;
+    padding-left: 55px;
+    font-family: $base-font-family-light;
+    font-size: 1rem;
+    line-height: $lineHeight;
+    position: relative;
+    &:before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: $dark-bg-color;
+      position: absolute;
+      left: 0;
+      border: 1px solid $border-color;
+    }
+
   }
 }
 

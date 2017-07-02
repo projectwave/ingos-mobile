@@ -1,0 +1,71 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+			form.form-strategy-planning
+				.form-row.form-row--risks
+					.accordion-panel
+						.accordion-panel__heading.js-toggle-next-el
+							.title Определите свой риск-портфель&nbsp;
+								span.title__note
+									| (не является обязательным)
+
+						.accordion-panel__body
+							p.inside.accordion-panel__body-item Определение оптимального соотношения риска и доходности для размещаемых Вами средств с учетом Вашей склонности к риску, инвестиционных целей, а также всевозможных планов и сроков по выводу размещаемых средств.
+							.flex-container.accordion-panel__body-item
+								.item
+									+step-block('Шаг 1', 'active')
+								.item
+									+step-block('Шаг 2', '')
+								.item
+									+step-block('Шаг 3', '')
+								.item
+									+step-block('Шаг 4', '')
+								.item
+									+step-block('Шаг 5', '')
+
+							.form-row.accordion-panel__body-item
+								label.form-row__title.text-left.inside
+									| Укажите ваш возраст:
+
+								.form-list.inside
+									.form-list__item
+										input(type='radio' name='age' id='age-1')
+
+										label(for='age-1')
+											| Менее 25 лет
+
+									.form-list__item
+										input(type='radio' checked='checked' name='age' id='age-2')
+
+										label(for='age-2')
+											| 26-35 лет
+
+									.form-list__item
+										input(type='radio' name='age' id='age-3')
+
+										label(for='age-3')
+											| 36-50 лет
+
+									.form-list__item
+										input(type='radio' name='age' id='age-4')
+
+										label(for='age-4')
+											| Более 50 лет
+				include assets/jade/partials/purchase-strategy-form-bottom
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

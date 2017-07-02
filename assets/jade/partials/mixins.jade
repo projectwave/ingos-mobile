@@ -13,3 +13,7 @@ mixin media-list-item(image, videoLength, caption, time)
                     - if(time) {
                     .media-preview__posttime #{time}
                     - }
+
+mixin step-block(content, className)
+    .step-block(class='#{className}')
+        .inner #{content}

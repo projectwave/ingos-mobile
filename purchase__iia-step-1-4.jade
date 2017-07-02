@@ -1,0 +1,33 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+
+			p Уважаемый Сергей Алексеевич, для приобретения ИИС по договору ДУ, нам не достает некоторох данных:
+
+			ol.classic
+				li.
+					Идентификационный номер налогоплательщика
+				li.
+					Справка 2 НДФЛ
+
+			p Пожалуйста, внесите данную информацию в
+				a(href='#') настройках личного кабинета
+
+
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

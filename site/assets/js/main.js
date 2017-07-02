@@ -23,6 +23,11 @@ var commonActions = (function (document, $) {
         slidingMenuItem: '.sliding-menu__item',
         slidingMenuTitle: '.js-sliding-menu-title',
         nextElToggler: '.js-toggle-next-el',
+        parentElToggler: {
+            'parent' : '.js-toggle-parent-el',
+            'button' : '.js-toggle-parent-el-button',
+            'body' : '.js-toggle-parent-el-body'
+        },
         openModal: '.js-open-modal',
         closeModal: '.js-close-modal',
         datepickerIcon: 'data-range-input__icon',
@@ -124,6 +129,16 @@ var commonActions = (function (document, $) {
         });
     }
 
+    function _toggleParentEl() {
+        $(selector.parentElToggler.button).on('click', function(){
+            var button = $(this),
+                parent = button.parents(selector.parentElToggler.parent),
+                body = parent.find(selector.parentElToggler.body);
+            button.toggleClass(className.active);
+            body.toggleClass(className.visible);
+        });
+    }
+
     function _addHoverState() {
         $('.nav-figure').on('mouseover', function(){
             $(this).addClass(className.hover);
@@ -196,6 +211,8 @@ var commonActions = (function (document, $) {
         }
 
         _toggleNextEl();
+
+        _toggleParentEl();
 
         _addHoverState();
 

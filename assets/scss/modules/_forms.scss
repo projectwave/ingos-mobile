@@ -189,3 +189,42 @@ form {
 
   }
 }
+
+
+.form-strategy-planning {
+  margin: 25px 0;
+  .form-row--risks {
+    padding: 21px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .form-row--contains-selects {
+    display: table;
+    width: 100%;
+  }
+
+  .form-row__title {
+    display: block;
+  }
+
+  .form-fieldset {
+    display: table-cell;
+    vertical-align: top;
+    &:first-child {
+      width: 270px;
+    }
+
+    &:last-child {
+      padding-left: 120px;
+      padding-top: 33px;
+      font-size: 14px;
+      padding-right: 50px;
+      line-height: 1.4;
+    }
+  }
+
+  .form-outgoing-link {
+    margin-top: 20px;
+  }
+}

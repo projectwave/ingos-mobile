@@ -26,6 +26,11 @@ $dark-bg-color:             #f9f9fa;
 $border-color:              #dcdedf;
 $status-positive:           green;
 $degree-color:              #00adeb;
+$text-pale:                 #6e767d;
+
+$color-step-default:        #8c9196;
+$color-step-active:         #e21e4b;
+
 
 
 // Font Settings
@@ -65,3 +70,10 @@ $tab-content-padding-h:     20px;
 
 $section-padding-default:   55px;
 $section-padding-small:     30px;
+
+$accordion-content-padding: 55px;
+
+
+$item-set-space:            10px;
+
+$card-list-padding:         $item-set-space;

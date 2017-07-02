@@ -43,3 +43,72 @@ $accordion-title-padding: 10px;
     display: block;
   }
 }
+
+
+.accordion-panel__heading {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+  text-align: left;
+  .title {
+    font-family: $base-font-family;
+    font-size: 1.385rem;
+  }
+
+  .title__note {
+    display: block;
+    font-family: $base-font-family;
+    font-size: $note-font-size;
+    color: $text-pale;
+    margin-top:8px;
+  }
+
+  &::before {
+    content: "";
+    width: 22px;
+    height: 13px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    background: url(../img/arrow-down.png);
+    background-size: cover;
+    transition: transform 0.2s linear;
+  }
+
+  @media(min-width: $breakpoint-sm) {
+    padding: 0 0 0 45px;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    padding: 0 0 0 55px;
+  }
+
+  @media(min-width: $desktop-lg) {
+    padding: 0 0 0 75px;
+  }
+
+}
+
+.accordion-panel__heading.is-active {
+  &::before {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-panel__body {
+  display: none;
+
+  .accordion-panel__body-item {
+    margin-top: $accordion-content-padding/3;
+    @media(min-width: $breakpoint-sm) {
+      margin-top: $accordion-content-padding/2.5;
+    }
+    @media(min-width: $breakpoint-md) {
+      margin-top: $accordion-content-padding;
+    }
+  }
+
+  &.is-visible {
+    display: block;
+  }
+}

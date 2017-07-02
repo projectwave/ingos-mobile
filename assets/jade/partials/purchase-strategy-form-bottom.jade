@@ -1,0 +1,38 @@
+.form-row
+    label(for='cabinet-connection-data-last-name').form-row__title
+        | Выберите стратегию:
+
+    select.form-control#fsp-strategy-select
+        option Сбалансированная
+        option Обычная
+
+    p.inside Рекомендовано при инвестировании от 250 000 руб. в год; при использовании данной стратегии, лучше воспользоваться освобождением от налога на полученный доход.
+    p.inside
+        a(href='#') Подробнее о стратегиях
+
+.form-row
+    label(for='cabinet-connection-data-last-name').form-row__title
+        | Укажите сумму инвестирования (руб.):
+
+    input(type='text'
+    value='250000.00'
+    placeholder=''
+    required,
+    id='cabinet-connection-data-last-name').form-control
+
+.form-row
+    .form-list.inside
+        .form-list__item
+            input(type='radio' checked='checked' name='iia-opening-agreement-status' id='iia-opening-agreement-status-1')
+
+            label(for='iia-opening-agreement-status-1')
+                | На дату подачи настоящего заяления у меня отстутствует договор с другим профессиональным участником рынка ценных бумаг на ведение индивидуального инвестиционного счета.
+
+        .form-list__item
+            input(type='radio' name='iia-opening-agreement-status' id='iia-opening-agreement-status-2')
+
+            label(for='iia-opening-agreement-status-2')
+                | На дату подачи настоящего заявления у меня действует договор на ведение индивидуального инвестиционного счета.
+
+button.btn-primary
+    | Далее

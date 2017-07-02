@@ -1,0 +1,41 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+		form.form-strategy-planning
+			.form-row.form-row--risks
+				.accordion-panel.js-toggle-parent-el
+					.content-section__inner
+						.accordion-panel__heading.js-toggle-parent-el-button
+							.title Сбалансированная стратегия. Оценка исторических данных
+
+					.accordion-panel__body.js-toggle-parent-el-body
+						.content-section__inner
+							p.inside.accordion-panel__body-item Рекомендованная Вам стратегия с учетом Вашей склонности к риску, инвестиционных целей, а также всевозможных планов и сроков по выводу размещаемых стредств — Сбалансированная.
+						.period-block
+							.period-block_header
+								.content-section__inner
+									.period-block_header-content
+										.icon
+										.text
+											.text-label Выбрать период
+											a(href='#').link-text-small 1 сен 2016 - 30 сен 2016
+							.period-block_grid График
+		.content-section__inner
+			include assets/jade/partials/purchase-strategy-form-bottom
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})
