@@ -3,6 +3,7 @@ $form-grid-padding: 40px;
 @mixin form-grid-table() {
   display: table;
   width: 100%;
+  table-layout: fixed;
   > .cell {
     display: table-cell;
     vertical-align: middle;
@@ -24,6 +25,25 @@ $form-grid-padding: 40px;
       white-space: nowrap;
     }
   }
+
+  &.compact {
+    border-collapse: collapse;
+    border-radius: $border-radius;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px $border-color;
+    > .cell {
+       padding: 0;
+       background: $dark-bg-color;
+       border: 1px solid $border-color;
+       &:first-child {border-radius: $border-radius 0 0 $border-radius;}
+       &:last-child {border-radius: 0 $border-radius $border-radius 0;}
+       > * {
+         background: none;
+         border: none;
+       }
+     }
+  }
+
 }
 
 

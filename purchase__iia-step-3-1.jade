@@ -1,0 +1,58 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+
+		include assets/jade/partials/purchase-chosen-data
+		.content-section__inner
+			p Я, Ковалев Сергей Алексеевич:
+			form(method='' action='').form-cabinet-connection-data.js-form-validate
+				.form-list.margin-bottom-0
+					.form-list__item
+						input(type='checkbox' checked='checked' id='form-ccv-esignature-check')
+
+						label(for='form-ccv-esignature-check')
+							| Подтверждаю, что ознакомлен с&nbsp;
+							a(href='#')
+								| условиями доверительного управления ценными бумагами с открытием и ведением индивидуального инвестиционного счета.
+
+					.form-list__item
+						input(type='checkbox' checked='checked' id='form-ccv-communication-check')
+
+						label(for='form-ccv-communication-check')
+							| Подтверждаю достоверность предоставленных данных и подтверждаю свое желание заключить договор ДУ на открытие ИИС.
+
+	.content-section.content-section-separator
+		.content-section__inner
+			.section-subtitle Для совершения процедуры подачи заявки на Ваш телефон будет отправлен подтверждающий код, который необходимо ввести ниже.
+
+			.form-row
+				label.form-row__title
+				button.btn-grey
+					| Получить код
+
+			.form-row
+				.form-grid
+					.cell
+						a(href='#').link-text-small Отправить еще раз
+
+					.cell
+						a(href='#').link-text-small SMS не приходит?
+
+
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

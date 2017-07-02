@@ -6,9 +6,10 @@ block content
 		.content-section__inner
 			.section-title
 				| Открытие индивидуального инвестиционного счета
-			form.form-strategy-planning
-				.form-row.form-row--risks
-					.accordion-panel
+		form.form-strategy-planning
+			.form-row.form-row--risks
+				.accordion-panel
+					.content-section__inner
 						.accordion-panel__heading.js-toggle-next-el
 							.title Определите свой риск-портфель&nbsp;
 								span.title__note
@@ -56,6 +57,7 @@ block content
 
 										label(for='age-4')
 											| Более 50 лет
+			.content-section__inner
 				include assets/jade/partials/purchase-strategy-form-bottom
 
 	include assets/jade/partials/outgoing-link

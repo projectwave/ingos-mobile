@@ -40,6 +40,13 @@
     text-align: left;
   }
 
+  p + & {
+    margin-top: 30px;
+    @media(min-width: $breakpoint-md) {
+      margin-top: 50px;
+    }
+  }
+
   @media(min-width: $breakpoint-md) {
     margin-bottom: 70px;
   }

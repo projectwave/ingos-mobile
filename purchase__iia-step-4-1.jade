@@ -1,0 +1,151 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+
+		include assets/jade/partials/purchase-chosen-data
+
+		.content-section__inner
+			.section-subtitle Выберите способ оплаты:
+
+		.content-section__inner
+			.tabs
+				.tabs__nav.buttoned.form-grid
+					a(href='#bank-card').tabs__nav-item.cell.is-active
+						| Оплата банковской картой
+
+					a(href='#bank-transfer').tabs__nav-item.cell
+						| Банковский перевод
+
+		.tab-container.is-visible#bank-card
+			.tab-container__section-inner
+				.content-section__inner
+					.form-row
+						label(for='purchase-bank-card-number').form-row__title
+							| Номер банковской карты:
+
+						input(type='text'
+						value='5486 7325 5408 7596'
+						placeholder='Введите номер банковской карты'
+						required,
+						id='purchase-bank-card-number').form-control
+						p
+							| Введите 16 или 18 цифр с лицевой стороны вашей карты.
+
+					.form-row
+						label(for='purchase-bank-card-holder').form-row__title
+							| Имя и фамилия держателя карты:
+
+						input(type='text'
+						value='SERGEI KOVALEV'
+						placeholder='Введите имя и фамилию держателя карты'
+						required,
+						id='purchase-bank-card-holder').form-control
+						p Введите имя и фамилию транслитом, как указано на карте.
+
+					.form-row
+						label.form-row__title
+							| Срок действия карты:
+						.form-grid
+							.cell
+								select.form-control.small
+									- for(var i=1; i<=12; i++) {
+										option #{i}
+									-}
+							.cell
+								select.form-control.small
+									- for(var i=1950; i<=2015; i++) {
+										option #{i}
+									-}
+
+					.form-row
+						label(for='purchase-bank-cvv').form-row__title
+							| CVV/CVC2 код:
+						input(type='text'
+						value='547'
+						placeholder='CVV/CVC2'
+						required,
+						id='purchase-bank-cvv').form-control.small
+						p
+							| Введите последние 3 цифры с обратной стороны карты, находящиеся под магнитной полоской.
+
+					.form-row
+						button.btn-primary
+							| Далее
+
+
+		.tab-container#bank-transfer
+			.tab-container__section-inner
+				.content-section__inner
+					p.inside
+						| Уважаемый, Ковалев Сергей Алексеевич. Благодарим Вас за оформление заявки на приобретение инвестиционных паев. Для приобретения инвестиционных паев Вам необходимо перечислить денежные средства в их оплату.
+
+					.section-subtitle Назначение платежа для банковского перевода:
+
+				.table-content.full
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell Получатель:
+									.type-cell ООО УК «Ингосстрах Инвестиции»
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell ИИН:
+									.type-cell 7705136973
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell КПП:
+									.type-cell 775001001
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell Банк получателя:
+									.type-cell Банк ГПБ (АО), г. Москва
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell БИК:
+									.type-cell 044525823
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell Расчетный счет:
+									.type-cell 40701810200000068886
+					.type-row
+						.type-cell
+							.content-section__inner
+								.table-content
+									.type-cell Назначение платежа:
+									.type-cell Оплата инвестиционных паев ОПИФ фондов «ИИ» от Ковалев Сергей Алексеевич по заявке № 57.1275001.040 от 20.04.2016 г.
+
+				.content-section__inner
+					.form-row.marginTop20
+						button.btn-grey.fontSizeBase
+							| Отправить реквизиты для перечисления денежных средств в оплату паев на email
+
+
+
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

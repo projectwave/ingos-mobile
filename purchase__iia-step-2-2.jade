@@ -1,0 +1,125 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+
+		include assets/jade/partials/purchase-chosen-data
+		.content-section__inner
+			p Просим Вас заполнить персональные данные для оформления заявки на присоединение к договору ДУ ИИС.
+			form(method='' action='').form-cabinet-connection-data.js-form-validate
+				.form-row
+					label(for='purchase-data-last-name').form-row__title.required
+						| Фамилия:
+
+					input(type='text'
+					value='Ковалев'
+					placeholder='Введите фамилию'
+					required,
+					id='purchase-data-last-name').form-control
+
+				.form-row
+					label(for='purchase-data-first-name').form-row__title.required
+						| Имя:
+
+					input(type='text'
+					value='Сергей'
+					placeholder='Введите имя'
+					required,
+					id='purchase-data-first-name').form-control
+
+				.form-row
+					label(for='purchase-data-second-name').form-row__title
+						| Отчество (при наличии):
+
+					input(type='text'
+					placeholder='Введите ваше отчество'
+					required,
+					id='purchase-data-second-name').form-control
+
+				.form-row
+					label(for='purchase-data-email').form-row__title.required
+						| Email:
+
+					input(type='text'
+					value='kovalev.81@gmail.com'
+					placeholder='Введите Email'
+					required,
+					id='purchase-data-email').form-control
+
+				.form-row
+					label(for='purchase-data-phone').form-row__title.required
+						| Номер мобильного телефона:
+
+					input(type='text'
+					placeholder='+7 (937) 524-54-19'
+					required,
+					id='purchase-data-phone').form-control
+
+				.form-row
+					label(for='purchase-data-passport').form-row__title.required
+						| Серия и № паспорта:
+
+					input(type='text'
+					placeholder='Введите серию и номер паспорта'
+					required,
+					id='purchase-data-passport').form-control
+
+				.form-row
+					label(for='purchase-data-passport-detail').form-row__title.required
+						| Кем выдан паспорт:
+
+					textarea(
+					placeholder='Введите так, как это указано в паспорте'
+					required,
+					id='purchase-data-passport-detail').form-control
+
+				.form-row
+					label.form-row__title.required
+						| Дата выдачи:
+
+					.form-grid.compact
+						.cell
+							select.form-control
+								- for(var i=1; i<=31; i++) {
+									option #{i}
+								-}
+						.cell
+							select.form-control
+								- for(var i=1; i<=12; i++) {
+									option #{i}
+								-}
+						.cell
+							select.form-control
+								- for(var i=1950; i<=2015; i++) {
+									option #{i}
+								-}
+
+				.form-row
+					label(for='purchase-data-passport-code').form-row__title
+						| Код подразделения:
+
+					input(type='text'
+					placeholder='Код...'
+					required,
+					id='purchase-data-passport-code').form-control.small
+
+				.form-row
+					button.btn-primary
+						| Далее
+
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})

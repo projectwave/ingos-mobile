@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6e41b95-351f-45b8-b6ea-4c6614ba0e37" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-1-(2-pages).html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-3-(1-page).html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-400.html" afterPath="$PROJECT_DIR$/site/error-page-400.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-403.html" afterPath="$PROJECT_DIR$/site/error-page-403.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/error-page-500.html" afterPath="$PROJECT_DIR$/site/error-page-500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/profile-and-settings.html" afterPath="$PROJECT_DIR$/site/profile-and-settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/partials/purchase-chosen-data.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-2-1.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-2-2.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-2-3.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-3-1.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-3-2.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/purchase__iia-step-4-1.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_typography.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade" afterPath="$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/css/style.css" afterPath="$PROJECT_DIR$/site/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/purchase__iia-step-1-1-and-1-2.html" afterPath="$PROJECT_DIR$/site/purchase__iia-step-1-1-and-1-2.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,114 +34,64 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.4539801">
+    <splitter split-orientation="horizontal" split-proportion="0.5298013">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="media.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/media.jade">
+          <file leaf-file-name="purchase__iia-step-2-1.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-1.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="10" />
+                <state relative-caret-position="306">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="media-item.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/media-item.jade">
+          <file leaf-file-name="purchase__iia-step-2-2.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-2.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-53">
-                  <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+                <state relative-caret-position="378">
+                  <caret line="111" column="31" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="111" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="purchase__iia-step-1-1-and-1-2.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
+          <file leaf-file-name="purchase__iia-step-3-1.jade" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-3-1.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
+                <state relative-caret-position="318">
+                  <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="purchase__iia-step-1-3.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="398">
-                  <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_period-block.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_period-block.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="37">
-                  <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="purchase__iia-step-1-4.jade" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-4.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="purchase-strategy-form-bottom.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bottom.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="666">
-                  <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_form-elements.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="62">
-                  <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_utilities.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/base/_utilities.scss">
+          <file leaf-file-name="purchase__iia-step-3-2.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-3-2.jade">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="162">
-                  <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="10" />
+                  <caret line="30" column="104" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="104" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
+          <file leaf-file-name="purchase__iia-step-4-1.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-4-1.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="44" />
+                <state relative-caret-position="320">
+                  <caret line="133" column="41" lean-forward="false" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="autorisation.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/autorisation.jade">
+          <file leaf-file-name="registration-verification.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/registration-verification.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="360">
+                  <caret line="47" column="66" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="47" selection-end-column="66" />
                   <folding />
                 </state>
               </provider>
@@ -138,38 +100,68 @@
           <file leaf-file-name="registration.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/registration.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="20" column="84" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="20" selection-end-column="84" />
+                <state relative-caret-position="323">
+                  <caret line="38" column="86" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="38" selection-end-column="86" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_forms.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_forms.scss">
+          <file leaf-file-name="purchase-chosen-data.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-chosen-data.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="171" column="3" lean-forward="false" selection-start-line="169" selection-start-column="2" selection-end-line="171" selection-end-column="3" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_accordion.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_accordion.scss">
+          <file leaf-file-name="purchase__iia-step-1-1-and-1-2.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+                <state relative-caret-position="594">
+                  <caret line="60" column="68" lean-forward="false" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_cards-list.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_cards-list.scss">
+          <file leaf-file-name="purchase__iia-step-1-3.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="108">
+                  <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="purchase__iia-step-1-4.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-4.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="purchase-strategy-form-bottom.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bottom.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="22" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="purchase__iia-step-2-3.jade" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-3.jade">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="424">
+                  <caret line="36" column="39" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="36" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -178,22 +170,72 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
+        <leaf>
+          <file leaf-file-name="_page-content.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
+                <state relative-caret-position="519">
+                  <caret line="454" column="47" lean-forward="false" selection-start-line="454" selection-start-column="47" selection-end-line="454" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_media-list.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_media-list.scss">
+          <file leaf-file-name="_buttons.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_buttons.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="12" column="5" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+                <state relative-caret-position="103">
+                  <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_utilities.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/base/_utilities.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="627">
+                  <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="354">
+                  <caret line="146" column="11" lean-forward="false" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_tabs.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_tabs.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_form-elements.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="241">
+                  <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -202,28 +244,38 @@
           <file leaf-file-name="_scaffolding.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/scss/base/_scaffolding.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+                <state relative-caret-position="252">
+                  <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_all.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_all.scss">
+          <file leaf-file-name="_form-grid.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+                <state relative-caret-position="396">
+                  <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_page-content.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
+          <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="149">
-                  <caret line="261" column="3" lean-forward="false" selection-start-line="261" selection-start-column="3" selection-end-line="261" selection-end-column="3" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_media-list.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_media-list.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-486">
+                  <caret line="12" column="5" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -232,58 +284,8 @@
           <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="3" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/partials/footer.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-972">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/partials/header.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/jade/partials/mixins.jade">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_content-section.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/scss/modules/_content-section.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="33" column="3" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="33" selection-end-column="3" />
+                <state relative-caret-position="576">
+                  <caret line="46" column="5" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -295,36 +297,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>back</find>
-      <find>content-section-padding</find>
-      <find>card__caption</find>
-      <find>form-item--password</find>
-      <find>content-section-dark</find>
-      <find>content-section--padding</find>
-      <find>form-autorisation-verification</find>
-      <find>content-section--dark</find>
-      <find>content-section</find>
-      <find>FontAwesome</find>
-      <find>wesome</find>
-      <find>label</find>
-      <find>accordion-panel</find>
       <find>form-row--risks</find>
       <find>plan</find>
       <find>font-face</find>
       <find>font-</find>
-      <find>media</find>
       <find>nextElToggler</find>
       <find>main.js</find>
       <find>commonActions</find>
       <find>cards-list__item</find>
       <find>form-list</find>
-      <find>_toggleNextEl</find>
-      <find>note</find>
       <find>8c9</find>
       <find>section-title</find>
-      <find>70</find>
       <find>2c2c2c</find>
       <find>font-s</find>
+      <find>_toggleNextEl</find>
+      <find>media</find>
+      <find>note</find>
+      <find>70</find>
+      <find>textarea</find>
+      <find>f9f9fa</find>
+      <find>.form-control</find>
+      <find>label</find>
+      <find>title</find>
+      <find>before</find>
+      <find>tabs__nav</find>
+      <find>form-control</find>
+      <find>section-subtitle</find>
+      <find>form</find>
+      <find>dcdedf</find>
+      <find>btn-primary</find>
+      <find>content-section__inner</find>
     </findStrings>
     <replaceStrings>
       <replace>content-section--padding</replace>
@@ -348,20 +350,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/scss/modules/_page-section.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_tables.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/assets/jade/partials/forms/sms-verification.jade" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
-        <option value="$PROJECT_DIR$/assets/jade/partials/menu-bar.jade" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_menu-bar.scss" />
-        <option value="$PROJECT_DIR$/assets/jade/layouts/global/partials/header.jade" />
         <option value="$PROJECT_DIR$/assets/scss/layouts/global/_header.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_image-blocks.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/_mixins.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/outgoing-link.jade" />
         <option value="$PROJECT_DIR$/unit-trust__demo-step-1.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/request-to-open-pif.jade" />
@@ -387,16 +378,29 @@
         <option value="$PROJECT_DIR$/assets/jade/partials/mixins.jade" />
         <option value="$PROJECT_DIR$/assets/scss/base/_variables.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bototm.jade" />
         <option value="$PROJECT_DIR$/purchase__iia-step-1-1.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_all.scss" />
         <option value="$PROJECT_DIR$/site/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
         <option value="$PROJECT_DIR$/purchase__iia-step-1-3-(1-page).jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_period-block.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
         <option value="$PROJECT_DIR$/purchase__iia-step-1-4.jade" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade" />
+        <option value="$PROJECT_DIR$/assets/jade/partials/purchase-chosen-data.jade" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-2-1.jade" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-2-3.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-3-2.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_form-grid.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-2-2.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-4-1.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
+        <option value="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-3-1.jade" />
       </list>
     </option>
   </component>
@@ -464,6 +468,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -479,8 +497,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/assets/scss/modules" />
       <recent name="$PROJECT_DIR$/assets/jade/partials" />
+      <recent name="$PROJECT_DIR$/assets/scss/modules" />
       <recent name="$PROJECT_DIR$/site/assets/img" />
       <recent name="$PROJECT_DIR$/assets/jade/partials/forms" />
     </key>
@@ -556,12 +574,12 @@
       <workItem from="1497014848615" duration="2530000" />
       <workItem from="1497077451565" duration="42349000" />
       <workItem from="1498721811625" duration="227000" />
-      <workItem from="1498903944543" duration="19186000" />
+      <workItem from="1498903944543" duration="34441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64292000" />
+    <option name="totallyTimeSpent" value="79547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1067" extended-state="4" />
@@ -572,9 +590,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31428573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15343915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19423692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14920636" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -599,87 +617,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/site/media.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/registration-password-creating.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="67" column="36" lean-forward="false" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/registration-verification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="58" column="38" lean-forward="false" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/unit-trust__demo-step-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="76" column="36" lean-forward="false" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/unit-trust__demo-step-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/request-to-open-pif.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/privacy-policy.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autorisation-connect.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="76" column="46" lean-forward="false" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autorisation-features.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/registration-password-creating.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="69" column="46" lean-forward="false" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration-verification.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -694,13 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -764,14 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_media-list.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/vendors/parsley.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-594">
@@ -810,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/partials/footer.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
+        <state relative-caret-position="-504">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -832,14 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="20" column="84" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="20" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_cards-list.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -850,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/jade/partials/mixins.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="288">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="16" />
           <folding />
         </state>
@@ -864,50 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="74" lean-forward="true" selection-start-line="58" selection-start-column="74" selection-end-line="58" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_utilities.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bottom.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -928,38 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="261" column="3" lean-forward="false" selection-start-line="261" selection-start-column="3" selection-end-line="261" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="3" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_all.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -968,26 +814,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/base/_scaffolding.scss">
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/request-to-open-pif.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="75" column="22" lean-forward="false" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-chosen-data.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_media-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+        <state relative-caret-position="108">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-4.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="162">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/purchase-strategy-form-bottom.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-3.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="36" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="60" column="68" lean-forward="false" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-1.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration-verification.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="47" column="66" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="47" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-3-2.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="30" column="104" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="146" column="11" lean-forward="false" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="86" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="38" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="115" column="9" lean-forward="false" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-2.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="111" column="31" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="111" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="46" column="5" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_tabs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/_utilities.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-4-1.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="133" column="41" lean-forward="false" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="454" column="47" lean-forward="false" selection-start-line="454" selection-start-column="47" selection-end-line="454" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/base/_scaffolding.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-3-1.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding />
         </state>
       </provider>

@@ -356,3 +356,129 @@ $adventage-bottom-margin: 35px;
 }
 
 
+
+
+.obj-list-container {
+  position: relative;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+  @media(min-width: $breakpoint-md) {
+    padding-bottom: 35px;
+    margin-bottom: 60px;
+  }
+}
+
+.obj-list {
+  width: 100%;
+  font-size: 1rem;
+  > .type-row {}
+  > .type-row,
+  > .type-cell {
+    &:not(:first-child) {
+      padding-top: 15px;
+    }
+  }
+  > .type-row > .type-cell,
+  > .type-cell {
+    &:first-child {
+      font-family: $base-font-family-light;
+
+    }
+    &:last-child {
+      font-family: $base-font-family;
+    }
+  }
+
+  @media(min-width: $breakpoint-sm) {
+
+  }
+
+  @media(min-width: $breakpoint-md) {
+    display: table;
+    > .type-row {
+      display: table-row;
+    }
+    > .type-row:not(:first-child) > .type-cell,
+    > .type-cell:not(:first-child) {
+      padding-top: 15px;
+    }
+    > .type-row,
+    > .type-cell {
+      &:not(:first-child) {
+        padding-top: 0;
+      }
+    }
+    > .type-row > .type-cell,
+    > .type-cell {
+      display: table-cell;
+      vertical-align: top;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        padding-left: 15px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+.table-content {
+  position: relative;
+  display: table;
+  width: 100%;
+  font-family: $base-font-family-light;
+  font-size: 0.769rem;
+  @media(min-width: $breakpoint-md) {
+    font-size: 0.923rem;
+  }
+  > .type-row {
+    display: table-row;
+  }
+  > .type-row .type-cell,
+  > .type-cell {
+    display: table-cell;
+    vertical-align: top;
+  }
+  > .type-row >.type-cell,
+  > .type-cell {
+    padding: 20px 0;
+  }
+
+  &.full {
+    display: block;
+    > .type-row {
+      display: block;
+      &:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+    > .type-row .type-cell,
+    > .type-cell {
+      display: block;
+      .table-content {
+        table-layout: fixed;
+        .type-cell {
+          display: table-cell;
+          padding: 0;
+          word-break: break-word;
+          &:first-child {
+            width: 130px;
+            @media(min-width: $breakpoint-md) {
+              width: 185px;
+            }
+          }
+          &:last-child {
+            @media(min-width: $breakpoint-md) {
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

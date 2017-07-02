@@ -15,6 +15,7 @@ body {
   font-family: $base-font-family;
   background: #fff;
   color: $title-color;
+  overflow-x: hidden;
 }
 
 * {
@@ -102,6 +103,11 @@ p {
   font-family: $base-font-family-light;
   margin: 10px 0;
 
+  input + & {
+    margin-top: 5px;
+    line-height: 1;
+  }
+
   @media(min-width: $breakpoint-md) {
     margin: 20px 0;
   }
@@ -148,4 +154,13 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+form {
+  p + & {
+    margin-top: 35px;
+    @media(min-width: $breakpoint-md) {
+      margin-top: 50px;
+    }
+  }
 }

@@ -12,6 +12,40 @@
   }
 }
 
+
+%btn-primary-inverted {
+  @include button();
+  color: $brand-color;
+  background: white;
+  text-align: center;
+  border: 2px solid $brand-color;
+  &:hover {
+    color: white;
+    background-color: #f92a51;
+  }
+  &:active {
+    color: white;
+    outline: none;
+    background-color: #c21244;
+  }
+}
+
+
+%btn-grey {
+  @include button();
+  color: white;
+  background: $color-step-default;
+  text-align: center;
+  &:hover {
+    background-color: lighten($color-step-default,5%);
+  }
+  &:active {
+    outline: none;
+    background-color: darken($color-step-default,5%);
+  }
+}
+
+
 .btn-bordered {
   @include button();
   color: $brand-color;
@@ -36,5 +70,35 @@
 
   @media(min-width: $breakpoint-md) {
     min-height: $input-height;
+  }
+}
+
+.btn-primary-inverted {
+  @extend %btn-primary-inverted;
+
+  min-height: $input-height / 2;
+
+  @media(min-width: $breakpoint-md) {
+    min-height: $input-height;
+  }
+}
+
+.btn-grey {
+  @extend %btn-grey;
+
+  min-height: $input-height / 2;
+
+  @media(min-width: $breakpoint-md) {
+    min-height: $input-height;
+  }
+}
+
+button {
+  & + button {
+    margin-top: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-top: 30px;
+    }
   }
 }

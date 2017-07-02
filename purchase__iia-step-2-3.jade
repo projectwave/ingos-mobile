@@ -1,0 +1,50 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Открытие индивидуального инвестиционного счета
+
+		include assets/jade/partials/purchase-chosen-data
+		.content-section__inner
+			p Заполните информацию о своем адресе регистрации.
+			form(method='' action='').form-cabinet-connection-data.js-form-validate
+				.form-row
+					label(for='purchase-address-registration').form-row__title
+						| Адрес регистрации:
+
+					textarea(
+					placeholder='Введите адрес прописки'
+					id='purchase-address-registration').form-control
+
+				.form-row
+					label(for='purchase-address-living').form-row__title
+						| Адрес проживания:
+
+					textarea(
+					placeholder='Введите фактическое место проживания'
+					id='purchase-address-living').form-control
+
+				.form-row
+					.form-grid
+						.cell
+							button.btn-primary-inverted
+								| Назад
+						.cell
+							button.btn-primary
+								| Далее
+
+
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function(){
+			commonActions.init();
+		})
