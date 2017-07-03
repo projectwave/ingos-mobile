@@ -1,0 +1,48 @@
+div.js-tab-parent-el
+    .content-section__inner
+        .tabs
+            .tabs__nav.buttoned.form-grid
+                a(href='#' data-href='manager-chat').tabs__nav-item-custom.js-tab-parent-el-button.cell.is-active
+                    | Чат с менеджером
+
+                a(href='#' data-href='user-question').tabs__nav-item-custom.js-tab-parent-el-button.cell
+                    | Мои вопросы
+
+    .tab-container.js-tab-parent-el-body.is-visible(data-target='manager-chat')
+        .tab-container__section-inner
+            .content-section__inner
+                .chat-manager
+                    .content-section__inner
+                        .chat-manager__preview
+                            .person-preview
+                                .person-preview__image
+                                    img(src='assets/img/icon-manager.png' alt='')
+
+                                .person-preview__info
+                                    .person-preview__name Анна Орлова
+
+                                    .person-preview__contacts
+                                        .person-preview__contacts-item
+                                            | skype:&nbsp;
+                                            a(href='skype:anna.ingosinvest')
+                                                | anna.ingosinvest
+
+                                    .chat-manager__actions
+                                        span(data-target-id='modal-change-personal-manager').link-change.js-open-modal
+                                            | поменять менеджера
+        .tab-container__section-inner
+            .content-section__inner
+                .section-subtitle.text-center.marginBottom35
+                    | Чат с менеджером:
+
+
+        .content-section.content-section-separator
+            .content-section__inner
+                include ../forms/chat
+
+
+    .tab-container.js-tab-parent-el-body(data-target='user-question')
+        .tab-container__section-inner
+            .content-section__inner
+
+                include ../tables/profile-questions

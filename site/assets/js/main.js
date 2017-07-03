@@ -28,6 +28,11 @@ var commonActions = (function (document, $) {
             'button' : '.js-toggle-parent-el-button',
             'body' : '.js-toggle-parent-el-body'
         },
+        parentElTab: {
+            'parent' : '.js-tab-parent-el',
+            'button' : '.js-tab-parent-el-button',
+            'body' : '.js-tab-parent-el-body'
+        },
         openModal: '.js-open-modal',
         closeModal: '.js-close-modal',
         datepickerIcon: 'data-range-input__icon',
@@ -139,6 +144,24 @@ var commonActions = (function (document, $) {
         });
     }
 
+
+    function _tabParentEl() {
+        $(selector.parentElTab.button).on('click', function(){
+            var button = $(this),
+                parent = button.parents(selector.parentElTab.parent),
+                body = parent.find(selector.parentElTab.body),
+                buttons = parent.find(selector.parentElTab.button),
+                href = button.data('href'),
+                target = body.data('target'),
+                bodies = parent.find(selector.parentElTab.body + '[data-target='+href+']');
+            buttons.removeClass(className.active);
+            button.addClass(className.active);
+            body.removeClass(className.visible);
+            bodies.addClass(className.visible);
+            return false;
+        });
+    }
+
     function _addHoverState() {
         $('.nav-figure').on('mouseover', function(){
             $(this).addClass(className.hover);
@@ -215,6 +238,8 @@ var commonActions = (function (document, $) {
         _toggleParentEl();
 
         _addHoverState();
+
+        _tabParentEl();
 
         _tabs();
 

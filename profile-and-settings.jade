@@ -29,130 +29,16 @@ block content
 				.tab-container__section-inner
 					.section-title Правила пользования
 
-					.files-list
-						.files-list__item
-							.file-preview
-								.file-preview__icon
-									span.icon-pdf
-
-								.file-preview__details
-									p Соглашение об использовании личных данных
-
-									p
-										a(href='#') Скачать
-
-						.files-list__item
-							.file-preview
-								.file-preview__icon
-									span.icon-pdf
-
-								.file-preview__details
-									p Заявление на комплексное обслуживание на рынке ценных бумаг
-
-									p
-										a(href='#') Скачать
-
-						.files-list__item
-							.file-preview
-								.file-preview__icon
-									span.icon-pdf
-
-								.file-preview__details
-									p Форма W-8BEN
-
-									p
-										a(href='#') Скачать
-
-						.files-list__item
-							.file-preview
-								.file-preview__icon
-									span.icon-pdf
-
-								.file-preview__details
-									p Соглашение о защите инвестиций
-
-									p
-										a(href='#') Скачать
+					include assets/jade/partials/tables/profile-terms-of-use
 
 
 			.tab-container#chat-with-manager.is-visible
-				.tab-container__header
-					.tab-container__header-title
-						.section-title.js-title-to-replace
-							| Ваш персональный менеджер
+				.tab-container__section-inner
+					.section-title Ваш персональный менеджер
 
-					.tab-container__header-actions
-						.switcher-panel
-							a(href='#manager-chat' data-target-title='Ваш персональный менеджер').switcher-panel__item.js-inner-tab-link.is-active
-								| Чат с менеджером
+					include assets/jade/partials/tables/profile-chat-with-manager
 
-							a(href='#user-question' data-target-title='Мои вопросы').switcher-panel__item.js-inner-tab-link
-								| Мои вопросы
 
-				.inner-tab-container#manager-chat.is-visible
-					.chat-manager
-						.chat-manager__preview
-							.person-preview
-								.person-preview__image
-									img(src='assets/img/icon-manager.png' alt='')
-
-								.person-preview__info
-									.person-preview__name Анна Орлова
-
-									.person-preview__contacts
-										.person-preview__contacts-item
-											| skype:&nbsp;
-											span.underline
-												| anna.ingosinvest
-
-							.chat-title
-								| Чат с менеджером:
-
-						.chat-manager__actions
-							span(data-target-id='modal-change-personal-manager').link-change.js-open-modal
-								| поменять менеджера
-
-					include assets/jade/partials/forms/chat
-
-				.inner-tab-container#user-question
-					.user-questions-list
-						.user-questions-list__item
-							.user-question.is-solved
-								.user-question__info
-									.user-question__name
-										| Изменение рассчетного счета
-
-									.user-question__status
-
-								.user-question__manager
-									.user-question__manager-icon
-										img(src='' alt='')
-
-									.user-question__manager-info
-										.user-question__manager-name
-											| Анна Орлова
-
-										.user-question__manager-date
-											| 15.11.2016 в 15.12
-
-						.user-questions-list__item
-							.user-question
-								.user-question__info
-									.user-question__name
-										| Как продать ПИФ?
-
-									.user-question__status
-
-								.user-question__manager
-									.user-question__manager-icon
-										img(src='' alt='')
-
-									.user-question__manager-info
-										.user-question__manager-name
-											| Иван Эстонский
-
-										.user-question__manager-date
-											| 15.11.2016 в 15.12
 
 			.tab-container#faq
 				.tab-container__section-inner
@@ -194,7 +80,8 @@ block content
 
 
 
-		include assets/jade/partials/cards-list
+		//include assets/jade/partials/cards-list
+		include assets/jade/partials/request-to-open-pif
 
 		include assets/jade/partials/outgoing-link
 

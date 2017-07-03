@@ -5,14 +5,17 @@
 
   .main-content-section &,
   .tab-container & {
-    font-size: 0.962rem; //25px
+
+  }
+
+  .main-content-section & {
     text-align: left;
+    font-size: 0.962rem; //25px
   }
 
   .tab-container & {
-    margin-bottom: 30px;
-    font-size: 1rem; //26px
-    text-align: left;
+    //margin-bottom: 30px;
+    //text-align: left;
   }
 
   @media(min-width: $breakpoint-md) {

@@ -482,3 +482,30 @@ $adventage-bottom-margin: 35px;
 }
 
 
+.user-question {
+
+  .icon-question {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #8c9196;
+    border-radius: 100%;
+  }
+  .user-question__name {
+    font-size: 1rem;
+  }
+  .user-question__status {
+    font-family: $base-font-family-light;
+    font-size: 0.846rem;
+    color: #8c9196;
+  }
+
+  &.is-solved {
+    .icon-question {
+      border-color: #0ca462;
+    }
+    .user-question__status {
+      color: #0ca462;
+    }
+  }
+}

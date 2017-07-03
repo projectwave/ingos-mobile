@@ -1,0 +1,41 @@
+.file-list {
+
+}
+
+.files-list__item {
+
+}
+
+.file-preview {
+  display: table;
+  width: 100%;
+}
+
+.file-preview__icon {
+  display: table-cell;
+  vertical-align: top;
+  width: 80px;
+  @media(min-width: $breakpoint-md) {
+    width: 125px;
+  }
+}
+
+.icon-pdf {
+  position: relative;
+  width: 50px;
+  height: 60px;
+  background: grey;
+  display: block;
+}
+
+.file-preview__details {
+  display: table-cell;
+  vertical-align: top;
+  p {
+    margin-top: 0;
+    a {
+      @extend .link-text;
+      font-size: 1rem;
+    }
+  }
+}

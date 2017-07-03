@@ -9,22 +9,35 @@ $chat-message-font-size: 14px;
 }
 
 .chat-manager {
-  display: table;
+  //display: table;
   width: 100%;
-  padding: 20px $tab-content-padding-h 20px;
-  border-bottom: 1px solid $border-color;
+  @media(min-width:$breakpoint-md) {
+    padding: 20px $tab-content-padding-h 20px;
+  }
+  //border-bottom: 1px solid $border-color;
+  //margin-bottom: 60px;
+  .content-section__inner {
+    padding: 0;
+  }
 }
 
 .chat-manager__preview {
-  overflow: hidden;
+  /*overflow: hidden;
   display: table-cell;
-  vertical-align: top;
+  vertical-align: top;*/
 }
 
 .chat-manager__actions {
-  display: table-cell;
+  position:absolute;
+  bottom:0;
+  font-size: 1rem;
+  white-space: nowrap;
+  @media(min-width: $breakpoint-md) {
+    white-space: normal;
+  }
+  /*display: table-cell;
   vertical-align: top;
-  text-align: right;
+  text-align: right;*/
 }
 
 
@@ -35,7 +48,11 @@ $chat-message-font-size: 14px;
 .person-preview {
   @include clearfix();
   display: table;
-
+  margin:0 auto;
+  /*width: 100%;
+  @media(min-width: $breakpoint-md) {
+    width: auto;
+  }*/
   .modal & {
     margin-left: auto;
     margin-right: auto;
@@ -51,34 +68,48 @@ $chat-message-font-size: 14px;
 .person-preview__image {
   display: table-cell;
   vertical-align: top;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 90%;
-  float: left;
   img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background: lightgray;
     border-radius: 90%;
   }
+  @media(min-width:$breakpoint-md) {
+    width: 100px;
+    height: 100px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
 }
 
 .person-preview__info {
+  position:relative;
   padding-bottom: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
   display: table-cell;
   vertical-align: top;
+  @media(min-width:$breakpoint-md) {
+    padding-left: 40px;
+  }
   .modal & {
     padding-bottom: 0;
   }
 }
 
 .person-preview__name {
-  font-size: 18px;
+  font-size: 1.154rem;
 }
 
 .person-preview__contacts {
-  font-size: $note-font-size;
+  font-size: 1rem;
+  font-family: $base-font-family-light;
+  margin-top: 5px;
 }
 
 .chat-title {
@@ -89,7 +120,7 @@ $chat-message-font-size: 14px;
 }
 
 .chat {
-  padding: 30px 105px;
+  padding: 0;
 }
 
 .chat__messages-tread {
@@ -100,20 +131,20 @@ $chat-message-font-size: 14px;
 
 .chat__post {
   position: relative;
-  width: 464px;
-  margin-left: 92px;
+  //width: 464px;
+  margin-left: 60px;
   margin-bottom: 15px;
-  padding: 15px 18px;
+  padding: 15px 50px 15px 18px;
   line-height: 1.4;
   background-color: #bfeeff;
   border-radius: $border-radius;
   &::before {
     content: attr(data-post-time);
-    position: relative;
-    float: right;
+    position: absolute;
     font-size: $chat-message-font-size;
-    top: 10px;
-    right: -112px;
+    bottom: 15px;
+    right: 15px;
+    color: #666;
   }
   &::after {
     content: "";
@@ -126,6 +157,13 @@ $chat-message-font-size: 14px;
     top: 43%;
     right: -4px;
   }
+  @media(min-width:$breakpoint-md) {
+    margin-bottom: 15px;
+    padding: 15px 80px 15px 18px;
+    &:before {
+      right: 35px;
+    }
+  }
 }
 
 .chat__post-message {
@@ -133,11 +171,11 @@ $chat-message-font-size: 14px;
 }
 
 .chat__post--companion {
-  margin-left: 62px;
+  //margin-left: 62px;
   background: #f3f4f4;
-  position: relative;
+  //position: relative;
   &::before {
-    right: -142px;
+    //right: -142px;
   }
   &::after {
     content: "";
@@ -175,11 +213,12 @@ $chat-message-font-size: 14px;
   width: 100%;
   padding: 10px 106px 10px 18px;
   font-size: $chat-message-font-size;
-  min-height: 54px;
+  min-height: 80px;
   display: block;
   border: 1px solid $border-color;
   border-radius: $border-radius;
   resize: none;
+  background: $dark-bg-color;
 }
 
 .chat__submit-message {
@@ -190,4 +229,14 @@ $chat-message-font-size: 14px;
   position: absolute;
   top: 10px;
   right: 10px;
+  width: 60px;
+  height: 60px;
+  background: $degree-color;
+  border-radius: 100%;
+
+}
+
+
+.chat-submit-area {
+
 }

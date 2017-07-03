@@ -16,7 +16,7 @@
 }
 
 .text-center {
-  text-align: center;
+  text-align: center!important;
 }
 
 .margin-bottom-0 {
@@ -63,4 +63,8 @@
 
 .marginTop20 {
   margin-top: 20px;
+}
+
+.marginBottom35 {
+  margin-bottom: 35px!important;
 }
