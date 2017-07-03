@@ -1,15 +1,18 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section
+	.content-section.content-section--padding
 		.content-section__inner
-			.title Открытие Демо-ПИФ
+			.section-title
+				| Открытие Демо-ПИФ
+			.section-subtitle
+				| На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом.
+			form(method='' action='').js-form-validate
+				include assets/jade/partials/forms/open-demo-pif
 
-			form.form-demo-pif-verification
-				include assets/jade/partials/forms/sms-verification
-
-	include assets/jade/partials/cards-list
-
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
 block body_end
@@ -17,6 +20,6 @@ block body_end
 	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
 	script(type='text/javascript' src='assets/js/main.js')
 	script(type='text/javascript').
-		$(function(){
+		$(function () {
 			commonActions.init();
 		})

@@ -1,0 +1,30 @@
+.menu-bar {
+  position: relative;
+  > i {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: $title-color;
+    border-radius: 5px;
+
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    > i {
+      width: 60px;
+      height: 8px;
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &:hover {
+    > i {
+
+    }
+  }
+}

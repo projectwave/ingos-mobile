@@ -1,7 +1,12 @@
 // Responsive rules breakpoints
-$breakpoint-sm:         320px;
-$breakpoint-md:        480px;
+$breakpoint-sm:             320px;
+  $breakpoint-sm-max:       $breakpoint-sm - 1px;
+$breakpoint-md:             480px;
+  $breakpoint-md-max:       $breakpoint-md - 1px;
 $desktop-lg:                750px;
+  $desktop-lg-max:          $desktop-lg - 1px;
+$breakpoint-form:           570px;
+  $breakpoint-form-max:     $breakpoint-form - 1px;
 
 // Layout
 $container-width:           1170px;
@@ -11,29 +16,38 @@ $container-gutter:          15px;
 // Colors
 $text-color:                #2f2f2f;
 $brand-color:               #e21e4b;
-$title-color:               #666666;
-$link-color:                #00529c;
+$title-color:               #2c2c2c;
+$link-color:                #005aa4;
 $link-hover-color:          green;
 $link-accent:               #e21e4b;
 $main-bg-color:             #fff;
-$border-color:              #cccccc;
+$grey-bg-color:             #dcdedf;
+$dark-bg-color:             #f9f9fa;
+$border-color:              #dcdedf;
 $status-positive:           green;
+$degree-color:              #00adeb;
+
 
 // Font Settings
-$base-font-size:            15px;
-$base-font-family:          'MuseoSans';
-$base-font-family-italic:   'MuseoSansItalic';
-$base-font-family-light:    'MuseoSansLight';
-$base-font-family-black:    'MuseoSansBlack';
-$lineHeight:                1.2;
+$base-font-size:            26px;
+$button-font-size:          1.308rem; //34px
+
+$base-font-family-light:        'MuseoSansLight';
+$base-font-family-light-italic: 'MuseoSansLightItalic';
+$base-font-family:              'MuseoSans';
+$base-font-family-italic:       'MuseoSansItalic';
+$base-font-family-black:        'MuseoSansBlack';
+$base-font-family-black-italic: 'MuseoSansBlackItalic';
+
+$lineHeight:                1.3;
 $font-default:              400;
 $font-light:                300;
 $bolder:                    700;
 $font-weight-black:         900;
-$note-font-size:            13px;
+$note-font-size:            0.769rem; //20px
 
 // Form elements
-$input-height:              54px;
+$input-height:              80px;
 $input-label-line-height:   $input-height;
 $form-item-padding:         30px;
 
@@ -48,3 +62,6 @@ $content-section-margin:    30px;
 $inline-item-spacer:        18px;
 
 $tab-content-padding-h:     20px;
+
+$section-padding-default:   55px;
+$section-padding-small:     30px;

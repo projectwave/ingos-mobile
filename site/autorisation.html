@@ -10,92 +10,64 @@
     <header class="page-header">
       <div class="header-row">
         <div class="header-row__inner">
-          <div class="header__logo">
-            <div class="brand-logo"><img src="assets/img/svg/brand-logo.svg" width="100" height="75" alt="ИНГОССТРАХ Инвестиции"></div>
+          <div class="form-grid strict">
+            <div class="cell style-full">
+              <div class="header__logo">
+                <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
+              </div>
+            </div>
+            <div class="cell"><a href="#" class="menu-bar"><i></i><i></i><i></i></a></div>
           </div>
         </div>
       </div>
     </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <form method="" action="" class="form-cabinet-connection-verification js-form-validate">
-          <div class="content-section">
-            <div class="content-section__inner">
-              <div class="section-title">Вход в личный кабинет</div>
-              <form method="" action="" class="form-autorisation js-form-validate">
-                <div class="form-row">
-                  <label for="autorisation-login" class="form-row__title">Логин:
-                    <input type="text" required placeholder="Введите логин" id="autorisation-login" class="form-control">
-                  </label>
-                  <div class="form-item form-item--password">
-                    <label for="autorisation-login" class="form-item__title">Пароль:<a href="#" class="link-remind-pass">Забыли пароль?</a></label>
-                    <input type="password" required placeholder="•••••" id="autorisation-password" class="form-control">
-                  </div>
-                  <div class="form-item">
-                    <input type="submit" value="Войти" class="form-submit">
-                  </div>
-                </div>
-                <div class="form-row form-row--note">
-                  <div class="form-note">Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.<span class="content-margin"></span><span class="line-break">Если вы еще не зарегестрированы &mdash;&nbsp;<a href="#">подключите личный кабинет</a>.</span></div>
-                </div>
-                <div class="form-row form-row--outcoming-link"><a href="#">Перейтив в полную версию кабинета</a></div>
-              </form>
+        <div class="content-section content-section--padding">
+          <div class="content-section__inner">
+            <div class="section-title">Вход в личный кабинет</div>
+            <form method="" action="" class="form-autorisation js-form-validate">
+              <div class="form-row">
+                <label for="autorisation-login" class="form-row__title">Логин:</label>
+                <input type="text" required placeholder="Введите логин" id="autorisation-login" class="form-control">
+              </div>
+              <div class="form-row form-item--password">
+                <label for="autorisation-login" class="form-row__title">Пароль:</label><a href="#" class="link-remind-pass">Забыли пароль?</a>
+                <input type="password" required placeholder="•••••" id="autorisation-password" class="form-control">
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Войти" class="form-submit">
+              </div>
+              <div class="form-row form-row--note">
+                <p>Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.</p>
+                <p>Если вы еще не зарегестрированы &mdash;&nbsp;<a href="#" class="link-text-small">подключите личный кабинет</a>.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="content-section content-section--outcoming-link">
+          <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>
+        </div>
+        <div class="content-section content-section--dark content-section--top-border">
+          <div class="content-section__inner">
+            <div class="privacy-policy">
+              <p>
+                АО УК «Ингосстрах-Инвестиции». Лицензия ФКЦБ России № 21-000-1-00020 от 25.08.1997 г.
+                на осуществление деятельности по управлению инвестиционными фондами,
+                паевыми инвестиционными фондами и негосударственными пенсионными фондами,
+                без ограничения срока действия. Лицензия ФСФР России № 077-08203-001000 от 23.12.2004 г.
+                на осуществление деятельности по доверительному управлению ценными бумагами без ограничения срока действия.
+                Раздел Демо-Пиф предназначен для оценки возможной эффективности инвестиций в паевые инвестиционные фонды,
+                вероятность которых рассматривается конкретным инвестором. Операции, осуществляемые инвестором с помощью сервиса «Демо-Пиф»,
+                не влекут каких-либо юридических последствий как для инвестора, так и для АО УК «Ингосстрах – Инвестиции».
+                Никакие действия, осуществляемые пользователем в разделе Демо-Пифы не будут иметь своим результатом приобретение,
+                погашение или обмен инвестиционных паев ПИФов под управлением АО УК «Ингосстрах – Инвестиции» или какой-либо другой управляющей компании.
+              </p>
             </div>
           </div>
-          <div class="test">
-            <div class="test__item"></div>
-            <div class="test__item"></div>
-            <div class="test__item"></div>
-          </div>
-          <div class="content-section__inner">
-            <div class="privacy-policy">АО УК ....</div>
-          </div>
-        </form>
+        </div>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="footer-row">
-        <div class="footer-row__inner">
-          <div class="footer__nav-area">
-            <div class="footer-nav-section">
-              <div class="footer-nav-title">Профиль</div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Отчёты</a></div>
-                <div class="footer-nav__item"><a href="#">Уведомления</a></div>
-                <div class="footer-nav__item"><a href="#">Пользователь</a></div>
-                <div class="footer-nav__item"><a href="#">Правила пользования</a></div>
-              </div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Ваш персональный менеджер</a></div>
-                <div class="footer-nav__item"><a href="#">FAQ</a></div>
-                <div class="footer-nav__item"><a href="#">Контакты</a></div>
-              </div>
-            </div>
-            <div class="footer-nav-section">
-              <div class="footer-nav-title">Инвестиции</div>
-              <div class="footer-nav">
-                <div class="footer-nav__item"><a href="#">Портфель</a></div>
-                <div class="footer-nav__item"><a href="#">ПИФы</a></div>
-                <div class="footer-nav__item"><a href="#">ДУ</a></div>
-                <div class="footer-nav__item"><a href="#">ИИС</a></div>
-                <div class="footer-nav__item"><a href="#"></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__feedback-area">
-            <div class="feedback">
-              <div class="feedback__number">8 800 100-48-98</div>
-              <div class="feedback__link"><a href="#" class="js-modal-open-feedback">Заказать звонок</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-row">
-        <div class="footer-row__inner">
-          <div class="footer-copy">АО УК «Ингосстрах-Инвестиции» &copy; 2011-2017, официальный сайт&nbsp;<a href="https://www.ingosinvest.ru/">ingosinvest.ru</a></div>
-        </div>
-      </div>
-    </footer>
     <!--include ../../partials/modal-popups/-->
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>

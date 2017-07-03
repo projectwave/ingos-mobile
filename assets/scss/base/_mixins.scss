@@ -33,13 +33,14 @@
   display: inline-block;
   vertical-align: top;
   border: 0;
-  font-size: $base-font-size;
+  font-size: $button-font-size;
   line-height: 1;
-  padding: 19px 41px;
+  //padding: 19px 41px;
   cursor: pointer;
   text-decoration: none;
   border-radius: $border-radius;
   user-select: none;
+  width: 100%;
 }
 
 @mixin icon() {
@@ -68,7 +69,9 @@
 
 %container {
   @include clearfix();
-  max-width: $container-width;
+  max-width: $desktop-lg;
   margin: 0 auto;
   padding: 0 $container-gutter;
 }
+
+

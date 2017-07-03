@@ -1,0 +1,22 @@
+.form-open-demo-pif
+	.form-row
+		label(for='verification-sms-code').form-row__title
+			| Введите код:
+
+		input(type='password'
+					required,
+					placeholder='•••••'
+					id='verification-sms-code').form-control
+
+	.form-row
+		input(type='submit' value='Войти').form-submit
+
+	.form-row.form-row--verification-troubleshooting
+		.form-grid
+			.cell
+				a(href='#').link-text-small
+					| Отправить еще раз
+
+			.cell
+				a(href='#').link-text-small
+					| СМС не приходит?

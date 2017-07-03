@@ -1,32 +1,39 @@
 extends assets/jade/layouts/global/index
-
+block header
+	include assets/jade/layouts/global/partials/header-menu
 block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title
+				| Возможности
 
-	form(method='' action='').form-cabinet-connection-verification.js-form-validate
-		.content-section
-			.content-section__inner
-				.section-title
-					| Возможности
+			.section-subtitle
+				| Личный кабинет &mdash; это очень удобный, простой и доступный способ получения информации о своем инвестиционным портфеле!
 
-				.section-subtitle
-					| Личный кабинет &mdash; это очень удобный, простой и доступный способ получения информации о своем инвестиционным портфеле!
+			img(src='assets/img/auto-features.png' alt='').features-cabinet-screenshot
 
-					img(src='' alt='').features-cabinet-screenshot
+			.section-title
+				| Круглосуточно посредством личного кабинета вы можете:
 
-		.content-section
-			.content-section__inner
-				.section-title
-					| Круглосуточно посредством личного кабинета вы можете:
+			ol
+				li.
+					Посмотреть актуальную информацию не только по агрегированному портфелю,
+					но и отдельно по Паевым фондам, Фолиои Доверительному управлению, а также стоимость,
+					динамику и структуру активов на текущую дату или за определенный период.
+				li.
+					Анализировать собственный портфель по географическому, отраслевому, валютному,
+					эмитентному и другим признакам.
+				li.
+					Просматривать историю операций по любому продукту за любой период.
+				li.
+					Получать различные виды отчетности – как регламентированные стандартные, так и заказные.
+				li.
+					Возможность оперативно связаться с инвестиционным консультантом, а также получать
+					важные сообщения в Личном кабинете.
 
-				ol
-					li Посмотреть актуальную информацию ...
 
-					li ...
-
-				.outcoming-link
-					a(href='#') Перейтив в полную версию кабинета
-
-		include assets/jade/partials/privacy-policy
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
 
 block body_end
 	script(type='text/javascript' src='assets/js/vendors/parsley.js')
