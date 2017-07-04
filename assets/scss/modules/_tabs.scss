@@ -1,6 +1,10 @@
 .tabs {
   @include section-decorated();
   @include clearfix();
+
+  &.not-shadow {
+    box-shadow: none;
+  }
 }
 
 .tabs__nav {

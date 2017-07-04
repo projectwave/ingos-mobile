@@ -8,28 +8,27 @@ div.js-tab-parent-el
                 a(href='#' data-href='user-question').tabs__nav-item-custom.js-tab-parent-el-button.cell
                     | Мои вопросы
 
-    .tab-container.js-tab-parent-el-body.is-visible(data-target='manager-chat')
+    .tab-container.js-tab-parent-el-body(data-target='manager-chat').is-visible
         .tab-container__section-inner
-            .content-section__inner
-                .chat-manager
-                    .content-section__inner
-                        .chat-manager__preview
-                            .person-preview
-                                .person-preview__image
-                                    img(src='assets/img/icon-manager.png' alt='')
+            .chat-manager
+                .content-section__inner
+                    .chat-manager__preview
+                        .person-preview
+                            .person-preview__image
+                                img(src='assets/img/icon-manager.png' alt='')
 
-                                .person-preview__info
-                                    .person-preview__name Анна Орлова
+                            .person-preview__info
+                                .person-preview__name Анна Орлова
 
-                                    .person-preview__contacts
-                                        .person-preview__contacts-item
-                                            | skype:&nbsp;
-                                            a(href='skype:anna.ingosinvest')
-                                                | anna.ingosinvest
+                                .person-preview__contacts
+                                    .person-preview__contacts-item
+                                        | skype:&nbsp;
+                                        a(href='skype:anna.ingosinvest')
+                                            | anna.ingosinvest
 
-                                    .chat-manager__actions
-                                        span(data-target-id='modal-change-personal-manager').link-change.js-open-modal
-                                            | поменять менеджера
+                                .chat-manager__actions
+                                    span(data-target-id='modal-change-personal-manager').link-change.js-open-modal
+                                        | поменять менеджера
         .tab-container__section-inner
             .content-section__inner
                 .section-subtitle.text-center.marginBottom35
@@ -43,6 +42,4 @@ div.js-tab-parent-el
 
     .tab-container.js-tab-parent-el-body(data-target='user-question')
         .tab-container__section-inner
-            .content-section__inner
-
-                include ../tables/profile-questions
+            include ../tables/profile-questions

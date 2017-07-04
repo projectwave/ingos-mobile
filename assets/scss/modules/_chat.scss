@@ -56,12 +56,13 @@ $chat-message-font-size: 14px;
   .modal & {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
   }
 }
 
 .person-preview__actions {
   .modal & {
-    margin-top: 15px;
+    margin-top: 75px;
   }
 }
 

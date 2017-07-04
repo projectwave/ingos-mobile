@@ -5,14 +5,17 @@
 
 .modal__title {
   @extend .section-title;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 25px;
+  margin-top: 0;
+  font-size: 1.385rem;
 }
 
 .modal__subtitle {
   @extend .section-subtitle;
   margin-bottom: 20px;
   line-height: 1.3;
+  font-size: 1rem;
 }
 
 
@@ -21,7 +24,7 @@
 //##
 
 //** Padding applied to the modal body
-$modal-inner-padding:         32px 30px;
+$modal-inner-padding:         40px 20px;
 
 //** Padding applied to the modal title
 $modal-title-padding:         20px 30px;
@@ -93,7 +96,7 @@ $modal-width-sm:              300px;
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: absolute;
-  padding: $modal-inner-padding;
+  padding: 20px;
   top: 50%;
   left: 0;
   right: 0;
@@ -104,6 +107,20 @@ $modal-width-sm:              300px;
   z-index: 999;
   border-radius: $border-radius;
   background: $main-bg-color;
+
+  @media(min-width: $breakpoint-md) {
+    padding: $modal-inner-padding;
+  }
+
+  button {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media(min-width: $breakpoint-md) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
 }
 
 // Measure scrollbar width for padding body during modal show/hide
@@ -176,3 +193,6 @@ $modal-width-sm:              300px;
     filter: brightness(150%);
   }
 }
+
+
+

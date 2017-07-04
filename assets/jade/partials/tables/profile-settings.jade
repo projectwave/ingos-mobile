@@ -1,0 +1,53 @@
+form(method='' action='')
+    .form-row.content-section__inner
+        label(for='profile-data-second-name').form-row__title
+            | Фамилия:
+
+        input(type='text'
+        placeholder='Введите фамилию'
+        required,
+        id='profile-data-second-name').form-control
+
+    .form-row.content-section__inner
+        label(for='profile-data-first-name').form-row__title
+            | Имя:
+
+        input(type='text'
+        placeholder='Введите имя'
+        required,
+        id='profile-data-first-name').form-control
+
+    .form-row.content-section__inner
+        label(for='profile-data-third-name').form-row__title
+            | Отчество:
+
+        input(type='text'
+        placeholder='Введите отчество'
+        required,
+        id='profile-data-third-name').form-control
+
+    .form-row.content-section__inner
+        p Пожалуйста загрузите недостающие документы
+        ol.classic
+            li Идентификационный номер налогоплательщика
+            li Справка 2 НДФЛ
+
+    .form-row.section-upload
+        .content-section__inner
+            .form-row.content-section__inner
+                label.form-row__title
+                    | Выберите файлы
+
+                button.btn-grey.small
+                    | Выбрать
+
+                .form-row.marginTop30
+                    .form-fake.style-delete
+                        .text test 1
+
+                .form-row
+                    .form-fake.style-delete
+                        .text test 2
+
+    .form-row.content-section__inner
+        input(type='submit' value='Отправить').form-submit

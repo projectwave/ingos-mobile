@@ -11,6 +11,10 @@ $input-font-size: 1.154rem; //30px
 
   p {
     font-size: 1rem;
+    text-align: left;
+  }
+  li {
+    text-align: left;
   }
 
   @media(min-width: $breakpoint-md) {
@@ -471,6 +475,41 @@ textarea.form-control {
   .is100 & {
     &:nth-child(-n+5) {
       background: $degree-color;
+    }
+  }
+}
+
+
+.form-fake {
+  position: relative;
+  @extend .form-control;
+  background: white;
+  padding-right: 75px;
+
+  .text {
+    position: absolute;
+    left: 25px;
+    font-size: 1.154rem;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @media(min-width: $breakpoint-md) {
+      left: 45px;
+    }
+  }
+
+  &.style-delete {
+    &:after {
+      content: '';
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      background: $title-color;
     }
   }
 }

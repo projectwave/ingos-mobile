@@ -1,0 +1,26 @@
+.accordion
+	- for (var item = 0; item < arrayTest.length; ++item) {
+
+		.accordion__section-title.js-toggle-next-el
+			.content-section__inner #{arrayTest[item]['header']}
+
+		.accordion__section
+			.content-section__inner
+				.links-list
+					- for (var list = 0; list < arrayTest[item]['list'].length; ++list) {
+						.links-list__item
+							span.answer-link.js-toggle-next-el #{arrayTest[item]['list'][list]['question']}
+							.faq-answer #{arrayTest[item]['list'][list]['answer']}
+					- }
+	- }
+
+
+
+
+
+
+
+
+
+
+

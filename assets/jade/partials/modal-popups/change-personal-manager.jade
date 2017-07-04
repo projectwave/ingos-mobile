@@ -15,9 +15,12 @@
 								 placeholder='Опишите причину смены менеджера').form-control
 
 			.form-row
-				button(type='submit' value='').form-submit
-					span.icon-change.icon-change--white
-
-					| Сменить менеджера
+				.form-grid
+					.cell
+						button.btn-grey
+							| Отмена
+					.cell
+						button.btn-primary
+							| Сменить менеджера
 
 		.modal-close(data-dismiss='modal')

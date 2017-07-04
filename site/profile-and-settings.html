@@ -10,8 +10,8 @@
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section">
-          <div class="tabs">
-            <div class="tabs__nav"><a href="#user" class="tabs__nav-item">Пользователь</a><a href="#terms-of-use" class="tabs__nav-item">Правила</a><a href="#chat-with-manager" class="tabs__nav-item is-active">Менеджер</a><a href="#faq" class="tabs__nav-item">FAQ</a><a href="#settings" class="tabs__nav-item">Настройки</a></div>
+          <div class="tabs not-shadow">
+            <div class="tabs__nav"><a href="#user" class="tabs__nav-item">Пользователь</a><a href="#terms-of-use" class="tabs__nav-item">Правила</a><a href="#chat-with-manager" class="tabs__nav-item">Менеджер</a><a href="#faq" class="tabs__nav-item">FAQ</a><a href="#settings" class="tabs__nav-item is-active">Настройки</a></div>
             <div id="user" class="tab-container">
               <div class="tab-container__section-inner">
                 <div class="section-title">Реквизиты клиента</div>
@@ -196,7 +196,7 @@
                 </div>
               </div>
             </div>
-            <div id="chat-with-manager" class="tab-container is-visible">
+            <div id="chat-with-manager" class="tab-container">
               <div class="tab-container__section-inner">
                 <div class="section-title">Ваш персональный менеджер</div>
                 <div class="js-tab-parent-el">
@@ -207,19 +207,17 @@
                   </div>
                   <div data-target="manager-chat" class="tab-container js-tab-parent-el-body is-visible">
                     <div class="tab-container__section-inner">
-                      <div class="content-section__inner">
-                        <div class="chat-manager">
-                          <div class="content-section__inner">
-                            <div class="chat-manager__preview">
-                              <div class="person-preview">
-                                <div class="person-preview__image"><img src="assets/img/icon-manager.png" alt=""></div>
-                                <div class="person-preview__info">
-                                  <div class="person-preview__name">Анна Орлова</div>
-                                  <div class="person-preview__contacts">
-                                    <div class="person-preview__contacts-item">skype:&nbsp;<a href="skype:anna.ingosinvest">anna.ingosinvest</a></div>
-                                  </div>
-                                  <div class="chat-manager__actions"><span data-target-id="modal-change-personal-manager" class="link-change js-open-modal">поменять менеджера</span></div>
+                      <div class="chat-manager">
+                        <div class="content-section__inner">
+                          <div class="chat-manager__preview">
+                            <div class="person-preview">
+                              <div class="person-preview__image"><img src="assets/img/icon-manager.png" alt=""></div>
+                              <div class="person-preview__info">
+                                <div class="person-preview__name">Анна Орлова</div>
+                                <div class="person-preview__contacts">
+                                  <div class="person-preview__contacts-item">skype:&nbsp;<a href="skype:anna.ingosinvest">anna.ingosinvest</a></div>
                                 </div>
+                                <div class="chat-manager__actions"><span data-target-id="modal-change-personal-manager" class="link-change js-open-modal">поменять менеджера</span></div>
                               </div>
                             </div>
                           </div>
@@ -261,33 +259,31 @@
                   </div>
                   <div data-target="user-question" class="tab-container js-tab-parent-el-body">
                     <div class="tab-container__section-inner">
-                      <div class="content-section__inner">
-                        <div class="table-content full">
-                          <div class="type-row">
-                            <div class="type-cell">
-                              <div class="files-list content-section__inner">
-                                <div class="files-list__item">
-                                  <div class="file-preview user-question is-solved">
-                                    <div class="file-preview__icon"><span class="icon-question"></span></div>
-                                    <div class="file-preview__details">
-                                      <p><a href="#" class="user-question__name">Изменение рассчетного счета</a></p>
-                                      <p class="user-question__status">Данный вопрос решен</p>
-                                    </div>
+                      <div class="table-content full">
+                        <div class="type-row">
+                          <div class="type-cell">
+                            <div class="files-list content-section__inner">
+                              <div class="files-list__item">
+                                <div class="file-preview user-question is-solved">
+                                  <div class="file-preview__icon"><span class="icon-question"></span></div>
+                                  <div class="file-preview__details">
+                                    <p><a href="#" class="user-question__name">Изменение рассчетного счета</a></p>
+                                    <p class="user-question__status">Данный вопрос решен</p>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="type-row">
-                            <div class="type-cell">
-                              <div class="files-list content-section__inner">
-                                <div class="files-list__item">
-                                  <div class="file-preview user-question">
-                                    <div class="file-preview__icon"><span class="icon-question"></span></div>
-                                    <div class="file-preview__details">
-                                      <p><a href="#" class="user-question__name">Как продать ПИФ?</a></p>
-                                      <p class="user-question__status">Вопрос ожидает ответа менеджера</p>
-                                    </div>
+                        </div>
+                        <div class="type-row">
+                          <div class="type-cell">
+                            <div class="files-list content-section__inner">
+                              <div class="files-list__item">
+                                <div class="file-preview user-question">
+                                  <div class="file-preview__icon"><span class="icon-question"></span></div>
+                                  <div class="file-preview__details">
+                                    <p><a href="#" class="user-question__name">Как продать ПИФ?</a></p>
+                                    <p class="user-question__status">Вопрос ожидает ответа менеджера</p>
                                   </div>
                                 </div>
                               </div>
@@ -304,29 +300,168 @@
               <div class="tab-container__section-inner">
                 <div class="section-title">Часто задаваемые вопросы</div>
                 <div class="accordion">
-                  <div class="accordion__section-title js-toggle-next-el">Портфель</div>
+                  <div class="accordion__section-title js-toggle-next-el">
+                    <div class="content-section__inner">Портфель</div>
+                  </div>
                   <div class="accordion__section">
-                    <div class="links-list">
-                      <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое паевой инвестиционный фонд?</span>
-                        <div class="faq-answer">Стоимость чистых активов паевого инвестиционного фонда (СЧА) определяется как разница между стоимостью активов этого фонда (денежные средства на счетах и в банках, ценные бумаги, накопленный купонный доход и иные разрешенные активы) и величиной обязательств, подлежащих исполнению за счет указанных активов, на момент определения стоимости чистых активов.</div>
+                    <div class="content-section__inner">
+                      <div class="links-list">
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion__section-title js-toggle-next-el">Паевые Инвестиционные Фонды</div>
+                  <div class="accordion__section-title js-toggle-next-el">
+                    <div class="content-section__inner">Паевые инвестиционные фонды</div>
+                  </div>
                   <div class="accordion__section">
-                    <div class="links-list">
-                      <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое инвестиционный пай?</span>
-                        <div class="faq-answer">Стоимость чистых активов паевого инвестиционного фонда (СЧА) определяется как разница между стоимостью активов этого фонда (денежные средства на счетах и в банках, ценные бумаги, накопленный купонный доход и иные разрешенные активы) и величиной обязательств, подлежащих исполнению за счет указанных активов, на момент определения стоимости чистых активов.</div>
+                    <div class="content-section__inner">
+                      <div class="links-list">
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое паевой инвестиционный фонд?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое инвестиционный пай?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое СЧА?</span>
+                          <div class="faq-answer">Стоимость чистых активов паевого инвестиционного фонда (СЧА) определяется как разница между стоимостью активов этого фонда (денежные средства на счетах и в банках, ценные бумаги, накопленный купонный доход и иные разрешенные активы) и величиной обязательств, подлежащих исполнению за счет указанных активов, на момент определения стоимости чистых активов.</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Какие бывают паевые фонды, и чем они отличаются?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Как лучше инвестировать?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Каким образом можно получить информацию о состоянии счета инвестора?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Какие комиссии / затраты образуются при обслуживании паевых инвестиционных фондов?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Может ли инвестор влиять на инвестиционные решения Управляющей компании?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Как и когда рассчитывается расчетная стоимость пая?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что является доходом клиента?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Как купить паи паевого фонда?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Как продать паи паевого фонда?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Какова минимальная сумма инвестиций в паевой фонд?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Выплачиваются ли проценты, дивиденды по паям фонда?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Можно ли обменять паи?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Наследование инвестиционных паев</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">В какие ценные бумаги вкладываются средства ПИФ</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что происходит с инвестиционными паями, если УК обанкротилась?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Гарантируется ли сохранность вложений?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Какие риски несет инвестор?</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
                       </div>
-                      <div class="links-list__item"><span class="answer-link js-toggle-next-el">Что такое СЧА?</span></div>
+                    </div>
+                  </div>
+                  <div class="accordion__section-title js-toggle-next-el">
+                    <div class="content-section__inner">Доверительное управление</div>
+                  </div>
+                  <div class="accordion__section">
+                    <div class="content-section__inner">
+                      <div class="links-list">
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__section-title js-toggle-next-el">
+                    <div class="content-section__inner">Индивидуальные Инвестиционные счета</div>
+                  </div>
+                  <div class="accordion__section">
+                    <div class="content-section__inner">
+                      <div class="links-list">
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                        <div class="links-list__item"><span class="answer-link js-toggle-next-el">Вопрос</span>
+                          <div class="faq-answer">Ответ</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="settings" class="tab-container">
+            <div id="settings" class="tab-container is-visible">
               <div class="tab-container__section-inner">
                 <div class="section-title">Обновление регистрационных данных</div>
+                <form method="" action="">
+                  <div class="form-row content-section__inner">
+                    <label for="profile-data-second-name" class="form-row__title">Фамилия:</label>
+                    <input type="text" placeholder="Введите фамилию" required id="profile-data-second-name" class="form-control">
+                  </div>
+                  <div class="form-row content-section__inner">
+                    <label for="profile-data-first-name" class="form-row__title">Имя:</label>
+                    <input type="text" placeholder="Введите имя" required id="profile-data-first-name" class="form-control">
+                  </div>
+                  <div class="form-row content-section__inner">
+                    <label for="profile-data-third-name" class="form-row__title">Отчество:</label>
+                    <input type="text" placeholder="Введите отчество" required id="profile-data-third-name" class="form-control">
+                  </div>
+                  <div class="form-row content-section__inner">
+                    <p>Пожалуйста загрузите недостающие документы</p>
+                    <ol class="classic">
+                      <li>Идентификационный номер налогоплательщика</li>
+                      <li>Справка 2 НДФЛ</li>
+                    </ol>
+                  </div>
+                  <div class="form-row section-upload">
+                    <div class="content-section__inner">
+                      <div class="form-row content-section__inner">
+                        <label class="form-row__title">Выберите файлы</label>
+                        <button class="btn-grey small">Выбрать</button>
+                        <div class="form-row marginTop30">
+                          <div class="form-fake style-delete">
+                            <div class="text">test 1</div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="form-fake style-delete">
+                            <div class="text">test 2</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row content-section__inner">
+                    <input type="submit" value="Отправить" class="form-submit">
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -389,7 +524,14 @@
                 <textarea required data-parsley-error-message="Это поле нужно заполнить" placeholder="Опишите причину смены менеджера" class="form-control"></textarea>
               </div>
               <div class="form-row">
-                <button type="submit" value="" class="form-submit"><span class="icon-change icon-change--white"></span>Сменить менеджера</button>
+                <div class="form-grid">
+                  <div class="cell">
+                    <button class="btn-grey">Отмена</button>
+                  </div>
+                  <div class="cell">
+                    <button class="btn-primary">Сменить менеджера</button>
+                  </div>
+                </div>
               </div>
             </form>
             <div data-dismiss="modal" class="modal-close"></div>
@@ -404,8 +546,10 @@
               <div class="person-preview__info">
                 <div class="person-preview__name">Анна Орлова</div>
                 <div class="person-preview__contacts">
-                  <div class="person-preview__contacts-item">skype:&nbsp;<span class="underline">anna.ingosinvest</span>
-                    <div class="person-preview__actions"><span class="js-start-manager-chat btn-bordered btn-sm">Начать чат с менеджером</span></div>
+                  <div class="person-preview__contacts-item">skype:&nbsp;<a href="skype:anna.ingosinvest">anna.ingosinvest</a>
+                    <div class="person-preview__actions">
+                      <button class="btn-primary">Начать чат с менеджером</button>
+                    </div>
                   </div>
                 </div>
               </div>
