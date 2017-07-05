@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6e41b95-351f-45b8-b6ea-4c6614ba0e37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/partials/data.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/partials/tables/profile-faq.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/jade/partials/tables/profile-settings.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" afterPath="$PROJECT_DIR$/assets/jade/layouts/global/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-manager.jade" afterPath="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-manager.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade" afterPath="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade" afterPath="$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_typography.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" afterPath="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_chat.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_chat.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_modal-popups.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_modal-popups.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" afterPath="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile-and-settings.jade" afterPath="$PROJECT_DIR$/profile-and-settings.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/css/style.css" afterPath="$PROJECT_DIR$/site/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/main.js" afterPath="$PROJECT_DIR$/site/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/profile-and-settings.html" afterPath="$PROJECT_DIR$/site/profile-and-settings.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,14 +19,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5498008">
+    <splitter split-orientation="horizontal" split-proportion="0.58499336">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="profile-chat-with-manager.jade" pinned="false" current-in-tab="false">
+          <file leaf-file-name="profile-chat-with-manager.jade" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="26" column="62" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="26" selection-end-column="62" />
+                <state relative-caret-position="234">
+                  <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -82,8 +65,8 @@
           <file leaf-file-name="profile-and-settings.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/profile-and-settings.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                <state relative-caret-position="108">
+                  <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
@@ -129,11 +112,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="change-personal-mananger-accepted.jade" pinned="false" current-in-tab="true">
+          <file leaf-file-name="change-personal-mananger-accepted.jade" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <state relative-caret-position="126">
+                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -147,8 +130,15 @@
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="349">
-                  <caret line="512" column="5" lean-forward="true" selection-start-line="512" selection-start-column="5" selection-end-line="512" selection-end-column="5" />
-                  <folding />
+                  <caret line="512" column="5" lean-forward="false" selection-start-line="512" selection-start-column="5" selection-end-line="512" selection-end-column="5" />
+                  <folding>
+                    <marker date="1499193294315" expanded="true" signature="2361:2590" ph="{...}" />
+                    <marker date="1499193294315" expanded="true" signature="2701:3024" ph="{...}" />
+                    <marker date="1499193294315" expanded="true" signature="6000:6207" ph="{...}" />
+                    <marker date="1499193294315" expanded="true" signature="8203:8252" ph="{...}" />
+                    <marker date="1499193294315" expanded="true" signature="8312:8752" ph="{...}" />
+                    <marker date="1499193294315" expanded="true" signature="8772:8851" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -158,16 +148,18 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="498">
                   <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-                  <folding />
+                  <folding>
+                    <marker date="1499193738475" expanded="true" signature="977:1013" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="33" />
+                <state relative-caret-position="270">
+                  <caret line="176" column="56" lean-forward="false" selection-start-line="176" selection-start-column="56" selection-end-line="176" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -176,8 +168,8 @@
           <file leaf-file-name="_tabs.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_tabs.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -188,7 +180,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="208">
                   <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-                  <folding />
+                  <folding>
+                    <marker date="1499195060838" expanded="true" signature="1031:1367" ph="{...}" />
+                    <marker date="1499195060838" expanded="true" signature="1265:1364" ph="{...}" />
+                    <marker date="1499195060838" expanded="true" signature="1312:1360" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -198,7 +194,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
                   <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-                  <folding />
+                  <folding>
+                    <marker date="1499098700906" expanded="true" signature="113:237" ph="{...}" />
+                    <marker date="1499098700906" expanded="true" signature="368:509" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -208,7 +207,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="172">
                   <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-                  <folding />
+                  <folding>
+                    <marker date="1499003743808" expanded="true" signature="1757:1992" ph="{...}" />
+                    <marker date="1499003743808" expanded="true" signature="2747:2856" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -218,7 +220,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
                   <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="10" />
-                  <folding />
+                  <folding>
+                    <marker date="1498998904051" expanded="true" signature="52:963" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -248,7 +252,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="269">
                   <caret line="189" column="18" lean-forward="false" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
-                  <folding />
+                  <folding>
+                    <marker date="1499187030961" expanded="true" signature="15:369" ph="{...}" />
+                    <marker date="1499187030961" expanded="true" signature="493:909" ph="{...}" />
+                    <marker date="1499187030961" expanded="true" signature="804:835" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -268,7 +276,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
                   <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-                  <folding />
+                  <folding>
+                    <marker date="1499191378388" expanded="true" signature="200:797" ph="{...}" />
+                    <marker date="1499191378388" expanded="true" signature="835:925" ph="{...}" />
+                    <marker date="1499191378388" expanded="true" signature="947:1187" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -278,7 +290,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="177">
                   <caret line="486" column="22" lean-forward="false" selection-start-line="486" selection-start-column="22" selection-end-line="486" selection-end-column="22" />
-                  <folding />
+                  <folding>
+                    <marker date="1499193671209" expanded="true" signature="128:381" ph="{...}" />
+                    <marker date="1499193671209" expanded="true" signature="218:266" ph="{...}" />
+                    <marker date="1499193671209" expanded="true" signature="7786:8377" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -288,12 +304,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="318">
                   <caret line="106" column="20" lean-forward="false" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
-                  <folding />
+                  <folding>
+                    <marker date="1499192794789" expanded="true" signature="1611:1849" ph="{...}" />
+                    <marker date="1499192794789" expanded="true" signature="1651:1844" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_modal-popups.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_modal-popups.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/scss/modules/_modal-popups.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="478">
@@ -308,7 +327,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
                   <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-                  <folding />
+                  <folding>
+                    <marker date="1499194457763" expanded="true" signature="1723:2287" ph="{...}" />
+                    <marker date="1499194457763" expanded="true" signature="1821:1874" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -319,7 +341,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>previe</find>
       <find>.link-change</find>
       <find>.person-preview</find>
       <find>.chat__post</find>
@@ -334,7 +355,6 @@
       <find>links-list</find>
       <find>form-row</find>
       <find>accordion__section</find>
-      <find>tabs__nav-item</find>
       <find>chat__post</find>
       <find>.form-control</find>
       <find>btn-grey</find>
@@ -348,6 +368,8 @@
       <find>person-preview</find>
       <find>button</find>
       <find>modal-dialog</find>
+      <find>parentElTab</find>
+      <find>tabs__nav-item</find>
       <find>tab-container__section-inner</find>
     </findStrings>
     <replaceStrings>
@@ -401,7 +423,6 @@
         <option value="$PROJECT_DIR$/assets/scss/modules/_file-list.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_navigation.scss" />
         <option value="$PROJECT_DIR$/purchase__iia-step-4-1.jade" />
-        <option value="$PROJECT_DIR$/site/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/jade/partials/forms/chat.jade" />
         <option value="$PROJECT_DIR$/assets/scss/base/_mixins.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/tables/profile-questions.jade" />
@@ -412,18 +433,19 @@
         <option value="$PROJECT_DIR$/assets/jade/partials/data.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_tabs.scss" />
-        <option value="$PROJECT_DIR$/profile-and-settings.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/_utilities.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/tables/profile-settings.jade" />
-        <option value="$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_forms.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-manager.jade" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_chat.scss" />
         <option value="$PROJECT_DIR$/assets/scss/modules/_modal-popups.scss" />
         <option value="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade" />
+        <option value="$PROJECT_DIR$/profile-and-settings.jade" />
+        <option value="$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade" />
+        <option value="$PROJECT_DIR$/site/assets/js/main.js" />
       </list>
     </option>
   </component>
@@ -695,12 +717,12 @@
       <workItem from="1497014848615" duration="2530000" />
       <workItem from="1497077451565" duration="42349000" />
       <workItem from="1498721811625" duration="227000" />
-      <workItem from="1498903944543" duration="62263000" />
+      <workItem from="1498903944543" duration="68925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107369000" />
+    <option name="totallyTimeSpent" value="114031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1036" extended-state="4" />
@@ -711,11 +733,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31619257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22100656" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19637139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14770241" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14770241" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -858,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="150" column="32" lean-forward="false" selection-start-line="150" selection-start-column="32" selection-end-line="150" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-4.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -878,7 +892,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
+          <folding>
+            <marker date="1499003743808" expanded="true" signature="1757:1992" ph="{...}" />
+            <marker date="1499003743808" expanded="true" signature="2747:2856" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -918,7 +935,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <marker date="1499098700906" expanded="true" signature="113:237" ph="{...}" />
+            <marker date="1499098700906" expanded="true" signature="368:509" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -950,7 +970,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="189" column="18" lean-forward="false" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
-          <folding />
+          <folding>
+            <marker date="1499187030961" expanded="true" signature="15:369" ph="{...}" />
+            <marker date="1499187030961" expanded="true" signature="493:909" ph="{...}" />
+            <marker date="1499187030961" expanded="true" signature="804:835" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,7 +1014,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1499191378388" expanded="true" signature="200:797" ph="{...}" />
+            <marker date="1499191378388" expanded="true" signature="835:925" ph="{...}" />
+            <marker date="1499191378388" expanded="true" signature="947:1187" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -998,14 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_tabs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1030,15 +1050,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="106" column="20" lean-forward="false" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile-and-settings.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1499192794789" expanded="true" signature="1611:1849" ph="{...}" />
+            <marker date="1499192794789" expanded="true" signature="1651:1844" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,7 +1061,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="486" column="22" lean-forward="false" selection-start-line="486" selection-start-column="22" selection-end-line="486" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1499193671209" expanded="true" signature="128:381" ph="{...}" />
+            <marker date="1499193671209" expanded="true" signature="218:266" ph="{...}" />
+            <marker date="1499193671209" expanded="true" signature="7786:8377" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +1073,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
           <caret line="68" column="19" lean-forward="false" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1499193738475" expanded="true" signature="977:1013" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,7 +1083,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1499194457763" expanded="true" signature="1723:2287" ph="{...}" />
+            <marker date="1499194457763" expanded="true" signature="1821:1874" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,7 +1094,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1498998904051" expanded="true" signature="52:963" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,15 +1112,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1499195060838" expanded="true" signature="1031:1367" ph="{...}" />
+            <marker date="1499195060838" expanded="true" signature="1265:1364" ph="{...}" />
+            <marker date="1499195060838" expanded="true" signature="1312:1360" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="512" column="5" lean-forward="true" selection-start-line="512" selection-start-column="5" selection-end-line="512" selection-end-column="5" />
-          <folding />
+          <caret line="512" column="5" lean-forward="false" selection-start-line="512" selection-start-column="5" selection-end-line="512" selection-end-column="5" />
+          <folding>
+            <marker date="1499193294315" expanded="true" signature="2361:2590" ph="{...}" />
+            <marker date="1499193294315" expanded="true" signature="2701:3024" ph="{...}" />
+            <marker date="1499193294315" expanded="true" signature="6000:6207" ph="{...}" />
+            <marker date="1499193294315" expanded="true" signature="8203:8252" ph="{...}" />
+            <marker date="1499193294315" expanded="true" signature="8312:8752" ph="{...}" />
+            <marker date="1499193294315" expanded="true" signature="8772:8851" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,26 +1143,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/tables/profile-settings.jade">
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="29" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="41" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="26" column="62" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="26" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-manager.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="47" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="23" selection-end-column="47" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1138,10 +1159,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade">
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-manager.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_tabs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/tables/profile-settings.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="41" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile-and-settings.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="176" column="56" lean-forward="false" selection-start-line="176" selection-start-column="56" selection-end-line="176" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/partials/tables/profile-chat-with-manager.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
       </provider>

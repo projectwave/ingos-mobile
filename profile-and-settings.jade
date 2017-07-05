@@ -10,13 +10,13 @@ block content
 				a(href='#terms-of-use').tabs__nav-item
 					| Правила
 
-				a(href='#chat-with-manager').tabs__nav-item
+				a(href='#chat-with-manager').tabs__nav-item.is-active
 					| Менеджер
 
 				a(href='#faq').tabs__nav-item
 					| FAQ
 
-				a(href='#settings').tabs__nav-item.is-active
+				a(href='#settings').tabs__nav-item
 					| Настройки
 
 			.tab-container#user
@@ -32,7 +32,7 @@ block content
 					include assets/jade/partials/tables/profile-terms-of-use
 
 
-			.tab-container#chat-with-manager
+			.tab-container#chat-with-manager.is-visible
 				.tab-container__section-inner
 					.section-title Ваш персональный менеджер
 
@@ -48,7 +48,7 @@ block content
 
 
 
-			.tab-container#settings.is-visible
+			.tab-container#settings
 				.tab-container__section-inner
 					.section-title
 						| Обновление регистрационных данных

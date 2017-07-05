@@ -149,15 +149,14 @@ var commonActions = (function (document, $) {
         $(selector.parentElTab.button).on('click', function(){
             var button = $(this),
                 parent = button.parents(selector.parentElTab.parent),
-                body = parent.find(selector.parentElTab.body),
+                bodies = parent.find(selector.parentElTab.body),
                 buttons = parent.find(selector.parentElTab.button),
                 href = button.data('href'),
-                target = body.data('target'),
-                bodies = parent.find(selector.parentElTab.body + '[data-target='+href+']');
+                body = parent.find(selector.parentElTab.body + '[data-target='+href+']');
             buttons.removeClass(className.active);
+            bodies.removeClass(className.visible);
             button.addClass(className.active);
-            body.removeClass(className.visible);
-            bodies.addClass(className.visible);
+            body.addClass(className.visible);
             return false;
         });
     }
@@ -175,7 +174,7 @@ var commonActions = (function (document, $) {
             e.preventDefault();
 
             $('.tabs__nav-item').removeClass(className.active);
-            $('.tab-container').removeClass(className.visible);
+            $('.tab-container:not(.js-tab-parent-el-body)').removeClass(className.visible);
             $(this).addClass(className.active);
             $($(this).attr('href')).addClass(className.visible);
         });
@@ -233,13 +232,13 @@ var commonActions = (function (document, $) {
             _startManagerChat();
         }
 
+        _tabParentEl();
+
         _toggleNextEl();
 
         _toggleParentEl();
 
         _addHoverState();
-
-        _tabParentEl();
 
         _tabs();
 
