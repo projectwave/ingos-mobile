@@ -1,7 +1,7 @@
 html {
   font-size: 16px;
 
-  @media(min-width: $breakpoint-sm) {
+  @media(min-width: 370px) {
     font-size: 20px;
   }
   @media(min-width: $breakpoint-md) {

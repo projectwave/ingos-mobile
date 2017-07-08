@@ -1,0 +1,13 @@
+.content-section
+    .content-section__inner
+        .section-subtitle.text-center
+            | На карте показано географическое распределение ценных бумаг (производных финансовых инструментов) изменение рыночной стоимости которых, оказывает влияние на стоимость Вашего портфеля.
+.content-section
+    - for(var item = 0; item < rulerGeorgaphy.length; ++item) {
+        +rulerGeography(
+            rulerGeorgaphy[item]['title'],
+            rulerGeorgaphy[item]['labelRight'],
+            rulerGeorgaphy[item]['date'],
+            rulerGeorgaphy[item]['value']
+        )
+    - }

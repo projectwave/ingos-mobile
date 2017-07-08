@@ -17,3 +17,34 @@ mixin media-list-item(image, videoLength, caption, time)
 mixin step-block(content, className)
     .step-block(class='#{className}')
         .inner #{content}
+
+
+mixin ruler(title, labelLeft, labelRight, progressValue, progressColor)
+    .ruler
+        .content-section__inner
+            .ruler-title.text-center #{title}
+            .ruler-toolbar
+                .ruler-toolbar-cell
+                    .ruler-label #{labelLeft}
+                .ruler-toolbar-cell
+                    .ruler-label #{labelRight}
+            .ruler-chart
+                .ruler-chart-status(style='width:#{progressValue};background:#{progressColor}')
+
+mixin rulerGeography(title, labelRight, date, value)
+    .ruler
+        .content-section__inner
+            .ruler-toolbar
+                .ruler-toolbar-cell
+                    .ruler-title #{title}
+                .ruler-toolbar-cell
+                    .ruler-label #{labelRight}
+            ul.ruler-list
+                li
+                    .prop-label Дата: #{date}
+
+                li
+                    .prop-label Значение:
+                    .value-label #{value}
+
+

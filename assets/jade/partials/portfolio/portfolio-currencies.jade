@@ -1,0 +1,14 @@
+.content-section
+    .content-section__inner
+        .section-subtitle.text-center
+            | На графике показан Ваш портфель в разрезе валют открытых позиций. Суммы приведены к выбранной Вами валюте.
+.content-section
+    - for(var item = 0; item < rulerCurrencies.length; ++item) {
+        +ruler(
+            rulerCurrencies[item]['title'],
+            rulerCurrencies[item]['labelLeft'],
+            rulerCurrencies[item]['labelRight'],
+            rulerCurrencies[item]['progressValue'],
+            rulerCurrencies[item]['progressColor']
+        )
+    - }

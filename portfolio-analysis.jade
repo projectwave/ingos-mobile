@@ -1,0 +1,67 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#geography').tabs__nav-item.is-active
+					| География
+
+				a(href='#industry').tabs__nav-item
+					| Отрасли
+
+				a(href='#asset-classes').tabs__nav-item
+					| Классы активов
+
+				a(href='#issuers').tabs__nav-item
+					| Эмитенты
+
+				a(href='#currencies').tabs__nav-item
+					| Валюты
+
+
+			.tab-container#geography.is-visible
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Диверсификация портфеля по географии
+					include assets/jade/partials/portfolio/portfolio-geography
+
+			.tab-container#industry
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Диверсификация портфеля по отраслям
+					include assets/jade/partials/portfolio/portfolio-industry
+
+			.tab-container#asset-classes
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Диверсификация портфеля по классам активов
+					include assets/jade/partials/portfolio/portfolio-asset-classes
+
+			.tab-container#issuers
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Диверсификация портфеля по эмитентам
+					include assets/jade/partials/portfolio/portfolio-issuers
+
+			.tab-container#currencies
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Диверсификация портфеля по валютам
+					include assets/jade/partials/portfolio/portfolio-currencies
+
+
+
+
+
+		//include assets/jade/partials/cards-list
+		include assets/jade/partials/request-to-open-pif
+
+		include assets/jade/partials/outgoing-link
+
+		include assets/jade/partials/privacy-policy
+
+	include assets/jade/partials/modal-popups/change-personal-manager
+
+	include assets/jade/partials/modal-popups/change-personal-mananger-accepted

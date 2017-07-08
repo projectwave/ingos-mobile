@@ -19,6 +19,12 @@
   text-align: center!important;
 }
 
+
+.table-layout-auto {
+  table-layout: auto!important;
+}
+
+
 .margin-bottom-0 {
   margin-bottom: 0!important;
 }
@@ -69,6 +75,30 @@
   margin-top: 30px;
 }
 
+.marginTop40 {
+  margin-top: 40px;
+}
+
 .marginBottom35 {
   margin-bottom: 35px!important;
 }
+
+.width100 {
+  width: 100%!important;
+}
+
+
+.borderedVert {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+
+.bg-dark {
+  background: $dark-bg-color;
+}
+
+
+
+.fontColorGrowUp {color: $status-positive!important;}
+.fontColorGrowDown {color: $status-positive!important;}

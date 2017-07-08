@@ -1,0 +1,41 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section
+		.content-section__inner
+			.section-title.styleInset
+				| История
+
+	.content-section.bg-dark
+		.borderedVert.marginTop40
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.tile-iconed
+						.icon
+						.text
+							.prop На дату
+							a(href='#').link-text-small.value
+								| 1 сен 2016 - 30 сен 2016
+				.cell
+					.tile-iconed
+						.icon
+						.text
+							.prop Изменение за период
+							.value.fontColorGrowUp
+								| + 336,4(59,61%)
+
+	.portfolio-history-chart Chart
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

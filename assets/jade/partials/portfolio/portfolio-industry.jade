@@ -1,0 +1,13 @@
+.content-section
+    .content-section__inner
+
+.content-section
+    - for(var item = 0; item < rulerIndustry.length; ++item) {
+        +ruler(
+            rulerIndustry[item]['title'],
+            rulerIndustry[item]['labelLeft'],
+            rulerIndustry[item]['labelRight'],
+            rulerIndustry[item]['progressValue'],
+            rulerIndustry[item]['progressColor']
+        )
+    - }

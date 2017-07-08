@@ -1,0 +1,69 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.bg-dark
+		.content-section__inner
+			.section-title.styleInset
+				| Портфель
+
+
+		.content-section__inner
+			.form-grid.table-layout-auto
+				.cell
+					.ball-chart
+				.cell.text-center.width100
+					p Общая оценка портфеля
+					p.text-imp 3 952 289,00 Р
+
+		.borderedVert.marginTop40
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.tile-iconed
+						.icon
+						.text
+							| На дату &nbsp;
+							a(href='#').link-text-small
+								| Сегодня
+				.cell
+					.tile-iconed
+						.icon
+						.text
+							| Валюта &nbsp;
+							a(href='#').link-text-small
+								| Рубли
+
+	.content-section
+
+			- for(var item = 0; item < rulerBag.length; ++item) {
+				+ruler(
+					rulerBag[item]['title'],
+					rulerBag[item]['labelLeft'],
+					rulerBag[item]['labelRight'],
+					rulerBag[item]['progressValue'],
+					rulerBag[item]['progressColor']
+				)
+			- }
+
+	.content-section
+		.content-section__inner
+			a(href='#').btn-block.strict
+				.cell.cellIconLeft
+					.icon-test
+				.cell.cellTitle Добавить иные активы
+				.cell.cellIconRight
+					.icon-test
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

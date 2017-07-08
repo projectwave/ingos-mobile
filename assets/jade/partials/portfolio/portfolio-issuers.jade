@@ -1,0 +1,14 @@
+.content-section
+    .content-section__inner
+        .section-subtitle.text-center
+            | На графике показаны 10 наиболее крупных по объему позиций. Объем позиции указан в выбранной вами валюте.
+.content-section
+    - for(var item = 0; item < rulerIsuers.length; ++item) {
+        +ruler(
+            rulerIsuers[item]['title'],
+            rulerIsuers[item]['labelLeft'],
+            rulerIsuers[item]['labelRight'],
+            rulerIsuers[item]['progressValue'],
+            rulerIsuers[item]['progressColor']
+        )
+    - }

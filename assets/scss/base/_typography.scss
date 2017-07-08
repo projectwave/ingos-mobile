@@ -21,6 +21,12 @@
   @media(min-width: $breakpoint-md) {
     margin: 70px 0;
   }
+
+  &.styleInset {
+    margin:0;
+    padding: 50px 0 40px;
+  }
+
 }
 
 .section-title + .links-list,
@@ -207,10 +213,22 @@
 }
 
 
+.text-imp {
+  font-size: 1.385rem;
+  font-family: $base-font-family;
+}
+
+
+
 .link-text-small {
   @extend .link-text;
   font-size: 1rem;
 }
+
+
+.prop-label {display: inline-block;}
+.value-label {display: inline-block;font-family: $base-font-family}
+
 
 @font-face {
   font-family: "MuseoSansLight";
@@ -259,3 +277,5 @@
   url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.woff") format("woff"),
   url("/assets/fonts/MuseoSansBlackItalic/museosanscyrl-900italic.ttf") format("truetype");
 }
+
+
