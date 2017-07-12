@@ -1,0 +1,68 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section
+		.content-section__inner
+			.section-title.styleInset
+				| Сводный отчет
+
+	.content-section.bg-dark
+		.borderedVert.marginTop40
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.content-section__inner
+						.tile-iconed.styleInline
+							.icon
+								img(src='/assets/img/icon-calendar-blue.png')
+							.text
+								.prop Дата оценки:
+								a(href='#' class='value').link-text-small.value
+									| 31 мар 2016
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| Детализация по фонду
+
+			.form-row
+				label.form-row__title
+					| Выберите параметр для отображения:
+				select.form-control
+					option Текущая стоимость оставшихся паев, руб.
+					option Прошлая стоимость оставшихся паев, руб.
+					option Будущая стоимость оставшихся паев, руб.
+					option Нелепая стоимость оставшихся паев, руб.
+
+	- for(var item = 0; item < rulerUnitTrustConsolidatedReport.length; ++item) {
+		+rulerListed(
+			{
+				'title': rulerUnitTrustConsolidatedReport[item]['title'],
+				'list': rulerUnitTrustConsolidatedReport[item]['list']
+			}
+		)
+	- }
+
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+				'left': 'icon-mail.png',
+				'title': 'Сформировать отчет и отправить на email',
+			})
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

@@ -23,35 +23,139 @@
     </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <div class="content-section">
-          <div class="content-section__inner">
-            <div class="section-title">История</div>
-          </div>
-        </div>
         <div class="content-section bg-dark">
+          <div class="content-section__inner">
+            <div class="section-title">Инвестиционный портфель ПИФ</div>
+          </div>
+          <div class="content-section__inner">
+            <div class="form-grid table-layout-auto">
+              <div class="cell">
+                <div class="ball-chart"></div>
+              </div>
+              <div class="cell text-center width100">
+                <p>Общая оценка</p>
+                <p class="text-imp">1 512 980,06 Р</p>
+              </div>
+            </div>
+          </div>
           <div class="borderedVert marginTop40">
             <div class="form-grid bordered borderedVertFree">
               <div class="cell">
                 <div class="tile-iconed">
                   <div class="icon"><img src="/assets/img/icon-calendar-blue.png"></div>
-                  <div class="text">
-                    <div class="prop">На дату</div><a href="#" class="value link-text-small value">1 сен 2016 - 30 сен 2016</a>
-                  </div>
+                  <div class="text">Дата оценки: &nbsp;<a href="#" class="value link-text-small">31 мар 2016</a></div>
                 </div>
               </div>
               <div class="cell">
                 <div class="tile-iconed">
-                  <div class="icon"><img src="/assets/img/icon-graph.png"></div>
-                  <div class="text">
-                    <div class="prop">Изменение за период</div>
-                    <div class="value fontColorGrowUp">+ 336,4(59,61%)</div>
-                  </div>
+                  <div class="icon"><img src="/assets/img/icon-currency-exchange.png"></div>
+                  <div class="text">Валюта: &nbsp;<a href="#" class="value link-text-small">Рубли</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="portfolio-history-chart">Chart</div>
+        <div class="content-section">
+          <div class="ruler">
+            <div class="content-section__inner"><a href="#" class="ruler-title text-center">Ингосстрах. Облигации</a>
+              <div class="ruler-toolbar">
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">59,69%</div>
+                </div>
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">903 174,44 Р</div>
+                </div>
+              </div>
+              <div class="ruler-chart">
+                <div style="width:59.69%;background:#1b7cd0" class="ruler-chart-status"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ruler">
+            <div class="content-section__inner"><a href="#" class="ruler-title text-center">Ингосстрах. Еврооблигации</a>
+              <div class="ruler-toolbar">
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">32,03%</div>
+                </div>
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">484 525,04 Р</div>
+                </div>
+              </div>
+              <div class="ruler-chart">
+                <div style="width:32.03%;background:#ff6961" class="ruler-chart-status"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ruler">
+            <div class="content-section__inner"><a href="#" class="ruler-title text-center">Ингосстрах. Риел Эстейт</a>
+              <div class="ruler-toolbar">
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">8,28%</div>
+                </div>
+                <div class="ruler-toolbar-cell">
+                  <div class="ruler-label">125 280,58 Р</div>
+                </div>
+              </div>
+              <div class="ruler-chart">
+                <div style="width:8.28%;background:#b6e329" class="ruler-chart-status"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section">
+          <div class="content-section__inner">
+            <div class="section-title">ПИФы</div>
+            <div class="form-row">
+              <label class="form-row__title">Выберите параметр для отображения:</label>
+              <select class="form-control">
+                <option>Текущая оценка 1 пая, руб.</option>
+                <option>Текущая оценка 2 пая, руб.</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="ruler">
+          <div class="content-section__inner">
+            <div class="ruler-title text-left">Ингосстрах. Облигации</div>
+            <ul class="ruler-list">
+              <li>
+                <div class="prop-label">Текущая лценка 1 пая, руб:</div>
+                <div class="value-label">2 733,86 Р</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ruler">
+          <div class="content-section__inner">
+            <div class="ruler-title text-left">Ингосстрах. Еврооблигации</div>
+            <ul class="ruler-list">
+              <li>
+                <div class="prop-label">Текущая лценка 1 пая, руб:</div>
+                <div class="value-label">1 774,04 Р</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ruler">
+          <div class="content-section__inner">
+            <div class="ruler-title text-left">Ингосстрах. Риел Эстейт</div>
+            <ul class="ruler-list">
+              <li>
+                <div class="prop-label">Текущая лценка 1 пая, руб:</div>
+                <div class="value-label">1 310,51 Р</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-section">
+          <div class="content-section__inner"><a href="#" class="btn-block strict">
+              <div class="cell cellIconLeft">
+                <div class="iconBalled"><img src="/assets/img/icon-mail.png"/></div>
+              </div>
+              <div class="cell cellTitle">Сформировать отчет и отправить на email
+              </div></a>
+          </div>
+        </div>
         <div class="content-section content-section--dark content-section--open-pif padding-top-0">
           <div class="content-section__inner">
             <div class="section-title">Отправить заявку на открытие</div>

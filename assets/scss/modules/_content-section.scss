@@ -36,18 +36,18 @@
 
 
 .content-section--outcoming-link {
-  padding: 45px 0 30px;
+  padding: 75px 0 40px;
   text-align: center;
 
-  .content-section:not(.content-section--dark) + & {
-    padding-top: 45 - $section-padding-small;
+  /*.content-section:not(.content-section--dark) + & {
+    padding: 95px 0 60px;
     @media(min-width: $breakpoint-md) {
-        padding-top: 85 - $section-padding-default;
+      padding: 95px 0 60px;
     }
-  }
+  }*/
 
   @media(min-width: $breakpoint-md) {
-    padding: 85px 0 60px;
+    padding: 95px 0 60px;
   }
 }
 

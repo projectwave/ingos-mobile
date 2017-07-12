@@ -100,10 +100,10 @@
 }
 
 .tab-container__section-inner {
-  padding-top: 30px;
+  /*padding-top: 30px;
   @media(min-width: $breakpoint-md) {
     padding-top: 50px;
-  }
+  }*/
   > *:not(.section-title)first-child {
     margin-top: 0;
   }

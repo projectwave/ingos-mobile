@@ -4,30 +4,26 @@ block header
 block content
 	.content-section
 		.content-section__inner
-			.section-title
-				| История
+			.section-title.styleInset
+				| Документы по ПИФ
 
-	.content-section.bg-dark
-		.borderedVert.marginTop40
-			.form-grid.bordered.borderedVertFree
-				.cell
-					.tile-iconed
-						.icon
-							img(src='/assets/img/icon-calendar-blue.png')
-						.text
-							.prop На дату
-							a(href='#' class='value').link-text-small.value
-								| 1 сен 2016 - 30 сен 2016
-				.cell
-					.tile-iconed
-						.icon
-							img(src='/assets/img/icon-graph.png')
-						.text
-							.prop Изменение за период
-							.value.fontColorGrowUp
-								| + 336,4(59,61%)
 
-	.portfolio-history-chart Chart
+	+sliderNav({
+        'left': 'icon-year-arrow-left.png',
+        'right': 'icon-year-arrow-right.png',
+        'title': 2016,
+        'titleClassName': 'text-center',
+    })
+
+	- for(var item = 0; item < rulerUnitTrustDocuments.length; ++item) {
+		+docsReview({
+            'left': rulerUnitTrustDocuments[item]['icon'],
+            'title': rulerUnitTrustDocuments[item]['title'],
+            'download': true,
+		})
+	- }
+
+
 
 	include assets/jade/partials/request-to-open-pif
 	include assets/jade/partials/outgoing-link

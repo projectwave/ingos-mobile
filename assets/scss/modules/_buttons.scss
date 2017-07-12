@@ -133,38 +133,60 @@ button {
   border: 1px solid $border-color;
   border-radius: $border-radius;
   margin: 35px 0;
-  font-size: 1.154rem;
+  font-size: 1rem;
   font-family: $base-font-family;
   color: $title-color;
+  text-decoration: none;
+  @media(min-width: $breakpoint-md) {
+    font-size: 0.923rem;
+  }
   @media(min-width: 675px) {
     font-size: 1.385rem;
   }
   > .cell {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 13px!important;
-    padding-right: 13px!important;
+    img {
+      display: block;
+      max-width:40px;
+      @media(min-width: 675px) {
+        max-width:60px;
+      }
+    }
     @media(min-width: 675px) {
       padding-top: 40px;
       padding-bottom: 40px;
     }
-    &.cellIconLeft {}
-    &.cellIconRight {}
-    &.cellTitle {
-      width: 100%;
-    }
-    &:first-child {
+    &.cellIconLeft {
       padding-left: 15px!important;
+      padding-right: 0!important;
       @media(min-width: 675px) {
-        padding-left: 30px!important;
+        padding-left: 40px!important;
       }
     }
-    &:last-child {
+    &.cellIconRight {
+      padding-left: 0!important;
       padding-right: 15px!important;
       @media(min-width: 675px) {
-        padding-right: 30px!important;
+        padding-right: 40px!important;
+      }
+      img {
+        max-width:20px;
+        @media(min-width: 675px) {
+          max-width:25px;
+        }
+      }
+    }
+    &.cellTitle {
+      width: 100%;
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+      @media(min-width: 675px) {
+        padding-left: 40px!important;
+        padding-right: 40px!important;
       }
     }
   }
+  @extend %btn-action-default;
 
 }

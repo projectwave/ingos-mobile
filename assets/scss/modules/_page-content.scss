@@ -542,12 +542,15 @@ $adventage-bottom-margin: 35px;
   > .icon {
     margin: 0 auto;
     width: 50px;
-    height: 50px;
-    background: #00adeb;
+    img {
+      display: block;
+      width: 100%;
+    }
   }
   > .text {
     text-align: center;
     margin-top: 40px;
+    font-family: $base-font-family-light;
     .prop {
       & + .value {
         display: inline-block;
@@ -555,11 +558,32 @@ $adventage-bottom-margin: 35px;
       }
     }
     .value {
-      font-family: $base-font-family-light;
+
     }
   }
   .cell > & {
     margin: 50px 0 35px !important;
+  }
+
+  &.styleInline {
+    padding: 20px 0;
+    @media(min-width: $breakpoint-md) {
+      padding: 35px 0;
+    }
+    > .icon {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    > .text {
+      padding-left: 50px + 20px;
+      margin: 0;
+      text-align: left;
+      @media(min-width: $breakpoint-md) {
+        padding-left: 50px + 50px;
+      }
+    }
   }
 }
 
@@ -567,15 +591,24 @@ $adventage-bottom-margin: 35px;
 .ruler {
   position: relative;
   font-size: 1.385rem;
-  padding: 25px 0 20px;
+  padding: 20px 0 20px;
   border-bottom: 1px solid $border-color;
+  display: block;
+  text-decoration: none;
   @media(min-width: $breakpoint-md) {
-    padding: 50px 0 40px;
+    padding: 40px 0 40px;
   }
   .ruler-title {
     color: $title-color;
     font-family: $base-font-family-light;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 35px;
+    }
+  }
+  a.ruler-title {
+    display: block;
+    color: $link-color;
   }
   .ruler-label {
     color: $title-color;
@@ -609,6 +642,23 @@ $adventage-bottom-margin: 35px;
       bottom: 0;
     }
   }
+  button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    @media(min-width: $breakpoint-md) {
+      margin-top: 35px;
+    }
+  }
+
+  &.rulerCelled {
+
+  }
+}
+
+
+a.ruler {
+  @extend %btn-action-default;
 }
 
 
@@ -624,6 +674,21 @@ ul.ruler-list {
       margin-top: 5px;
     }
   }
+  &.ruler-list_tabled {
+    display: table;
+    width: 100%;
+    > li {
+      display: table-row;
+      .prop-label,
+      .value-label {
+        display: table-cell;
+        vertical-align: top;
+      }
+      .value-label {
+        text-align: right;
+      }
+    }
+  }
 }
 
 
@@ -631,10 +696,120 @@ ul.ruler-list {
 .portfolio-history-chart {
   position: relative;
   height: 640px;
-  //background: lighten(#999, 20%);
+  background: lighten(#999, 35%);
 }
 
 
 
+.label-tabled {
+  position: relative;
+  @extend .btn-block;
+  border: none;
+  margin: 0;
+  > .cell {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 13px!important;
+    padding-right: 13px!important;
+    &.cellIconLeft {}
+    &.cellIconRight {}
+    &.cellTitle {
+      width: 100%;
+      padding: 0!important;
+    }
+    &.cellIconLeft {
+      padding-left: 15px!important;
+      padding-right: 40px!important;
+      @media(min-width: 675px) {
+        padding-left: 30px!important;
+        padding-right: 70px!important;
+      }
+    }
+    &.cellIconRight {
+      padding-right: 15px!important;
+      padding-left: 40px!important;
+      @media(min-width: 675px) {
+        padding-right: 30px!important;
+        padding-left: 70px!important;
+      }
+    }
+  }
+}
 
 
+
+.slider-nav {
+  position: relative;
+  @extend .label-tabled;
+  background: $dark-bg-color;
+  height: 100px;
+  &:hover {
+    &,&:active {
+      background: none!important;
+    }
+  }
+  > .cell {
+    img {
+      max-width:20px;
+      @media(min-width: 675px) {
+        max-width:25px;
+      }
+    }
+  }
+  > a.cell {
+    @extend %btn-action-default;
+  }
+}
+
+
+.docs-review {
+  position: relative;
+  @extend .label-tabled;
+  font-size: 1rem;
+  font-family: $base-font-family-light;
+  &:hover {
+    &,&:active {
+      background: none!important;
+    }
+  }
+  > .cell {
+    vertical-align: top!important;
+    @media(max-width: $breakpoint-md-max) {
+      &.cellIconLeft {
+        padding: 0!important;
+      }
+
+    }
+  }
+  .block-link {
+    text-align: right;
+    @media(min-width: $breakpoint-md) {
+      text-align: left;
+    }
+  }
+}
+
+
+.block-link {
+  margin-top: 10px!important;
+  @media(min-width: $breakpoint-md) {
+    margin-top: 15px!important;
+  }
+}
+
+
+
+.iconBalled {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background: $degree-color;
+
+  > img {
+    position: absolute;
+    left:0;top:0;bottom:0;right:0;margin:auto;
+    max-width: 40px!important;
+    max-height: 40px!important;
+  }
+}

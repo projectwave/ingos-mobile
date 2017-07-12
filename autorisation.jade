@@ -2,7 +2,7 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section.content-section--padding
+	.content-section
 		.content-section__inner
 			.section-title
 				| Вход в личный кабинет
@@ -32,13 +32,13 @@ block content
 					input(type='submit' value='Войти').form-submit
 
 				.form-row.form-row--note
-					p
+					p.text-center
 						| Если вы клиент АО УК «Ингосстрах-Инвестиции», введите логин (обычно это ваш email) и пароль.
 
-					p
+					p.text-center
 						| Если вы еще не зарегестрированы &mdash;&nbsp;
 						a(href='#').link-text-small
-							| подключите личный кабинет
+							| <br>подключите личный кабинет
 						| .
 
 	include assets/jade/partials/outgoing-link

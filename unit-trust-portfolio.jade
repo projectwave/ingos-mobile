@@ -1,0 +1,93 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.bg-dark
+		.content-section__inner
+			.section-title
+				| Инвестиционный портфель ПИФ
+
+
+		.content-section__inner
+			.form-grid.table-layout-auto
+				.cell
+					.ball-chart
+				.cell.text-center.width100
+					p Общая оценка
+					p.text-imp 1 512 980,06 Р
+
+		.borderedVert.marginTop40
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.tile-iconed
+						.icon
+							img(src='/assets/img/icon-calendar-blue.png')
+						.text
+							| Дата оценки: &nbsp;
+							a(href='#' class='value').link-text-small
+								| 31 мар 2016
+				.cell
+					.tile-iconed
+						.icon
+							img(src='/assets/img/icon-currency-exchange.png')
+						.text
+							| Валюта: &nbsp;
+							a(href='#' class='value').link-text-small
+								| Рубли
+
+	.content-section
+
+			- for(var item = 0; item < rulerUnitTrustPortfolio.length; ++item) {
+				+ruler(
+					rulerUnitTrustPortfolio[item]['title'],
+					rulerUnitTrustPortfolio[item]['labelLeft'],
+					rulerUnitTrustPortfolio[item]['labelRight'],
+					rulerUnitTrustPortfolio[item]['progressValue'],
+					rulerUnitTrustPortfolio[item]['progressColor'],
+					true
+				)
+			- }
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| ПИФы
+
+			.form-row
+				label.form-row__title
+					| Выберите параметр для отображения:
+				select.form-control
+					option Текущая оценка 1 пая, руб.
+					option Текущая оценка 2 пая, руб.
+
+	- for(var item = 0; item < rulerUnitTrustPortfolioPif.length; ++item) {
+		+rulerListed(
+			{
+				'title': rulerUnitTrustPortfolioPif[item]['title'],
+				'list': rulerUnitTrustPortfolioPif[item]['list']
+			}
+		)
+	- }
+	.content-section
+		.content-section__inner
+			+btnBlock({
+				'left': 'icon-mail.png',
+				'title': 'Сформировать отчет и отправить на email',
+			})
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

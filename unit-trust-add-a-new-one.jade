@@ -1,0 +1,52 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section
+		.content-section__inner
+			.section-title
+				| Паевые инвестиционные фонды
+			.section-subtitle
+				| Сергей Алексеевич, к сожалению, на данный момент у Вас отсутствуют паи фондов. Для того, чтобы начать инвестировать, вам необходимо:
+
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+                'left': 'icon-search.png',
+                'leftColored': true,
+                'right': 'icon-year-arrow-right.png',
+                'title': 'Выбрать фонд на сайте АО УК «Ингосстрах Инвестиции»',
+            })
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+                'left': 'icon-request.png',
+                'leftColored': true,
+                'right': 'icon-year-arrow-right.png',
+                'title': 'Оформить заявку в любом удобном для вас офисе',
+            })
+
+	.content-section
+		.content-section__inner
+			.section-subtitle
+				| Более подробную информацию Вы можете получить по телефону: 8 800 100-48-98
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

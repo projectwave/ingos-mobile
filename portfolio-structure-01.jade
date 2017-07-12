@@ -2,9 +2,20 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header-menu
 block content
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+                'left': 'icon-notify.png',
+                'right': 'icon-year-arrow-right.png',
+                'download': true,
+                'linked': false,
+                'title': 'Ваш отчет сформирован',
+            })
+
 	.content-section.bg-dark
 		.content-section__inner
-			.section-title.styleInset
+			.section-title
 				| Портфель
 
 
@@ -21,6 +32,7 @@ block content
 				.cell
 					.tile-iconed
 						.icon
+							img(src='/assets/img/icon-calendar-blue.png')
 						.text
 							| На дату &nbsp;
 							a(href='#').link-text-small
@@ -28,6 +40,7 @@ block content
 				.cell
 					.tile-iconed
 						.icon
+							img(src='/assets/img/icon-currency-exchange.png')
 						.text
 							| Валюта &nbsp;
 							a(href='#').link-text-small
@@ -47,12 +60,11 @@ block content
 
 	.content-section
 		.content-section__inner
-			a(href='#').btn-block.strict
-				.cell.cellIconLeft
-					.icon-test
-				.cell.cellTitle Добавить иные активы
-				.cell.cellIconRight
-					.icon-test
+			+btnBlock({
+				'left' : 'icon-add.png',
+				'right' : 'icon-year-arrow-right.png',
+				'title' : 'Добавить иные активы',
+			})
 
 
 	include assets/jade/partials/request-to-open-pif

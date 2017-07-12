@@ -1,16 +1,22 @@
 extends assets/jade/layouts/global/index
 block header
-	include assets/jade/layouts/global/partials/header
+	include assets/jade/layouts/global/partials/header-menu
 block content
-	.content-section
+	.content-section.borderedBottom
 		.content-section__inner
-			.section-title Вход в личный кабинет
-			.section-subtitle
-				| На ваш мобильный телефон +7 (937) xxx-xx-19 выслано SMS-сообщение с кодом.
+			.section-title.styleInset
+				| Документы по ПИФ
 
-			form(method='' action='').form-autorisation-verification.js-form-validate
-				include assets/jade/partials/forms/sms-verification
 
+	- for(var year = 2014; year <= 2017; ++year) {
+		+rulerCelled({
+			'left': 'icon-folder.png',
+			'title': year,
+		})
+	- }
+
+
+	include assets/jade/partials/request-to-open-pif
 	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy
 
@@ -19,6 +25,6 @@ block body_end
 	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
 	script(type='text/javascript' src='assets/js/main.js')
 	script(type='text/javascript').
-		$(function(){
+		$(function () {
 			commonActions.init();
 		})

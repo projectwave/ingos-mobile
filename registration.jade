@@ -2,7 +2,7 @@ extends assets/jade/layouts/global/index
 block header
 	include assets/jade/layouts/global/partials/header
 block content
-	.content-section.content-section--padding
+	.content-section
 		.content-section__inner
 			.section-title
 				| Подключить личный кабинет
@@ -47,11 +47,11 @@ block content
 						required,
 						id='cabinet-connection-data-phone').form-control
 
-						p В формате&nbsp;
+						p.text-center В формате&nbsp;
 							span.form-item__note
 								| +Х ХХХ ХХХХ-ХХХ-ХХ
 
-				.form-row
+				.form-row.margin-bottom-0
 					input(type='submit' value='Отправить').form-submit
 
 	include assets/jade/partials/outgoing-link

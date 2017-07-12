@@ -19,10 +19,14 @@ mixin step-block(content, className)
         .inner #{content}
 
 
-mixin ruler(title, labelLeft, labelRight, progressValue, progressColor)
+mixin ruler(title, labelLeft, labelRight, progressValue, progressColor, linked)
     .ruler
         .content-section__inner
-            .ruler-title.text-center #{title}
+            - if(linked == true) {
+                a(href='#').ruler-title.text-center #{title}
+            - } else {
+                .ruler-title.text-center #{title}
+            - }
             .ruler-toolbar
                 .ruler-toolbar-cell
                     .ruler-label #{labelLeft}
@@ -46,5 +50,127 @@ mixin rulerGeography(title, labelRight, date, value)
                 li
                     .prop-label Значение:
                     .value-label #{value}
+
+
+mixin rulerPortfolio(title, labelProp, labelValue)
+    .ruler
+        .content-section__inner
+            .ruler-title.text-left #{title}
+            ul.ruler-list
+                li
+                    .prop-label #{labelProp}: #{labelValue}
+
+
+mixin rulerListed(options)
+    .ruler
+        .content-section__inner
+            - if(options.title) {
+                .ruler-title.text-left #{options.title}
+            - }
+            - if(options.list) {
+                ul.ruler-list
+                    - for(var item = 0; item < options.list.length; ++item) {
+                    li
+                        .prop-label #{options.list[item]['prop']}
+                        .value-label #{options.list[item]['value']}
+                    - }
+            - }
+            - if(options.listTabled) {
+                ul.ruler-list.ruler-list_tabled
+                    - for(var item = 0; item < options.listTabled.length; ++item) {
+                    li
+                        .prop-label #{options.listTabled[item]['prop']}
+                        .value-label #{options.listTabled[item]['value']}
+                    - }
+            - }
+            - if(options.button) {
+                button.btn-grey.fontSizeBase #{options.button}
+            - }
+
+
+mixin btnBlock(options)
+    a(href='#').btn-block.strict
+        - if(options.left) {
+            .cell.cellIconLeft
+                - if(options.left) {
+                    .iconBalled
+                        img(src='/assets/img/#{options.left}')
+                - } else {
+                    img(src='/assets/img/#{options.left}')
+                - }
+
+        - }
+        .cell.cellTitle
+            | #{options.title}
+            - if(options.download) {
+                .block-link
+                    +linkDownload(options.linked)
+            - }
+        - if(options.right) {
+            .cell.cellIconRight
+                img(src='/assets/img/#{options.right}')
+        - }
+
+
+mixin rulerCelled(options)
+    a(href='#').ruler
+        .content-section__inner
+            .label-tabled.strict
+                - if(options.left) {
+                    .cell.cellIconLeft
+                        img(src='/assets/img/#{options.left}')
+                - }
+                - if(options.title) {
+                    .cell.cellTitle(class='#{options.titleClassName}') #{options.title}
+                - }
+                - if(options.right) {
+                    .cell.cellIconRight
+                        div(class='#{options.right}')
+                - }
+
+
+mixin sliderNav(options)
+    .content-section.bg-dark
+        .content-section__inner
+            .slider-nav.strict
+                - if(options.left) {
+                a(href='#').cell.cellIconLeft
+                    img(src='/assets/img/#{options.left}')
+                - }
+                .cell.cellTitle.text-center #{options.title}
+                - if(options.right) {
+                a(href='#').cell.cellIconRight
+                    img(src='/assets/img/#{options.right}')
+                - }
+
+
+mixin linkDownload(options)
+    - if(!options.linked) {
+        a(href='#').link-text-small Скачать
+    - } else {
+        span.link-text-small Скачать
+    - }
+
+
+
+mixin docsReview(options)
+    .ruler
+        .content-section__inner
+            .docs-review
+                - if(options.left) {
+                .cell.cellIconLeft
+                    img(src='/assets/img/#{options.left}')
+                - }
+                .cell.cellTitle
+                    | #{options.title}
+                    - if(options.download) {
+                        .block-link
+                            +linkDownload(true)
+                    - }
+                - if(options.right) {
+                .cell.cellIconRight
+                    img(src='/assets/img/#{options.right}')
+                - }
+
 
 

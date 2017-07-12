@@ -4,30 +4,31 @@ block header
 block content
 	.content-section
 		.content-section__inner
-			.section-title
-				| История
+			.section-title.styleInset
+				| Заявки на приобритение
 
-	.content-section.bg-dark
-		.borderedVert.marginTop40
-			.form-grid.bordered.borderedVertFree
-				.cell
-					.tile-iconed
-						.icon
-							img(src='/assets/img/icon-calendar-blue.png')
-						.text
-							.prop На дату
-							a(href='#' class='value').link-text-small.value
-								| 1 сен 2016 - 30 сен 2016
-				.cell
-					.tile-iconed
-						.icon
-							img(src='/assets/img/icon-graph.png')
-						.text
-							.prop Изменение за период
-							.value.fontColorGrowUp
-								| + 336,4(59,61%)
+	.content-section
+		- for(var item = 0; item < rulerUnitTrustBids.length; ++item) {
+			+rulerListed({
+				'title': rulerUnitTrustBids[item]['title'],
+				'listTabled': rulerUnitTrustBids[item]['list'],
+				'button': rulerUnitTrustBids[item]['button'],
+			})
+		- }
 
-	.portfolio-history-chart Chart
+	.content-section
+		.content-section__inner
+			+btnBlock({
+                'left': 'icon-mail.png',
+                'title': 'Сформировать отчет и отправить на email',
+            })
+
+
+
+
+
+
+
 
 	include assets/jade/partials/request-to-open-pif
 	include assets/jade/partials/outgoing-link
