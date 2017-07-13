@@ -1,0 +1,185 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+
+
+
+	.content-section.bg-dark
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#bag-default').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#bag-num-1').tabs__nav-item
+					| Портфель по договору №111
+
+			.tab-container#bag-default.is-visible
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Динамика портфеля ДУ
+						.section-subtitle.text-center График доходности. Динамика портфеля с учетом вводов и выводов
+				.content-section.bg-dark
+					.borderedVert.marginTop40
+						.form-grid.bordered.borderedVertFree
+							.cell
+								.content-section__inner
+									.tile-iconed.styleInline
+										.icon
+											img(src='/assets/img/icon-calendar-blue.png')
+										.text
+											.prop Выбрать период:
+											a(href='#' class='value').link-text-small.value
+												| 01 янв 2015 - 20 июл 2016
+
+				.portfolio-history-chart Chart
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Доходность рублевой части портфеля (RUB)
+
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Средне-инвестированная сумма
+								option Максимально-инвестированная сумма
+								option Минимально-инвестированная сумма
+
+
+				- for(var item = 0; item < rulerTMInvestBagDohRub.length; ++item) {
+					+rulerListed({
+						'title': rulerTMInvestBagDohRub[item]['title'],
+						'titleBold': rulerTMInvestBagDohRub[item]['titleBold'],
+						'list': rulerTMInvestBagDohRub[item]['list']
+					})
+				- }
+
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Доходность валютной части портфеля (USD)
+
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Текущая оценка
+								option Прошлая оценка
+								option Будущая оценка
+
+
+
+				- for(var item = 0; item < rulerTMInvestBagDohUsd.length; ++item) {
+					+rulerListed({
+						'title': rulerTMInvestBagDohUsd[item]['title'],
+						'titleBold': rulerTMInvestBagDohUsd[item]['titleBold'],
+						'list': rulerTMInvestBagDohUsd[item]['list']
+					})
+				- }
+
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Информация о пришедших купонах, RUB
+
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Сумма выплаты, RUB
+								option Разность выплаты, RUB
+								option Происзведение выплаты, RUB
+
+
+
+
+				- for(var item = 0; item < rulerTMInvestBagKupRub.length; ++item) {
+					+rulerListed({
+						'title': rulerTMInvestBagKupRub[item]['title'],
+						'titleBold': rulerTMInvestBagKupRub[item]['titleBold'],
+						'list': rulerTMInvestBagKupRub[item]['list']
+					})
+				- }
+
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Информация о пришедших купонах, USD
+
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Количество бумаг
+								option Качество бумаг
+								option Цвет бумаг
+
+
+
+				- for(var item = 0; item < rulerTMInvestBagKupUsd.length; ++item) {
+					+rulerListed({
+						'title': rulerTMInvestBagKupUsd[item]['title'],
+						'titleBold': rulerTMInvestBagKupUsd[item]['titleBold'],
+						'list': rulerTMInvestBagKupUsd[item]['list']
+					})
+				- }
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Следующие купонные выплаты
+
+
+				.content-section
+					- for(var item = 0; item < rulerTMInvestNextKup.length; ++item) {
+						+rulerListed({
+							'title': rulerTMInvestNextKup[item]['title'],
+							'titleClass': rulerTMInvestNextKup[item]['titleClass'],
+							'listTabled': rulerTMInvestNextKup[item]['list'],
+							'button': rulerTMInvestNextKup[item]['button'],
+						})
+					- }
+
+
+				.content-section
+					.content-section__inner
+						+btnBlock({
+                            'left': 'icon-mail.png',
+                            'title': 'Сформировать отчет и отправить на email',
+                        })
+
+
+
+
+			.tab-container#bag-num-1
+				.tab-container__section-inner
+					.section-title Портфель по договору №111
+					.content-section__inner
+						| Не понятно какой контент
+
+
+
+
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

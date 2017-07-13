@@ -682,10 +682,35 @@ ul.ruler-list {
       .prop-label,
       .value-label {
         display: table-cell;
-        vertical-align: top;
+        vertical-align: middle;
+        > span {
+          font-family: $base-font-family-light;
+          &.m-megaValue {
+            font-size: 1.308rem;
+            font-family: $base-font-family;
+          }
+        }
+      }
+      .prop-label {
+
+        > span {
+          &.m-prop {}
+          &.m-value {}
+        }
       }
       .value-label {
         text-align: right;
+
+        > span {
+          &.m-prop {
+            &.megaTitle {
+
+            }
+          }
+          &.m-value {
+            font-family: $base-font-family;
+          }
+        }
       }
     }
   }

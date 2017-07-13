@@ -33,6 +33,10 @@
   padding-top: 0!important;
 }
 
+.padding-bottom-0 {
+  padding-bottom: 0!important;
+}
+
 
 .price-inline__dot-value {
   font-family: $base-font-family-light;
@@ -84,12 +88,27 @@
   margin-top: 40px;
 }
 
+
+.paddingTop40 {
+  padding-top: 40px;
+}
+
+
+.paddingBottom40 {
+  padding-bottom: 40px;
+}
+
+
 .marginBottom35 {
   margin-bottom: 35px!important;
 }
 
 .width100 {
   width: 100%!important;
+}
+
+.margin0 {
+  margin: 0!important;
 }
 
 
@@ -114,6 +133,11 @@
 }
 
 
+.bg-darker {
+  background: $darker-bg-color;
+}
+
+
 
 .fontColorGrowUp {color: $status-positive!important;}
 .fontColorGrowDown {color: $status-positive!important;}
@@ -132,4 +156,22 @@
       background: lighten(#999, 30%);
     }
   }
+}
+
+
+.fontDefault {
+  font-family:$base-font-family!important;
+}
+
+
+.content-custom-padding {
+  padding:15px 0;
+  @media(min-width:$breakpoint-md) {
+    padding:20px 0;
+  }
+}
+
+
+.colorRed {
+  color: $status-negative;
 }

@@ -1,0 +1,30 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+	.content-section.borderedBottom
+		.content-section__inner
+			.section-title.styleInset
+				| Документы по ИИС
+
+
+	- for(var year = 2017; year >= 2014; --year) {
+		+rulerCelled({
+			'left': 'icon-folder.png',
+			'title': year,
+		})
+	- }
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

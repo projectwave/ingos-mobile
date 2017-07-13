@@ -1,0 +1,109 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+
+
+
+	.content-section.bg-dark
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#bag-default').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#bag-num-1').tabs__nav-item
+					| Портфель по договору №111
+
+			.tab-container#bag-default.is-visible
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Инвестиционный портфель ДУ
+						.form-grid.table-layout-auto
+							.cell
+								.ball-chart
+							.cell.text-center.width100
+								p Общая оценка
+								p.text-imp 1 512 980,06 Р
+				.content-section.bg-dark
+					.borderedVert.marginTop40
+						.form-grid.bordered.borderedVertFree
+							.cell
+								.content-section__inner
+									.tile-iconed.styleInline
+										.icon
+											img(src='/assets/img/icon-calendar-blue.png')
+										.text
+											.prop Дата и время оценки:
+											a(href='#' class='value').link-text-small.value
+												| 31 мар 2016, 0:00
+
+				.content-section
+					- for(var item = 0; item < rulerTMInvestBag.length; ++item) {
+						+ruler(
+							rulerTMInvestBag[item]['title'],
+							rulerTMInvestBag[item]['labelLeft'],
+							rulerTMInvestBag[item]['labelRight'],
+							rulerTMInvestBag[item]['progressValue'],
+							rulerTMInvestBag[item]['progressColor'],
+							false
+						)
+					- }
+
+				.content-section
+					.content-section__inner
+						.section-title
+							| Финансовые инструменты
+
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Балансовая стоимость, руб.
+								option Завышенная стоимость, руб.
+								option Окончательная стоимость, руб.
+
+
+				- for(var item = 0; item < rulerTMInvestBagFinInstr.length; ++item) {
+				+rulerListed({
+                    'title': rulerTMInvestBagFinInstr[item]['title'],
+                    'list': rulerTMInvestBagFinInstr[item]['list']
+                })
+				- }
+
+				.content-section
+					.content-section__inner
+						+btnBlock({
+                            'left': 'icon-mail.png',
+                            'title': 'Сформировать отчет и отправить на email',
+                        })
+
+
+
+
+			.tab-container#bag-num-1
+				.tab-container__section-inner
+					.section-title Портфель по договору №111
+					.content-section__inner
+						| Не понятно какой контент
+
+
+
+
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

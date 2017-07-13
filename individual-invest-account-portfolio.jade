@@ -1,0 +1,97 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+
+
+
+
+	.content-section.bg-dark
+		.content-section__inner.paddingBottom40
+			.section-title Портфель ИИС
+			.form-grid.table-layout-auto
+				.cell
+					.ball-chart
+				.cell.text-center.width100
+					p Общая оценка
+					p.text-imp 407 294,26 Р
+	.content-section.bg-dark
+		.borderedVert
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.content-section__inner
+						.tile-iconed.styleInline
+							.icon
+								img(src='/assets/img/icon-calendar-blue.png')
+							.text
+								.prop Дата и время оценки:
+								a(href='#' class='value').link-text-small.value
+									| 05 дек 2016, 0:00
+
+	.content-section
+		- for(var item = 0; item < rulerIIAPortfolio.length; ++item) {
+			+ruler(
+				rulerIIAPortfolio[item]['title'],
+				rulerIIAPortfolio[item]['labelLeft'],
+				rulerIIAPortfolio[item]['labelRight'],
+				rulerIIAPortfolio[item]['progressValue'],
+				rulerIIAPortfolio[item]['progressColor'],
+				false
+			)
+		- }
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| Финансовые инструменты
+
+			.form-row
+				label.form-row__title
+					| Выберите параметр для отображения:
+				select.form-control
+					option Балансовая стоимость, руб.
+					option Завышенная стоимость, руб.
+					option Окончательная стоимость, руб.
+
+
+	- for(var item = 0; item < rulerIIAPortfolioFinInstr.length; ++item) {
+		+rulerListed({
+			'title': rulerIIAPortfolioFinInstr[item]['title'],
+			'list': rulerIIAPortfolioFinInstr[item]['list']
+		})
+	- }
+
+	.content-section
+		.content-section__inner
+			p
+				| Средневзвешенная доходность с начала года на 20.07.2016 (по оценке): — 6.07%
+			p
+				| <span class='colorRed'>*</span> — Балансовая стоимость приведена с учетом накопленных процентов и дисконтов.<br>
+				| <span class='colorRed'>**</span> — Оценка долговых обязательств (в случае отсутствия котировок) произведена с учетом срока их обращения с момента постановки на баланс.
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+				'left': 'icon-mail.png',
+				'title': 'Сформировать отчет и отправить на email',
+			})
+
+
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

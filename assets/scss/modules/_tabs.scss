@@ -1,6 +1,7 @@
 .tabs {
   @include section-decorated();
   @include clearfix();
+  background: none;
 
   &.not-shadow {
     box-shadow: none;

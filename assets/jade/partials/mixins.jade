@@ -65,7 +65,7 @@ mixin rulerListed(options)
     .ruler
         .content-section__inner
             - if(options.title) {
-                .ruler-title.text-left #{options.title}
+                .ruler-title(class= options.titleClass ) #{options.title}
             - }
             - if(options.list) {
                 ul.ruler-list
@@ -76,7 +76,7 @@ mixin rulerListed(options)
                     - }
             - }
             - if(options.listTabled) {
-                ul.ruler-list.ruler-list_tabled
+                ul.ruler-list(class= options.rulerListInline ? '' : 'ruler-list_tabled' )
                     - for(var item = 0; item < options.listTabled.length; ++item) {
                     li
                         .prop-label #{options.listTabled[item]['prop']}
@@ -88,15 +88,62 @@ mixin rulerListed(options)
             - }
 
 
+mixin rulerListedMultiple(options)
+    - if(options.header) {
+        .content-section.content-custom-padding.bg-darker
+            .content-section__inner
+                p.fontDefault.margin0 #{options.header}
+    - }
+    - if(options.content) {
+    - for(var content = 0; content < options.content.length; ++content) {
+        .ruler
+            .content-section__inner
+                - if(options.content[content].title) {
+                    .ruler-title #{options.content[content].title}
+                - }
+                - if(options.content[content].list) {
+                    ul.ruler-list.ruler-list_tabled
+                        - for(var item = 0; item < options.content[content].list.length; ++item) {
+                            li
+                                .prop-label
+                                    - if(options.content[content].list[item]['prop'].prop) {
+                                        span.m-prop(class= options.content[content].list[item]['prop'].propClass ) #{options.content[content].list[item]['prop'].prop}
+                                    - }
+                                    - if(options.content[content].list[item]['prop'].value) {
+                                        span.m-value #{options.content[content].list[item]['prop'].value}
+                                    - }
+                                    - if(options.content[content].list[item]['prop'].megaValue) {
+                                        span.m-megaValue #{options.content[content].list[item]['prop'].megaValue}
+                                    - }
+                                .value-label
+                                    - if(options.content[content].list[item]['value'].prop) {
+                                        span.m-prop #{options.content[content].list[item]['value'].prop}
+                                    - }
+                                    - if(options.content[content].list[item]['value'].value) {
+                                        span.m-value #{options.content[content].list[item]['value'].value}
+                                    - }
+                                    - if(options.content[content].list[item]['value'].megaValue) {
+                                        span.m-megaValue #{options.content[content].list[item]['value'].megaValue}
+                                    - }
+                        - }
+                - }
+    - }
+    - }
+
+
+
+
 mixin btnBlock(options)
     a(href='#').btn-block.strict
         - if(options.left) {
             .cell.cellIconLeft
                 - if(options.left) {
-                    .iconBalled
+                    - if(options.iconBalled) {
+                        .iconBalled
+                            img(src='/assets/img/#{options.left}')
+                    - } else {
                         img(src='/assets/img/#{options.left}')
-                - } else {
-                    img(src='/assets/img/#{options.left}')
+                    - }
                 - }
 
         - }

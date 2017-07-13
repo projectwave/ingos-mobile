@@ -1,0 +1,120 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+
+
+
+
+	.content-section
+		.content-section__inner
+			.section-title Динамика портфеля ИИС
+			.section-subtitle.text-center График доходности. Динамика портфеля с учетом вводов и выводов
+	.content-section.bg-dark
+		.borderedVert.marginTop40
+			.form-grid.bordered.borderedVertFree
+				.cell
+					.content-section__inner
+						.tile-iconed.styleInline
+							.icon
+								img(src='/assets/img/icon-calendar-blue.png')
+							.text
+								.prop Выбрать период:
+								a(href='#' class='value').link-text-small.value
+									| 04 янв 2015 - 12 янв 2016
+
+	.portfolio-history-chart Chart
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| Доходность рублевой части портфеля (RUB)
+
+			.form-row
+				label.form-row__title
+					| Выберите параметр для отображения:
+				select.form-control
+					option Сумма выплаты
+					option Разность выплаты
+					option Произведение выплаты
+
+
+	- for(var item = 0; item < rulerIIAPortfolioDohRub.length; ++item) {
+		+rulerListed({
+			'title': rulerIIAPortfolioDohRub[item]['title'],
+			'titleBold': rulerIIAPortfolioDohRub[item]['titleBold'],
+			'list': rulerIIAPortfolioDohRub[item]['list']
+		})
+	- }
+
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| Информация о пришедших купонах, RUB
+
+			.form-row
+				label.form-row__title
+					| Выберите параметр для отображения:
+				select.form-control
+					option Сумма выплаты, RUB
+					option Разность выплаты, RUB
+					option Происзведение выплаты, RUB
+
+
+
+
+	- for(var item = 0; item < rulerIIAPortfolioKupRub.length; ++item) {
+		+rulerListed({
+			'title': rulerIIAPortfolioKupRub[item]['title'],
+			'titleBold': rulerIIAPortfolioKupRub[item]['titleBold'],
+			'list': rulerIIAPortfolioKupRub[item]['list']
+		})
+	- }
+
+
+
+	.content-section
+		.content-section__inner
+			.section-title
+				| Следующие купонные выплаты
+
+
+	.content-section
+		- for(var item = 0; item < rulerIIAPortfolioNextKup.length; ++item) {
+			+rulerListed({
+				'title': rulerIIAPortfolioNextKup[item]['title'],
+				'titleClass': rulerIIAPortfolioNextKup[item]['titleClass'],
+				'listTabled': rulerIIAPortfolioNextKup[item]['list'],
+				'button': rulerIIAPortfolioNextKup[item]['button'],
+			})
+		- }
+
+
+	.content-section
+		.content-section__inner
+			+btnBlock({
+				'left': 'icon-mail.png',
+				'title': 'Сформировать отчет и отправить на email',
+			})
+
+
+
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})

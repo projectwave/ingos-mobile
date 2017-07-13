@@ -5,29 +5,23 @@ block content
 	.content-section
 		.content-section__inner
 			.section-title.styleInset
-				| Заявки на приобритение
-
-	.content-section
-		- for(var item = 0; item < rulerUnitTrustBids.length; ++item) {
-			+rulerListed({
-				'title': rulerUnitTrustBids[item]['title'],
-                'titleClass': rulerUnitTrustBids[item]['titleClass'],
-				'listTabled': rulerUnitTrustBids[item]['list'],
-				'button': rulerUnitTrustBids[item]['button'],
-			})
-		- }
-
-	.content-section
-		.content-section__inner
-			+btnBlock({
-                'left': 'icon-mail.png',
-                'title': 'Сформировать отчет и отправить на email',
-            })
+				| Документы по ДУ
 
 
+	+sliderNav({
+        'left': 'icon-year-arrow-left.png',
+        'right': 'icon-year-arrow-right.png',
+        'title': 2016,
+        'titleClassName': 'text-center',
+    })
 
-
-
+	- for(var item = 0; item < rulerUnitTrustDocuments.length; ++item) {
+		+docsReview({
+            'left': rulerUnitTrustDocuments[item]['icon'],
+            'title': rulerUnitTrustDocuments[item]['title'],
+            'download': true,
+		})
+	- }
 
 
 

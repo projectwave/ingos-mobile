@@ -1,0 +1,97 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+block content
+
+
+
+	.content-section.bg-dark
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#bag-default').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#bag-num-1').tabs__nav-item
+					| Портфель по договору №111
+
+			.tab-container#bag-default.is-visible
+				.tab-container__section-inner
+					.content-section__inner
+						.section-title Информация по сделкам
+
+				.content-section.bg-darker
+					.borderedVert.marginTop40
+						.form-grid.bordered.borderedVertFree
+							.cell
+								.content-section__inner
+									.tile-iconed.styleInline
+										.icon
+											img(src='/assets/img/icon-calendar-blue.png')
+										.text
+											.prop Выбрать период:
+											a(href='#' class='value').link-text-small.value
+												| 5 янв 2016 - 12 янв 2016
+
+				.content-section
+					.content-section__inner.content-section--padding.padding-bottom-0
+						.form-row
+							label.form-row__title
+								| Выберите параметр для отображения:
+							select.form-control
+								option Цена
+								option Стоимость
+								option Сумма
+
+
+
+				.content-section
+					- for(var item = 0; item < rulerTMInvestDealings.length; ++item) {
+						+rulerListed({
+							'title': rulerTMInvestDealings[item]['title'],
+							'titleClass': rulerTMInvestDealings[item]['titleClass'],
+							'rulerListInline': rulerTMInvestDealings[item]['rulerListInline'],
+							'listTabled': rulerTMInvestDealings[item]['list'],
+							'button': rulerTMInvestDealings[item]['button'],
+						})
+					- }
+
+
+
+
+				.content-section
+					.content-section__inner
+						+btnBlock({
+                            'left': 'icon-mail.png',
+                            'title': 'Сформировать отчет и отправить на email',
+                        })
+
+
+
+
+			.tab-container#bag-num-1
+				.tab-container__section-inner
+					.section-title Портфель по договору №111
+					.content-section__inner
+						| Не понятно какой контент
+
+
+
+
+
+
+
+
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
+	script(type='text/javascript' src='assets/js/vendors/parsley.js')
+	script(type='text/javascript' src='assets/js/vendors/bootstrap-modal.js')
+	script(type='text/javascript' src='assets/js/main.js')
+	script(type='text/javascript').
+		$(function () {
+			commonActions.init();
+		})
